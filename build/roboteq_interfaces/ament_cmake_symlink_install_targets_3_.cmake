@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/wjs/cart_ros2/build/roboteq_interfaces/rosidl_generator_py/roboteq_interfaces/roboteq_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" "TARGETS" "roboteq_interfaces__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "lib/python3.8/site-packages/roboteq_interfaces")

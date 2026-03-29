@@ -1,0 +1,26 @@
+[0.076s] Invoking command in '/home/wjs/cart_ros2/build/stella_ahrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/stella_ahrs -- -j4 -l4
+[0.503s] [100%] Built target stella_ahrs_node
+[0.593s] Invoked command in '/home/wjs/cart_ros2/build/stella_ahrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/stella_ahrs -- -j4 -l4
+[0.622s] Invoking command in '/home/wjs/cart_ros2/build/stella_ahrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/stella_ahrs
+[0.694s] -- Install configuration: ""
+[0.706s] -- Execute custom install script
+[0.707s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs//launch/stella_ahrs_launch.py
+[0.713s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/rviz/imu_test.rviz
+[0.714s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/stella_ahrs/stella_ahrs_node
+[0.715s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/package_run_dependencies/stella_ahrs
+[0.719s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/parent_prefix_path/stella_ahrs
+[0.720s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/environment/ament_prefix_path.sh
+[0.722s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/environment/ament_prefix_path.dsv
+[0.723s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/environment/path.sh
+[0.725s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/environment/path.dsv
+[0.727s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/local_setup.bash
+[0.729s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/local_setup.sh
+[0.736s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/local_setup.zsh
+[0.737s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/local_setup.dsv
+[0.741s] -- Symlinking: /home/wjs/cart_ros2/install/share/stella_ahrs/package.dsv
+[0.792s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/packages/stella_ahrs
+[0.794s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.796s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/cmake/stella_ahrsConfig.cmake
+[0.798s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/cmake/stella_ahrsConfig-version.cmake
+[0.803s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/package.xml
+[0.926s] Invoked command in '/home/wjs/cart_ros2/build/stella_ahrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/stella_ahrs

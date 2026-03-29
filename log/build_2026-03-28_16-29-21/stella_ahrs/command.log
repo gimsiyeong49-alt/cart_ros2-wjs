@@ -1,0 +1,4 @@
+Invoking command in '/home/wjs/cart_ros2/build/stella_ahrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/stella_ahrs -- -j4 -l4
+Invoked command in '/home/wjs/cart_ros2/build/stella_ahrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/stella_ahrs -- -j4 -l4
+Invoking command in '/home/wjs/cart_ros2/build/stella_ahrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/stella_ahrs
+Invoked command in '/home/wjs/cart_ros2/build/stella_ahrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/stella_ahrs

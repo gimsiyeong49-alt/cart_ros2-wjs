@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from roboteq_interfaces/srv/Command.srv
+// generated code does not contain a copyright notice
+
+
+module roboteq_interfaces {
+  module srv {
+    struct Command_Request {
+      string user_input;
+
+      int64 channel;
+
+      int64 value;
+    };
+    struct Command_Response {
+      string result;
+    };
+  };
+};

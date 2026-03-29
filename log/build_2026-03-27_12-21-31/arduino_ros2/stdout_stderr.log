@@ -1,0 +1,19 @@
+running develop
+running egg_info
+creating arduino_ros2.egg-info
+writing arduino_ros2.egg-info/PKG-INFO
+writing dependency_links to arduino_ros2.egg-info/dependency_links.txt
+writing entry points to arduino_ros2.egg-info/entry_points.txt
+writing requirements to arduino_ros2.egg-info/requires.txt
+writing top-level names to arduino_ros2.egg-info/top_level.txt
+writing manifest file 'arduino_ros2.egg-info/SOURCES.txt'
+reading manifest file 'arduino_ros2.egg-info/SOURCES.txt'
+writing manifest file 'arduino_ros2.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/wjs/cart_ros2/install/lib/python3.8/site-packages/arduino-ros2.egg-link (link to .)
+Installing pub_joycmd script to /home/wjs/cart_ros2/install/lib/arduino_ros2
+
+Installed /home/wjs/cart_ros2/build/arduino_ros2
+running symlink_data
+symbolically linking /home/wjs/cart_ros2/build/arduino_ros2/resource/arduino_ros2 -> /home/wjs/cart_ros2/install/share/ament_index/resource_index/packages
+symbolically linking /home/wjs/cart_ros2/build/arduino_ros2/package.xml -> /home/wjs/cart_ros2/install/share/arduino_ros2

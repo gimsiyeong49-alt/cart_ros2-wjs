@@ -1,0 +1,21 @@
+[5.422s] Invoking command in '/home/wjs/cart_ros2/build/arduino_ros2': PYTHONPATH=/home/wjs/cart_ros2/build/arduino_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/wjs/cart_ros2/build/arduino_ros2/build --no-deps symlink_data
+[7.224s] running develop
+[8.931s] running egg_info
+[8.936s] creating arduino_ros2.egg-info
+[8.937s] writing arduino_ros2.egg-info/PKG-INFO
+[8.942s] writing dependency_links to arduino_ros2.egg-info/dependency_links.txt
+[8.943s] writing entry points to arduino_ros2.egg-info/entry_points.txt
+[8.951s] writing requirements to arduino_ros2.egg-info/requires.txt
+[8.958s] writing top-level names to arduino_ros2.egg-info/top_level.txt
+[8.987s] writing manifest file 'arduino_ros2.egg-info/SOURCES.txt'
+[9.602s] reading manifest file 'arduino_ros2.egg-info/SOURCES.txt'
+[9.605s] writing manifest file 'arduino_ros2.egg-info/SOURCES.txt'
+[10.382s] running build_ext
+[10.384s] Creating /home/wjs/cart_ros2/install/lib/python3.8/site-packages/arduino-ros2.egg-link (link to .)
+[10.387s] Installing pub_joycmd script to /home/wjs/cart_ros2/install/lib/arduino_ros2
+[10.399s] 
+[10.399s] Installed /home/wjs/cart_ros2/build/arduino_ros2
+[10.400s] running symlink_data
+[10.401s] symbolically linking /home/wjs/cart_ros2/build/arduino_ros2/resource/arduino_ros2 -> /home/wjs/cart_ros2/install/share/ament_index/resource_index/packages
+[10.411s] symbolically linking /home/wjs/cart_ros2/build/arduino_ros2/package.xml -> /home/wjs/cart_ros2/install/share/arduino_ros2
+[10.798s] Invoked command in '/home/wjs/cart_ros2/build/arduino_ros2' returned '0': PYTHONPATH=/home/wjs/cart_ros2/build/arduino_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/wjs/cart_ros2/build/arduino_ros2/build --no-deps symlink_data

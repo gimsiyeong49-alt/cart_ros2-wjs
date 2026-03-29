@@ -1,0 +1,27 @@
+[1.711s] Invoking command in '/home/wjs/cart_ros2/build/agv_mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/agv_mapping -- -j4 -l4
+[1.960s] Invoked command in '/home/wjs/cart_ros2/build/agv_mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/agv_mapping -- -j4 -l4
+[1.987s] Invoking command in '/home/wjs/cart_ros2/build/agv_mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/agv_mapping
+[2.044s] -- Install configuration: ""
+[2.046s] -- Execute custom install script
+[2.049s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/launch/online_async_launch.py
+[2.051s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/launch/online_cartographer_launch.py
+[2.055s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/config/.ekf.yaml.swo
+[2.056s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/config/agv_cartographer_2d.lua
+[2.058s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/config/ekf.yaml
+[2.059s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/config/mapper_params_online_async.yaml
+[2.062s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/package_run_dependencies/agv_mapping
+[2.064s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/parent_prefix_path/agv_mapping
+[2.067s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/environment/ament_prefix_path.sh
+[2.069s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/environment/ament_prefix_path.dsv
+[2.072s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/environment/path.sh
+[2.076s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/environment/path.dsv
+[2.080s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/local_setup.bash
+[2.084s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/local_setup.sh
+[2.090s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/local_setup.zsh
+[2.094s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/local_setup.dsv
+[2.104s] -- Symlinking: /home/wjs/cart_ros2/install/share/agv_mapping/package.dsv
+[2.147s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/packages/agv_mapping
+[2.151s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/cmake/agv_mappingConfig.cmake
+[2.151s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/cmake/agv_mappingConfig-version.cmake
+[2.162s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/package.xml
+[2.386s] Invoked command in '/home/wjs/cart_ros2/build/agv_mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/agv_mapping

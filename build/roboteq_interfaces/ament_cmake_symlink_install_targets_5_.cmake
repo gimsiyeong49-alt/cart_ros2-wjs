@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/wjs/cart_ros2/build/roboteq_interfaces/rosidl_generator_py/roboteq_interfaces/libroboteq_interfaces__python.so" "TARGETS" "roboteq_interfaces__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

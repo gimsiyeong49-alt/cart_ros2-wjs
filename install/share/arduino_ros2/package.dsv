@@ -1,0 +1,15 @@
+source;share/arduino_ros2/hook/cmake_prefix_path.ps1
+source;share/arduino_ros2/hook/cmake_prefix_path.dsv
+source;share/arduino_ros2/hook/cmake_prefix_path.sh
+source;share/arduino_ros2/hook/ld_library_path_lib.ps1
+source;share/arduino_ros2/hook/ld_library_path_lib.dsv
+source;share/arduino_ros2/hook/ld_library_path_lib.sh
+source;share/arduino_ros2/hook/pythonpath.ps1
+source;share/arduino_ros2/hook/pythonpath.dsv
+source;share/arduino_ros2/hook/pythonpath.sh
+source;share/arduino_ros2/hook/ament_prefix_path.ps1
+source;share/arduino_ros2/hook/ament_prefix_path.dsv
+source;share/arduino_ros2/hook/ament_prefix_path.sh
+source;../build/arduino_ros2/share/arduino_ros2/hook/pythonpath_develop.ps1
+source;../build/arduino_ros2/share/arduino_ros2/hook/pythonpath_develop.dsv
+source;../build/arduino_ros2/share/arduino_ros2/hook/pythonpath_develop.sh

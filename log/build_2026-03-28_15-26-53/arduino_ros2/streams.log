@@ -1,0 +1,17 @@
+[5.414s] Invoking command in '/home/wjs/cart_ros2/build/arduino_ros2': PYTHONPATH=/home/wjs/cart_ros2/build/arduino_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/wjs/cart_ros2/build/arduino_ros2/build --no-deps symlink_data
+[6.937s] running develop
+[7.716s] running egg_info
+[7.718s] writing arduino_ros2.egg-info/PKG-INFO
+[7.719s] writing dependency_links to arduino_ros2.egg-info/dependency_links.txt
+[7.719s] writing entry points to arduino_ros2.egg-info/entry_points.txt
+[7.719s] writing requirements to arduino_ros2.egg-info/requires.txt
+[7.720s] writing top-level names to arduino_ros2.egg-info/top_level.txt
+[7.856s] reading manifest file 'arduino_ros2.egg-info/SOURCES.txt'
+[7.859s] writing manifest file 'arduino_ros2.egg-info/SOURCES.txt'
+[8.111s] running build_ext
+[8.111s] Creating /home/wjs/cart_ros2/install/lib/python3.8/site-packages/arduino-ros2.egg-link (link to .)
+[8.116s] Installing pub_joycmd script to /home/wjs/cart_ros2/install/lib/arduino_ros2
+[8.117s] 
+[8.118s] Installed /home/wjs/cart_ros2/build/arduino_ros2
+[8.118s] running symlink_data
+[8.261s] Invoked command in '/home/wjs/cart_ros2/build/arduino_ros2' returned '0': PYTHONPATH=/home/wjs/cart_ros2/build/arduino_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/wjs/cart_ros2/build/arduino_ros2/build --no-deps symlink_data

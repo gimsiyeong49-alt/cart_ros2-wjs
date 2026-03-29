@@ -1,0 +1,180 @@
+[0.102s] Invoking command in '/home/wjs/cart_ros2/build/ira_laser_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake /home/wjs/cart_ros2/src/ira_laser_tools -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/wjs/cart_ros2/install
+[0.777s] -- The C compiler identification is GNU 10.5.0
+[1.440s] -- The CXX compiler identification is GNU 10.5.0
+[1.502s] -- Check for working C compiler: /usr/bin/cc
+[2.470s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.474s] -- Detecting C compiler ABI info
+[3.453s] -- Detecting C compiler ABI info - done
+[3.548s] -- Detecting C compile features
+[3.549s] -- Detecting C compile features - done
+[3.563s] -- Check for working CXX compiler: /usr/bin/c++
+[4.529s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[4.535s] -- Detecting CXX compiler ABI info
+[6.028s] -- Detecting CXX compiler ABI info - done
+[6.208s] -- Detecting CXX compile features
+[6.209s] -- Detecting CXX compile features - done
+[6.261s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[6.681s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[6.683s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[7.625s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[7.921s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[8.418s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.476s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[9.621s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[9.868s] -- Found FastRTPS: /opt/ros/galactic/include  
+[10.401s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[11.274s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[11.325s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[11.555s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[11.570s] -- Looking for pthread.h
+[12.316s] -- Looking for pthread.h - found
+[12.319s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[13.108s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[13.110s] -- Looking for pthread_create in pthreads
+[13.876s] -- Looking for pthread_create in pthreads - not found
+[13.879s] -- Looking for pthread_create in pthread
+[14.705s] -- Looking for pthread_create in pthread - found
+[14.712s] -- Found Threads: TRUE  
+[15.937s] -- Found rclcpp_action: 9.2.2 (/opt/ros/galactic/share/rclcpp_action/cmake)
+[16.770s] -- Found rclcpp_lifecycle: 9.2.2 (/opt/ros/galactic/share/rclcpp_lifecycle/cmake)
+[17.309s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[17.625s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[18.185s] -- Found laser_geometry: 2.2.1 (/opt/ros/galactic/share/laser_geometry/cmake)
+[18.316s] -- Found tf2: 0.17.5 (/opt/ros/galactic/share/tf2/cmake)
+[18.522s] -- Found tf2_ros: 0.17.5 (/opt/ros/galactic/share/tf2_ros/cmake)
+[19.909s] -- Found pcl_ros: 2.3.2 (/opt/ros/galactic/share/pcl_ros/cmake)
+[20.878s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[21.100s] -- Checking for module 'eigen3'
+[21.214s] --   Found eigen3, version 3.3.7
+[21.493s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[21.493s] -- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[21.841s] -- Checking for module 'flann'
+[21.959s] --   Found flann, version 1.9.1
+[22.267s] -- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  
+[22.641s] -- The imported target "vtkParseOGLExt" references the file
+[22.642s]    "/usr/bin/vtkParseOGLExt-7.1"
+[22.647s] but this file does not exist.  Possible reasons include:
+[22.648s] * The file was deleted, renamed, or moved to another location.
+[22.648s] * An install or uninstall procedure did not complete successfully.
+[22.650s] * The installation package was faulty and contained
+[22.651s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[22.652s] but not all the files it references.
+[22.652s] 
+[22.653s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[22.653s]    "/usr/lib/aarch64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[22.653s] but this file does not exist.  Possible reasons include:
+[22.653s] * The file was deleted, renamed, or moved to another location.
+[22.654s] * An install or uninstall procedure did not complete successfully.
+[22.654s] * The installation package was faulty and contained
+[22.655s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[22.656s] but not all the files it references.
+[22.656s] 
+[22.656s] -- The imported target "vtk" references the file
+[22.656s]    "/usr/bin/vtk"
+[22.657s] but this file does not exist.  Possible reasons include:
+[22.657s] * The file was deleted, renamed, or moved to another location.
+[22.657s] * An install or uninstall procedure did not complete successfully.
+[22.666s] * The installation package was faulty and contained
+[22.667s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[22.668s] but not all the files it references.
+[22.669s] 
+[22.669s] -- The imported target "pvtk" references the file
+[22.669s]    "/usr/bin/pvtk"
+[22.670s] but this file does not exist.  Possible reasons include:
+[22.670s] * The file was deleted, renamed, or moved to another location.
+[22.670s] * An install or uninstall procedure did not complete successfully.
+[22.670s] * The installation package was faulty and contained
+[22.671s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[22.671s] but not all the files it references.
+[22.671s] 
+[22.803s] -- Checking for module 'libusb-1.0'
+[22.921s] --   Found libusb-1.0, version 1.0.23
+[23.195s] -- Found USB_10: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[23.602s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[24.110s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[24.183s] -- Found libusb-1.0: /usr/include  
+[24.216s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[24.255s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[24.392s] -- Found Qhull: optimized;/usr/lib/aarch64-linux-gnu/libqhull.so;debug;/usr/lib/aarch64-linux-gnu/libqhull.so  
+[24.392s] -- QHULL found (include: /usr/include, lib: optimized;/usr/lib/aarch64-linux-gnu/libqhull.so;debug;/usr/lib/aarch64-linux-gnu/libqhull.so)
+[24.424s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[24.491s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[24.502s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[24.508s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[24.514s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[24.522s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[24.529s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[24.531s] -- Found PCL_2D: /usr/include/pcl-1.10  
+[24.545s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.10  
+[24.552s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[24.563s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[24.573s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[24.581s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[24.592s] -- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+[24.605s] -- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+[24.614s] -- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+[24.622s] -- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+[24.634s] -- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+[24.643s] -- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+[24.653s] -- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+[24.666s] -- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+[24.673s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.10  
+[24.705s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.10  
+[24.707s] -- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+[24.717s] -- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+[25.281s] CMake Warning (dev) at CMakeLists.txt:27 (find_package):
+[25.282s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[25.282s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[25.282s]   command to set the policy and suppress this warning.
+[25.283s] 
+[25.283s]   CMake variable PCL_ROOT is set to:
+[25.283s] 
+[25.283s]     /usr
+[25.284s] 
+[25.284s]   For compatibility, CMake is ignoring the variable.
+[25.284s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[25.284s] 
+[25.773s] -- Configuring done
+[26.561s] -- Generating done
+[26.832s] -- Build files have been written to: /home/wjs/cart_ros2/build/ira_laser_tools
+[26.921s] Invoked command in '/home/wjs/cart_ros2/build/ira_laser_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake /home/wjs/cart_ros2/src/ira_laser_tools -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/wjs/cart_ros2/install
+[26.927s] Invoking command in '/home/wjs/cart_ros2/build/ira_laser_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/ira_laser_tools -- -j4 -l4
+[27.197s] [35m[1mScanning dependencies of target laserscan_virtualizer[0m
+[27.918s] [ 25%] [32mBuilding CXX object CMakeFiles/laserscan_virtualizer.dir/src/laserscan_virtualizer.cpp.o[0m
+[27.966s] [01m[K/home/wjs/cart_ros2/src/ira_laser_tools/src/laserscan_virtualizer.cpp:1:[m[K [01;35m[Kwarning: [m[K"BOOST_BIND_NO_PLACEHOLDERS" redefined
+[27.967s]     1 | #define BOOST_BIND_NO_PLACEHOLDERS
+[27.967s]       | 
+[27.967s] [01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[100.710s] [ 50%] [32m[1mLinking CXX executable laserscan_virtualizer[0m
+[105.550s] [ 50%] Built target laserscan_virtualizer
+[105.609s] [35m[1mScanning dependencies of target laserscan_multi_merger[0m
+[106.012s] [ 75%] [32mBuilding CXX object CMakeFiles/laserscan_multi_merger.dir/src/laserscan_multi_merger.cpp.o[0m
+[173.734s] [100%] [32m[1mLinking CXX executable laserscan_multi_merger[0m
+[177.273s] [100%] Built target laserscan_multi_merger
+[177.324s] Invoked command in '/home/wjs/cart_ros2/build/ira_laser_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/ira_laser_tools -- -j4 -l4
+[177.338s] Invoking command in '/home/wjs/cart_ros2/build/ira_laser_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/ira_laser_tools
+[177.374s] -- Install configuration: ""
+[177.376s] -- Execute custom install script
+[177.378s] -- Symlinking: /home/wjs/cart_ros2/install/lib/ira_laser_tools/laserscan_multi_merger
+[177.420s] -- Symlinking: /home/wjs/cart_ros2/install/lib/ira_laser_tools/laserscan_virtualizer
+[177.462s] -- Symlinking: /home/wjs/cart_ros2/install/share/ira_laser_tools/launch/laserscan_multi_merger.launch
+[177.503s] -- Symlinking: /home/wjs/cart_ros2/install/share/ira_laser_tools/launch/laserscan_virtualizer.launch
+[177.543s] -- Symlinking: /home/wjs/cart_ros2/install/share/ira_laser_tools/launch/merge_multi.launch.py
+[177.585s] -- Symlinking: /home/wjs/cart_ros2/install/share/ira_laser_tools/config/laserscan_merge.yaml
+[177.627s] -- Symlinking: /home/wjs/cart_ros2/install/share/ament_index/resource_index/package_run_dependencies/ira_laser_tools
+[177.670s] -- Symlinking: /home/wjs/cart_ros2/install/share/ament_index/resource_index/parent_prefix_path/ira_laser_tools
+[177.712s] -- Symlinking: /home/wjs/cart_ros2/install/share/ira_laser_tools/environment/ament_prefix_path.sh
+[177.754s] -- Symlinking: /home/wjs/cart_ros2/install/share/ira_laser_tools/environment/ament_prefix_path.dsv
+[177.795s] -- Symlinking: /home/wjs/cart_ros2/install/share/ira_laser_tools/environment/path.sh
+[177.837s] -- Symlinking: /home/wjs/cart_ros2/install/share/ira_laser_tools/environment/path.dsv
+[177.881s] -- Symlinking: /home/wjs/cart_ros2/install/share/ira_laser_tools/local_setup.bash
+[177.921s] -- Symlinking: /home/wjs/cart_ros2/install/share/ira_laser_tools/local_setup.sh
+[177.962s] -- Symlinking: /home/wjs/cart_ros2/install/share/ira_laser_tools/local_setup.zsh
+[178.002s] -- Symlinking: /home/wjs/cart_ros2/install/share/ira_laser_tools/local_setup.dsv
+[178.047s] -- Symlinking: /home/wjs/cart_ros2/install/share/ira_laser_tools/package.dsv
+[178.091s] -- Symlinking: /home/wjs/cart_ros2/install/share/ament_index/resource_index/packages/ira_laser_tools
+[178.132s] -- Symlinking: /home/wjs/cart_ros2/install/share/ira_laser_tools/cmake/ament_cmake_export_dependencies-extras.cmake
+[178.174s] -- Symlinking: /home/wjs/cart_ros2/install/share/ira_laser_tools/cmake/ira_laser_toolsConfig.cmake
+[178.214s] -- Symlinking: /home/wjs/cart_ros2/install/share/ira_laser_tools/cmake/ira_laser_toolsConfig-version.cmake
+[178.258s] -- Symlinking: /home/wjs/cart_ros2/install/share/ira_laser_tools/package.xml
+[178.309s] Invoked command in '/home/wjs/cart_ros2/build/ira_laser_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/ira_laser_tools

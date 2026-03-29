@@ -1,0 +1,138 @@
+[0.128s] Invoking command in '/home/wjs/cart_ros2/build/laser_filters': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake /home/wjs/cart_ros2/src/laser_filters -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/wjs/cart_ros2/install
+[1.057s] -- The C compiler identification is GNU 10.5.0
+[1.634s] -- The CXX compiler identification is GNU 10.5.0
+[1.694s] -- Check for working C compiler: /usr/bin/cc
+[2.627s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.633s] -- Detecting C compiler ABI info
+[3.602s] -- Detecting C compiler ABI info - done
+[3.732s] -- Detecting C compile features
+[3.740s] -- Detecting C compile features - done
+[3.761s] -- Check for working CXX compiler: /usr/bin/c++
+[4.773s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[4.782s] -- Detecting CXX compiler ABI info
+[5.873s] -- Detecting CXX compiler ABI info - done
+[5.982s] -- Detecting CXX compile features
+[5.984s] -- Detecting CXX compile features - done
+[6.002s] -- Found ament_cmake_auto: 1.1.6 (/opt/ros/galactic/share/ament_cmake_auto/cmake)
+[6.635s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[6.637s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[7.206s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[9.005s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.079s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[10.250s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[10.494s] -- Found FastRTPS: /opt/ros/galactic/include  
+[11.137s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[11.711s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[11.727s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[11.887s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[11.892s] -- Looking for pthread.h
+[12.552s] -- Looking for pthread.h - found
+[12.555s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[13.040s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[13.043s] -- Looking for pthread_create in pthreads
+[13.478s] -- Looking for pthread_create in pthreads - not found
+[13.480s] -- Looking for pthread_create in pthread
+[13.978s] -- Looking for pthread_create in pthread - found
+[13.990s] -- Found Threads: TRUE  
+[16.944s] -- Found ament_cmake_gtest: 1.1.6 (/opt/ros/galactic/share/ament_cmake_gtest/cmake)
+[16.957s] -- Found gtest sources under '/opt/ros/galactic/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[16.968s] -- Check if compiler accepts -pthread
+[17.422s] -- Check if compiler accepts -pthread - yes
+[17.464s] -- Configuring done
+[17.686s] -- Generating done
+[17.788s] -- Build files have been written to: /home/wjs/cart_ros2/build/laser_filters
+[17.845s] Invoked command in '/home/wjs/cart_ros2/build/laser_filters' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake /home/wjs/cart_ros2/src/laser_filters -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/wjs/cart_ros2/install
+[17.861s] Invoking command in '/home/wjs/cart_ros2/build/laser_filters': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/laser_filters -- -j4 -l4
+[18.116s] [35m[1mScanning dependencies of target laser_scan_filters[0m
+[18.656s] [  7%] [32mBuilding CXX object CMakeFiles/laser_scan_filters.dir/src/laser_scan_filters.cpp.o[0m
+[50.935s] [ 14%] [32m[1mLinking CXX shared library liblaser_scan_filters.so[0m
+[52.555s] [ 14%] Built target laser_scan_filters
+[52.620s] [35m[1mScanning dependencies of target gtest_main[0m
+[52.737s] [ 21%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[55.677s] [ 28%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[55.878s] [ 28%] Built target gtest_main
+[55.942s] [35m[1mScanning dependencies of target scan_to_cloud_filter_chain[0m
+[56.370s] [ 35%] [32mBuilding CXX object CMakeFiles/scan_to_cloud_filter_chain.dir/src/scan_to_cloud_filter_chain.cpp.o[0m
+[107.419s] [ 42%] [32m[1mLinking CXX executable scan_to_cloud_filter_chain[0m
+[110.277s] [ 42%] Built target scan_to_cloud_filter_chain
+[110.381s] [35m[1mScanning dependencies of target scan_to_scan_filter_chain[0m
+[110.699s] [ 50%] [32mBuilding CXX object CMakeFiles/scan_to_scan_filter_chain.dir/src/scan_to_scan_filter_chain.cpp.o[0m
+[154.013s] [ 57%] [32m[1mLinking CXX executable scan_to_scan_filter_chain[0m
+[155.853s] [ 57%] Built target scan_to_scan_filter_chain
+[155.908s] [35m[1mScanning dependencies of target gtest[0m
+[155.910s] [35m[1mScanning dependencies of target generic_laser_filter_node[0m
+[156.009s] [ 64%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[156.155s] [ 71%] [32mBuilding CXX object CMakeFiles/generic_laser_filter_node.dir/src/generic_laser_filter_node.cpp.o[0m
+[169.597s] [ 78%] [32m[1mLinking CXX static library libgtest.a[0m
+[169.947s] [ 78%] Built target gtest
+[194.544s] [ 85%] [32m[1mLinking CXX executable generic_laser_filter_node[0m
+[196.360s] [ 85%] Built target generic_laser_filter_node
+[196.410s] [35m[1mScanning dependencies of target test_scan_filter_chain[0m
+[196.643s] [ 92%] [32mBuilding CXX object CMakeFiles/test_scan_filter_chain.dir/test/test_scan_filter_chain.cpp.o[0m
+[216.785s] [100%] [32m[1mLinking CXX executable test_scan_filter_chain[0m
+[217.793s] [100%] Built target test_scan_filter_chain
+[217.843s] Invoked command in '/home/wjs/cart_ros2/build/laser_filters' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/laser_filters -- -j4 -l4
+[217.852s] Invoking command in '/home/wjs/cart_ros2/build/laser_filters': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/laser_filters
+[217.892s] -- Install configuration: ""
+[217.894s] -- Execute custom install script
+[217.896s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters//laser_filters_plugins.xml
+[217.938s] -- Symlinking: /home/wjs/cart_ros2/install/include/laser_filters/angular_bounds_filter.h
+[217.977s] -- Symlinking: /home/wjs/cart_ros2/install/include/laser_filters/angular_bounds_filter_in_place.h
+[218.015s] -- Symlinking: /home/wjs/cart_ros2/install/include/laser_filters/array_filter.h
+[218.053s] -- Symlinking: /home/wjs/cart_ros2/install/include/laser_filters/box_filter.h
+[218.091s] -- Symlinking: /home/wjs/cart_ros2/install/include/laser_filters/footprint_filter.h
+[218.129s] -- Symlinking: /home/wjs/cart_ros2/install/include/laser_filters/intensity_filter.h
+[218.168s] -- Symlinking: /home/wjs/cart_ros2/install/include/laser_filters/interpolation_filter.h
+[218.207s] -- Symlinking: /home/wjs/cart_ros2/install/include/laser_filters/median_filter.h
+[218.246s] -- Symlinking: /home/wjs/cart_ros2/install/include/laser_filters/range_filter.h
+[218.284s] -- Symlinking: /home/wjs/cart_ros2/install/include/laser_filters/scan_mask_filter.h
+[218.322s] -- Symlinking: /home/wjs/cart_ros2/install/include/laser_filters/scan_shadows_filter.h
+[218.362s] -- Symlinking: /home/wjs/cart_ros2/install/include/laser_filters/speckle_filter.h
+[218.401s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/environment/library_path.sh
+[218.441s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/environment/library_path.dsv
+[218.481s] -- Symlinking: /home/wjs/cart_ros2/install/lib/liblaser_scan_filters.so
+[218.521s] -- Symlinking: /home/wjs/cart_ros2/install/lib/laser_filters/scan_to_cloud_filter_chain
+[218.561s] -- Symlinking: /home/wjs/cart_ros2/install/lib/laser_filters/scan_to_scan_filter_chain
+[218.599s] -- Symlinking: /home/wjs/cart_ros2/install/lib/laser_filters/generic_laser_filter_node
+[218.642s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/examples/box_filter_example.launch.py
+[218.680s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/examples/box_filter_example.yaml
+[218.719s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/examples/footprint_filter_example.launch.py
+[218.757s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/examples/footprint_filter_example.yaml
+[218.796s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/examples/intensity_filter_example.launch.py
+[218.835s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/examples/intensity_filter_example.yaml
+[218.874s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/examples/mask_filter_example.launch.py
+[218.918s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/examples/mask_filter_example.yaml
+[218.958s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/examples/median_filter_example.launch.py
+[218.997s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/examples/median_filter_example.yaml
+[219.036s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/examples/multiple_filters_example.launch.py
+[219.078s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/examples/multiple_filters_example.yaml
+[219.117s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/examples/pass_through_example.launch.py
+[219.156s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/examples/pass_through_example.yaml
+[219.196s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/examples/range_filter_example.launch.py
+[219.235s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/examples/range_filter_example.yaml
+[219.276s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/examples/shadow_filter_example.launch.py
+[219.315s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/examples/shadow_filter_example.yaml
+[219.354s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/examples/speckle_filter_example.launch
+[219.395s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/examples/speckle_filter_example.yaml
+[219.435s] -- Symlinking: /home/wjs/cart_ros2/install/share/ament_index/resource_index/package_run_dependencies/laser_filters
+[219.475s] -- Symlinking: /home/wjs/cart_ros2/install/share/ament_index/resource_index/parent_prefix_path/laser_filters
+[219.515s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/environment/ament_prefix_path.sh
+[219.554s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/environment/ament_prefix_path.dsv
+[219.596s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/environment/path.sh
+[219.635s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/environment/path.dsv
+[219.674s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/local_setup.bash
+[219.713s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/local_setup.sh
+[219.751s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/local_setup.zsh
+[219.792s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/local_setup.dsv
+[219.831s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/package.dsv
+[219.873s] -- Symlinking: /home/wjs/cart_ros2/install/share/ament_index/resource_index/packages/laser_filters
+[219.913s] -- Symlinking: /home/wjs/cart_ros2/install/share/ament_index/resource_index/filters__pluginlib__plugin/laser_filters
+[219.952s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/cmake/ament_cmake_export_dependencies-extras.cmake
+[219.992s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/cmake/ament_cmake_export_include_directories-extras.cmake
+[220.031s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/cmake/ament_cmake_export_libraries-extras.cmake
+[220.070s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/cmake/laser_filtersConfig.cmake
+[220.109s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/cmake/laser_filtersConfig-version.cmake
+[220.149s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/package.xml
+[220.190s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/config_filter/angle_filter_F.yaml
+[220.227s] -- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/config_filter/angle_filter_R.yaml
+[220.277s] Invoked command in '/home/wjs/cart_ros2/build/laser_filters' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/laser_filters

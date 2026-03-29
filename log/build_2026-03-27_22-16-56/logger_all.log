@@ -1,0 +1,1002 @@
+[0.844s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--merge-install']
+[0.845s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb91f75e0>>, merge_install=True, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb91f75e0>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffb91f7df0>)
+[1.486s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.488s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.488s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/wjs/cart_ros2'
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.491s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.491s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.491s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.533s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.533s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.534s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.534s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.534s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.534s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.536s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.536s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.536s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.537s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.537s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.537s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.537s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.537s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.539s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.539s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.539s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.539s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.539s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS) by extensions ['ignore', 'ignore_ament_install']
+[1.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS) by extension 'ignore'
+[1.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS) by extension 'ignore_ament_install'
+[1.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS) by extensions ['colcon_pkg']
+[1.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS) by extension 'colcon_pkg'
+[1.541s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS) by extensions ['colcon_meta']
+[1.541s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS) by extension 'colcon_meta'
+[1.541s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS) by extensions ['ros']
+[1.541s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS) by extension 'ros'
+[1.541s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS) by extensions ['cmake', 'python']
+[1.541s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS) by extension 'cmake'
+[1.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS) by extension 'python'
+[1.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS) by extensions ['python_setup_py']
+[1.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS) by extension 'python_setup_py'
+[1.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_aarch64) by extensions ['ignore', 'ignore_ament_install']
+[1.542s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_aarch64) by extension 'ignore'
+[1.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_aarch64) by extension 'ignore_ament_install'
+[1.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_aarch64) by extensions ['colcon_pkg']
+[1.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_aarch64) by extension 'colcon_pkg'
+[1.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_aarch64) by extensions ['colcon_meta']
+[1.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_aarch64) by extension 'colcon_meta'
+[1.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_aarch64) by extensions ['ros']
+[1.544s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_aarch64) by extension 'ros'
+[1.544s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_aarch64) by extensions ['cmake', 'python']
+[1.544s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_aarch64) by extension 'cmake'
+[1.544s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_aarch64) by extension 'python'
+[1.544s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_aarch64) by extensions ['python_setup_py']
+[1.544s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_aarch64) by extension 'python_setup_py'
+[1.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_amd64) by extensions ['ignore', 'ignore_ament_install']
+[1.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_amd64) by extension 'ignore'
+[1.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_amd64) by extension 'ignore_ament_install'
+[1.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_amd64) by extensions ['colcon_pkg']
+[1.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_amd64) by extension 'colcon_pkg'
+[1.546s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_amd64) by extensions ['colcon_meta']
+[1.546s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_amd64) by extension 'colcon_meta'
+[1.546s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_amd64) by extensions ['ros']
+[1.546s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_amd64) by extension 'ros'
+[1.546s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_amd64) by extensions ['cmake', 'python']
+[1.546s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_amd64) by extension 'cmake'
+[1.547s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_amd64) by extension 'python'
+[1.547s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_amd64) by extensions ['python_setup_py']
+[1.547s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_amd64) by extension 'python_setup_py'
+[1.547s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_arm64) by extensions ['ignore', 'ignore_ament_install']
+[1.547s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_arm64) by extension 'ignore'
+[1.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_arm64) by extension 'ignore_ament_install'
+[1.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_arm64) by extensions ['colcon_pkg']
+[1.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_arm64) by extension 'colcon_pkg'
+[1.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_arm64) by extensions ['colcon_meta']
+[1.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_arm64) by extension 'colcon_meta'
+[1.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_arm64) by extensions ['ros']
+[1.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_arm64) by extension 'ros'
+[1.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_arm64) by extensions ['cmake', 'python']
+[1.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_arm64) by extension 'cmake'
+[1.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_arm64) by extension 'python'
+[1.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_arm64) by extensions ['python_setup_py']
+[1.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_arm64) by extension 'python_setup_py'
+[1.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_armv7l) by extensions ['ignore', 'ignore_ament_install']
+[1.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_armv7l) by extension 'ignore'
+[1.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_armv7l) by extension 'ignore_ament_install'
+[1.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_armv7l) by extensions ['colcon_pkg']
+[1.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_armv7l) by extension 'colcon_pkg'
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_armv7l) by extensions ['colcon_meta']
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_armv7l) by extension 'colcon_meta'
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_armv7l) by extensions ['ros']
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_armv7l) by extension 'ros'
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_armv7l) by extensions ['cmake', 'python']
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_armv7l) by extension 'cmake'
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_armv7l) by extension 'python'
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_armv7l) by extensions ['python_setup_py']
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/lib_armv7l) by extension 'python_setup_py'
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example) by extensions ['ignore', 'ignore_ament_install']
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example) by extension 'ignore'
+[1.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example) by extension 'ignore_ament_install'
+[1.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example) by extensions ['colcon_pkg']
+[1.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example) by extension 'colcon_pkg'
+[1.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example) by extensions ['colcon_meta']
+[1.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example) by extension 'colcon_meta'
+[1.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example) by extensions ['ros']
+[1.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example) by extension 'ros'
+[1.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example) by extensions ['cmake', 'python']
+[1.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example) by extension 'cmake'
+[1.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example) by extension 'python'
+[1.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example) by extensions ['python_setup_py']
+[1.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example) by extension 'python_setup_py'
+[1.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example/stella_ahrs) by extensions ['ignore', 'ignore_ament_install']
+[1.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example/stella_ahrs) by extension 'ignore'
+[1.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example/stella_ahrs) by extension 'ignore_ament_install'
+[1.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example/stella_ahrs) by extensions ['colcon_pkg']
+[1.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example/stella_ahrs) by extension 'colcon_pkg'
+[1.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example/stella_ahrs) by extensions ['colcon_meta']
+[1.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example/stella_ahrs) by extension 'colcon_meta'
+[1.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example/stella_ahrs) by extensions ['ros']
+[1.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/2th_NtrexAHRS_lib_ROS/ros2_example/stella_ahrs) by extension 'ros'
+[1.567s] DEBUG:colcon.colcon_core.package_identification:Package 'src/2th_NtrexAHRS_lib_ROS/ros2_example/stella_ahrs' with type 'ros.ament_cmake' and name 'stella_ahrs'
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_body) by extensions ['ignore', 'ignore_ament_install']
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_body) by extension 'ignore'
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_body) by extension 'ignore_ament_install'
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_body) by extensions ['colcon_pkg']
+[1.569s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_body) by extension 'colcon_pkg'
+[1.569s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_body) by extensions ['colcon_meta']
+[1.569s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_body) by extension 'colcon_meta'
+[1.569s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_body) by extensions ['ros']
+[1.569s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_body) by extension 'ros'
+[1.571s] DEBUG:colcon.colcon_core.package_identification:Package 'src/agv_body' with type 'ros.ament_python' and name 'agv_body'
+[1.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_mapping) by extensions ['ignore', 'ignore_ament_install']
+[1.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_mapping) by extension 'ignore'
+[1.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_mapping) by extension 'ignore_ament_install'
+[1.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_mapping) by extensions ['colcon_pkg']
+[1.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_mapping) by extension 'colcon_pkg'
+[1.573s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_mapping) by extensions ['colcon_meta']
+[1.573s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_mapping) by extension 'colcon_meta'
+[1.573s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_mapping) by extensions ['ros']
+[1.573s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_mapping) by extension 'ros'
+[1.574s] DEBUG:colcon.colcon_core.package_identification:Package 'src/agv_mapping' with type 'ros.ament_cmake' and name 'agv_mapping'
+[1.575s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_ros2) by extensions ['ignore', 'ignore_ament_install']
+[1.575s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_ros2) by extension 'ignore'
+[1.575s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_ros2) by extension 'ignore_ament_install'
+[1.576s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_ros2) by extensions ['colcon_pkg']
+[1.576s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_ros2) by extension 'colcon_pkg'
+[1.576s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_ros2) by extensions ['colcon_meta']
+[1.576s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_ros2) by extension 'colcon_meta'
+[1.576s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_ros2) by extensions ['ros']
+[1.576s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_ros2) by extension 'ros'
+[1.578s] DEBUG:colcon.colcon_core.package_identification:Package 'src/arduino_ros2' with type 'ros.ament_python' and name 'arduino_ros2'
+[1.578s] Level 1:colcon.colcon_core.package_identification:_identify(src/ira_laser_tools) by extensions ['ignore', 'ignore_ament_install']
+[1.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/ira_laser_tools) by extension 'ignore'
+[1.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/ira_laser_tools) by extension 'ignore_ament_install'
+[1.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/ira_laser_tools) by extensions ['colcon_pkg']
+[1.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/ira_laser_tools) by extension 'colcon_pkg'
+[1.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/ira_laser_tools) by extensions ['colcon_meta']
+[1.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/ira_laser_tools) by extension 'colcon_meta'
+[1.580s] Level 1:colcon.colcon_core.package_identification:_identify(src/ira_laser_tools) by extensions ['ros']
+[1.580s] Level 1:colcon.colcon_core.package_identification:_identify(src/ira_laser_tools) by extension 'ros'
+[1.589s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ira_laser_tools' with type 'ros.ament_cmake' and name 'ira_laser_tools'
+[1.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/laser_filters) by extensions ['ignore', 'ignore_ament_install']
+[1.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/laser_filters) by extension 'ignore'
+[1.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/laser_filters) by extension 'ignore_ament_install'
+[1.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/laser_filters) by extensions ['colcon_pkg']
+[1.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/laser_filters) by extension 'colcon_pkg'
+[1.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/laser_filters) by extensions ['colcon_meta']
+[1.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/laser_filters) by extension 'colcon_meta'
+[1.591s] Level 1:colcon.colcon_core.package_identification:_identify(src/laser_filters) by extensions ['ros']
+[1.591s] Level 1:colcon.colcon_core.package_identification:_identify(src/laser_filters) by extension 'ros'
+[1.595s] DEBUG:colcon.colcon_core.package_identification:Package 'src/laser_filters' with type 'ros.ament_cmake' and name 'laser_filters'
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel) by extensions ['ignore', 'ignore_ament_install']
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel) by extension 'ignore'
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel) by extension 'ignore_ament_install'
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel) by extensions ['colcon_pkg']
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel) by extension 'colcon_pkg'
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel) by extensions ['colcon_meta']
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel) by extension 'colcon_meta'
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel) by extensions ['ros']
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel) by extension 'ros'
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel) by extensions ['cmake', 'python']
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel) by extension 'cmake'
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel) by extension 'python'
+[1.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel) by extensions ['python_setup_py']
+[1.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel) by extension 'python_setup_py'
+[1.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/roboteq_controller) by extensions ['ignore', 'ignore_ament_install']
+[1.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/roboteq_controller) by extension 'ignore'
+[1.599s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/roboteq_controller) by extension 'ignore_ament_install'
+[1.599s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/roboteq_controller) by extensions ['colcon_pkg']
+[1.599s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/roboteq_controller) by extension 'colcon_pkg'
+[1.599s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/roboteq_controller) by extensions ['colcon_meta']
+[1.599s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/roboteq_controller) by extension 'colcon_meta'
+[1.599s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/roboteq_controller) by extensions ['ros']
+[1.599s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/roboteq_controller) by extension 'ros'
+[1.602s] DEBUG:colcon.colcon_core.package_identification:Package 'src/roboteq_controller_ros-galactic-devel/roboteq_controller' with type 'ros.ament_cmake' and name 'roboteq_controller'
+[1.603s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/roboteq_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.603s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/roboteq_interfaces) by extension 'ignore'
+[1.603s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/roboteq_interfaces) by extension 'ignore_ament_install'
+[1.603s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/roboteq_interfaces) by extensions ['colcon_pkg']
+[1.603s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/roboteq_interfaces) by extension 'colcon_pkg'
+[1.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/roboteq_interfaces) by extensions ['colcon_meta']
+[1.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/roboteq_interfaces) by extension 'colcon_meta'
+[1.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/roboteq_interfaces) by extensions ['ros']
+[1.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/roboteq_interfaces) by extension 'ros'
+[1.606s] DEBUG:colcon.colcon_core.package_identification:Package 'src/roboteq_controller_ros-galactic-devel/roboteq_interfaces' with type 'ros.ament_cmake' and name 'roboteq_interfaces'
+[1.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/serial-ros2-master) by extensions ['ignore', 'ignore_ament_install']
+[1.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/serial-ros2-master) by extension 'ignore'
+[1.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/serial-ros2-master) by extension 'ignore_ament_install'
+[1.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/serial-ros2-master) by extensions ['colcon_pkg']
+[1.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/serial-ros2-master) by extension 'colcon_pkg'
+[1.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/serial-ros2-master) by extensions ['colcon_meta']
+[1.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/serial-ros2-master) by extension 'colcon_meta'
+[1.608s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/serial-ros2-master) by extensions ['ros']
+[1.608s] Level 1:colcon.colcon_core.package_identification:_identify(src/roboteq_controller_ros-galactic-devel/serial-ros2-master) by extension 'ros'
+[1.644s] DEBUG:colcon.colcon_core.package_identification:Package 'src/roboteq_controller_ros-galactic-devel/serial-ros2-master' with type 'ros.ament_cmake' and name 'serial'
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_differential_drive-ros2) by extensions ['ignore', 'ignore_ament_install']
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_differential_drive-ros2) by extension 'ignore'
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_differential_drive-ros2) by extension 'ignore_ament_install'
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_differential_drive-ros2) by extensions ['colcon_pkg']
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_differential_drive-ros2) by extension 'colcon_pkg'
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_differential_drive-ros2) by extensions ['colcon_meta']
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_differential_drive-ros2) by extension 'colcon_meta'
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_differential_drive-ros2) by extensions ['ros']
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_differential_drive-ros2) by extension 'ros'
+[1.650s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_differential_drive-ros2' with type 'ros.ament_python' and name 'differential_drive'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore'
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore_ament_install'
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_pkg']
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_pkg'
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_meta']
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_meta'
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ros']
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ros'
+[1.654s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sllidar_ros2' with type 'ros.ament_cmake' and name 'sllidar_ros2'
+[1.654s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.654s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.654s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.654s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.654s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.714s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.715s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.722s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/wjs/cart_ros2/install
+[1.724s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/wjs/tb3_tpl_ws/install
+[1.731s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 311 installed packages in /opt/ros/galactic
+[1.738s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.982s] Level 5:colcon.colcon_core.verb:set package 'agv_body' build argument 'cmake_args' from command line to 'None'
+[1.982s] Level 5:colcon.colcon_core.verb:set package 'agv_body' build argument 'cmake_target' from command line to 'None'
+[1.982s] Level 5:colcon.colcon_core.verb:set package 'agv_body' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.982s] Level 5:colcon.colcon_core.verb:set package 'agv_body' build argument 'cmake_clean_cache' from command line to 'False'
+[1.982s] Level 5:colcon.colcon_core.verb:set package 'agv_body' build argument 'cmake_clean_first' from command line to 'False'
+[1.982s] Level 5:colcon.colcon_core.verb:set package 'agv_body' build argument 'cmake_force_configure' from command line to 'False'
+[1.983s] Level 5:colcon.colcon_core.verb:set package 'agv_body' build argument 'ament_cmake_args' from command line to 'None'
+[1.983s] Level 5:colcon.colcon_core.verb:set package 'agv_body' build argument 'catkin_cmake_args' from command line to 'None'
+[1.983s] Level 5:colcon.colcon_core.verb:set package 'agv_body' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.983s] DEBUG:colcon.colcon_core.verb:Building package 'agv_body' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wjs/cart_ros2/build/agv_body', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wjs/cart_ros2/install', 'merge_install': True, 'path': '/home/wjs/cart_ros2/src/agv_body', 'symlink_install': True, 'test_result_base': None}
+[1.984s] Level 5:colcon.colcon_core.verb:set package 'agv_mapping' build argument 'cmake_args' from command line to 'None'
+[1.985s] Level 5:colcon.colcon_core.verb:set package 'agv_mapping' build argument 'cmake_target' from command line to 'None'
+[1.985s] Level 5:colcon.colcon_core.verb:set package 'agv_mapping' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.985s] Level 5:colcon.colcon_core.verb:set package 'agv_mapping' build argument 'cmake_clean_cache' from command line to 'False'
+[1.985s] Level 5:colcon.colcon_core.verb:set package 'agv_mapping' build argument 'cmake_clean_first' from command line to 'False'
+[1.985s] Level 5:colcon.colcon_core.verb:set package 'agv_mapping' build argument 'cmake_force_configure' from command line to 'False'
+[1.985s] Level 5:colcon.colcon_core.verb:set package 'agv_mapping' build argument 'ament_cmake_args' from command line to 'None'
+[1.985s] Level 5:colcon.colcon_core.verb:set package 'agv_mapping' build argument 'catkin_cmake_args' from command line to 'None'
+[1.985s] Level 5:colcon.colcon_core.verb:set package 'agv_mapping' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.985s] DEBUG:colcon.colcon_core.verb:Building package 'agv_mapping' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wjs/cart_ros2/build/agv_mapping', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wjs/cart_ros2/install', 'merge_install': True, 'path': '/home/wjs/cart_ros2/src/agv_mapping', 'symlink_install': True, 'test_result_base': None}
+[1.987s] Level 5:colcon.colcon_core.verb:set package 'arduino_ros2' build argument 'cmake_args' from command line to 'None'
+[1.987s] Level 5:colcon.colcon_core.verb:set package 'arduino_ros2' build argument 'cmake_target' from command line to 'None'
+[1.987s] Level 5:colcon.colcon_core.verb:set package 'arduino_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.987s] Level 5:colcon.colcon_core.verb:set package 'arduino_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[1.987s] Level 5:colcon.colcon_core.verb:set package 'arduino_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[1.987s] Level 5:colcon.colcon_core.verb:set package 'arduino_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[1.987s] Level 5:colcon.colcon_core.verb:set package 'arduino_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[1.987s] Level 5:colcon.colcon_core.verb:set package 'arduino_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[1.987s] Level 5:colcon.colcon_core.verb:set package 'arduino_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.988s] DEBUG:colcon.colcon_core.verb:Building package 'arduino_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wjs/cart_ros2/build/arduino_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wjs/cart_ros2/install', 'merge_install': True, 'path': '/home/wjs/cart_ros2/src/arduino_ros2', 'symlink_install': True, 'test_result_base': None}
+[1.989s] Level 5:colcon.colcon_core.verb:set package 'differential_drive' build argument 'cmake_args' from command line to 'None'
+[1.989s] Level 5:colcon.colcon_core.verb:set package 'differential_drive' build argument 'cmake_target' from command line to 'None'
+[1.989s] Level 5:colcon.colcon_core.verb:set package 'differential_drive' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.989s] Level 5:colcon.colcon_core.verb:set package 'differential_drive' build argument 'cmake_clean_cache' from command line to 'False'
+[1.989s] Level 5:colcon.colcon_core.verb:set package 'differential_drive' build argument 'cmake_clean_first' from command line to 'False'
+[1.989s] Level 5:colcon.colcon_core.verb:set package 'differential_drive' build argument 'cmake_force_configure' from command line to 'False'
+[1.989s] Level 5:colcon.colcon_core.verb:set package 'differential_drive' build argument 'ament_cmake_args' from command line to 'None'
+[1.989s] Level 5:colcon.colcon_core.verb:set package 'differential_drive' build argument 'catkin_cmake_args' from command line to 'None'
+[1.990s] Level 5:colcon.colcon_core.verb:set package 'differential_drive' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.990s] DEBUG:colcon.colcon_core.verb:Building package 'differential_drive' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wjs/cart_ros2/build/differential_drive', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wjs/cart_ros2/install', 'merge_install': True, 'path': '/home/wjs/cart_ros2/src/ros2_differential_drive-ros2', 'symlink_install': True, 'test_result_base': None}
+[1.991s] Level 5:colcon.colcon_core.verb:set package 'ira_laser_tools' build argument 'cmake_args' from command line to 'None'
+[1.991s] Level 5:colcon.colcon_core.verb:set package 'ira_laser_tools' build argument 'cmake_target' from command line to 'None'
+[1.991s] Level 5:colcon.colcon_core.verb:set package 'ira_laser_tools' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.991s] Level 5:colcon.colcon_core.verb:set package 'ira_laser_tools' build argument 'cmake_clean_cache' from command line to 'False'
+[1.991s] Level 5:colcon.colcon_core.verb:set package 'ira_laser_tools' build argument 'cmake_clean_first' from command line to 'False'
+[1.991s] Level 5:colcon.colcon_core.verb:set package 'ira_laser_tools' build argument 'cmake_force_configure' from command line to 'False'
+[1.991s] Level 5:colcon.colcon_core.verb:set package 'ira_laser_tools' build argument 'ament_cmake_args' from command line to 'None'
+[1.992s] Level 5:colcon.colcon_core.verb:set package 'ira_laser_tools' build argument 'catkin_cmake_args' from command line to 'None'
+[1.992s] Level 5:colcon.colcon_core.verb:set package 'ira_laser_tools' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.992s] DEBUG:colcon.colcon_core.verb:Building package 'ira_laser_tools' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wjs/cart_ros2/build/ira_laser_tools', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wjs/cart_ros2/install', 'merge_install': True, 'path': '/home/wjs/cart_ros2/src/ira_laser_tools', 'symlink_install': True, 'test_result_base': None}
+[1.993s] Level 5:colcon.colcon_core.verb:set package 'laser_filters' build argument 'cmake_args' from command line to 'None'
+[1.993s] Level 5:colcon.colcon_core.verb:set package 'laser_filters' build argument 'cmake_target' from command line to 'None'
+[1.993s] Level 5:colcon.colcon_core.verb:set package 'laser_filters' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.994s] Level 5:colcon.colcon_core.verb:set package 'laser_filters' build argument 'cmake_clean_cache' from command line to 'False'
+[1.994s] Level 5:colcon.colcon_core.verb:set package 'laser_filters' build argument 'cmake_clean_first' from command line to 'False'
+[1.994s] Level 5:colcon.colcon_core.verb:set package 'laser_filters' build argument 'cmake_force_configure' from command line to 'False'
+[1.994s] Level 5:colcon.colcon_core.verb:set package 'laser_filters' build argument 'ament_cmake_args' from command line to 'None'
+[1.994s] Level 5:colcon.colcon_core.verb:set package 'laser_filters' build argument 'catkin_cmake_args' from command line to 'None'
+[1.994s] Level 5:colcon.colcon_core.verb:set package 'laser_filters' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.994s] DEBUG:colcon.colcon_core.verb:Building package 'laser_filters' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wjs/cart_ros2/build/laser_filters', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wjs/cart_ros2/install', 'merge_install': True, 'path': '/home/wjs/cart_ros2/src/laser_filters', 'symlink_install': True, 'test_result_base': None}
+[1.996s] Level 5:colcon.colcon_core.verb:set package 'roboteq_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.996s] Level 5:colcon.colcon_core.verb:set package 'roboteq_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.996s] Level 5:colcon.colcon_core.verb:set package 'roboteq_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.996s] Level 5:colcon.colcon_core.verb:set package 'roboteq_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.996s] Level 5:colcon.colcon_core.verb:set package 'roboteq_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.996s] Level 5:colcon.colcon_core.verb:set package 'roboteq_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.996s] Level 5:colcon.colcon_core.verb:set package 'roboteq_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.996s] Level 5:colcon.colcon_core.verb:set package 'roboteq_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.996s] Level 5:colcon.colcon_core.verb:set package 'roboteq_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.997s] DEBUG:colcon.colcon_core.verb:Building package 'roboteq_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wjs/cart_ros2/build/roboteq_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wjs/cart_ros2/install', 'merge_install': True, 'path': '/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_interfaces', 'symlink_install': True, 'test_result_base': None}
+[1.998s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_args' from command line to 'None'
+[1.998s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target' from command line to 'None'
+[1.998s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.998s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_cache' from command line to 'False'
+[1.998s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_first' from command line to 'False'
+[1.998s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_force_configure' from command line to 'False'
+[1.998s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'ament_cmake_args' from command line to 'None'
+[1.998s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_cmake_args' from command line to 'None'
+[1.998s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.999s] DEBUG:colcon.colcon_core.verb:Building package 'serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wjs/cart_ros2/build/serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wjs/cart_ros2/install', 'merge_install': True, 'path': '/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/serial-ros2-master', 'symlink_install': True, 'test_result_base': None}
+[2.000s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_args' from command line to 'None'
+[2.000s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target' from command line to 'None'
+[2.000s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.000s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[2.000s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[2.000s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[2.000s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[2.000s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[2.000s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.001s] DEBUG:colcon.colcon_core.verb:Building package 'sllidar_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wjs/cart_ros2/build/sllidar_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wjs/cart_ros2/install', 'merge_install': True, 'path': '/home/wjs/cart_ros2/src/sllidar_ros2', 'symlink_install': True, 'test_result_base': None}
+[2.002s] Level 5:colcon.colcon_core.verb:set package 'stella_ahrs' build argument 'cmake_args' from command line to 'None'
+[2.002s] Level 5:colcon.colcon_core.verb:set package 'stella_ahrs' build argument 'cmake_target' from command line to 'None'
+[2.002s] Level 5:colcon.colcon_core.verb:set package 'stella_ahrs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.002s] Level 5:colcon.colcon_core.verb:set package 'stella_ahrs' build argument 'cmake_clean_cache' from command line to 'False'
+[2.002s] Level 5:colcon.colcon_core.verb:set package 'stella_ahrs' build argument 'cmake_clean_first' from command line to 'False'
+[2.002s] Level 5:colcon.colcon_core.verb:set package 'stella_ahrs' build argument 'cmake_force_configure' from command line to 'False'
+[2.002s] Level 5:colcon.colcon_core.verb:set package 'stella_ahrs' build argument 'ament_cmake_args' from command line to 'None'
+[2.002s] Level 5:colcon.colcon_core.verb:set package 'stella_ahrs' build argument 'catkin_cmake_args' from command line to 'None'
+[2.002s] Level 5:colcon.colcon_core.verb:set package 'stella_ahrs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.003s] DEBUG:colcon.colcon_core.verb:Building package 'stella_ahrs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wjs/cart_ros2/build/stella_ahrs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wjs/cart_ros2/install', 'merge_install': True, 'path': '/home/wjs/cart_ros2/src/2th_NtrexAHRS_lib_ROS/ros2_example/stella_ahrs', 'symlink_install': True, 'test_result_base': None}
+[2.004s] Level 5:colcon.colcon_core.verb:set package 'roboteq_controller' build argument 'cmake_args' from command line to 'None'
+[2.004s] Level 5:colcon.colcon_core.verb:set package 'roboteq_controller' build argument 'cmake_target' from command line to 'None'
+[2.004s] Level 5:colcon.colcon_core.verb:set package 'roboteq_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.004s] Level 5:colcon.colcon_core.verb:set package 'roboteq_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[2.004s] Level 5:colcon.colcon_core.verb:set package 'roboteq_controller' build argument 'cmake_clean_first' from command line to 'False'
+[2.004s] Level 5:colcon.colcon_core.verb:set package 'roboteq_controller' build argument 'cmake_force_configure' from command line to 'False'
+[2.004s] Level 5:colcon.colcon_core.verb:set package 'roboteq_controller' build argument 'ament_cmake_args' from command line to 'None'
+[2.004s] Level 5:colcon.colcon_core.verb:set package 'roboteq_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[2.005s] Level 5:colcon.colcon_core.verb:set package 'roboteq_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.005s] DEBUG:colcon.colcon_core.verb:Building package 'roboteq_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wjs/cart_ros2/build/roboteq_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wjs/cart_ros2/install', 'merge_install': True, 'path': '/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_controller', 'symlink_install': True, 'test_result_base': None}
+[2.005s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.010s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.011s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_interfaces' with build type 'ament_cmake'
+[2.012s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_interfaces'
+[2.020s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.021s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.021s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.050s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/serial-ros2-master' with build type 'ament_cmake'
+[2.052s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/serial-ros2-master'
+[2.055s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.057s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.091s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/wjs/cart_ros2/src/agv_body' with build type 'ament_python'
+[2.094s] Level 1:colcon.colcon_core.shell:create_environment_hook('agv_body', 'ament_prefix_path')
+[2.097s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/agv_body/hook/ament_prefix_path.ps1'
+[2.102s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/agv_body/hook/ament_prefix_path.dsv'
+[2.106s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/agv_body/hook/ament_prefix_path.sh'
+[2.112s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.113s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.146s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/wjs/cart_ros2/src/agv_mapping' with build type 'ament_cmake'
+[2.148s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/wjs/cart_ros2/src/agv_mapping'
+[2.152s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.152s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.211s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wjs/cart_ros2/build/roboteq_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/roboteq_interfaces -- -j4 -l4
+[2.246s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wjs/cart_ros2/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/serial -- -j4 -l4
+[3.446s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/wjs/cart_ros2/src/agv_body'
+[3.450s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.450s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.500s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wjs/cart_ros2/build/agv_mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/agv_mapping -- -j4 -l4
+[3.540s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wjs/cart_ros2/build/roboteq_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/roboteq_interfaces -- -j4 -l4
+[3.586s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wjs/cart_ros2/build/roboteq_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/roboteq_interfaces
+[3.594s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wjs/cart_ros2/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/serial -- -j4 -l4
+[3.607s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wjs/cart_ros2/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/serial
+[3.752s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[3.759s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wjs/cart_ros2/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/serial
+[3.797s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake module files
+[3.800s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake config files
+[3.806s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[3.807s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/serial/hook/cmake_prefix_path.ps1'
+[3.811s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/serial/hook/cmake_prefix_path.dsv'
+[3.816s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/serial/hook/cmake_prefix_path.sh'
+[3.821s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib'
+[3.822s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'ld_library_path_lib')
+[3.823s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/serial/hook/ld_library_path_lib.ps1'
+[3.826s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/serial/hook/ld_library_path_lib.dsv'
+[3.827s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/serial/hook/ld_library_path_lib.sh'
+[3.830s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[3.830s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/pkgconfig/serial.pc'
+[3.831s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/python3.8/site-packages'
+[3.832s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'pythonpath')
+[3.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/serial/hook/pythonpath.ps1'
+[3.834s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/serial/hook/pythonpath.dsv'
+[3.837s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/serial/hook/pythonpath.sh'
+[3.840s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[3.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/serial/package.ps1'
+[3.850s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wjs/cart_ros2/install/share/serial/package.dsv'
+[3.856s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/serial/package.sh'
+[3.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/serial/package.bash'
+[3.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/serial/package.zsh'
+[3.871s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wjs/cart_ros2/install/share/colcon-core/packages/serial)
+[3.874s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[3.875s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake module files
+[3.877s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake config files
+[3.884s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[3.885s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/serial/hook/cmake_prefix_path.ps1'
+[3.887s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/serial/hook/cmake_prefix_path.dsv'
+[3.894s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/serial/hook/cmake_prefix_path.sh'
+[3.898s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib'
+[3.898s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'ld_library_path_lib')
+[3.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/serial/hook/ld_library_path_lib.ps1'
+[3.901s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/serial/hook/ld_library_path_lib.dsv'
+[3.903s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/serial/hook/ld_library_path_lib.sh'
+[3.904s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[3.905s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/pkgconfig/serial.pc'
+[3.906s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/python3.8/site-packages'
+[3.906s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'pythonpath')
+[3.907s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/serial/hook/pythonpath.ps1'
+[3.909s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/serial/hook/pythonpath.dsv'
+[3.910s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/serial/hook/pythonpath.sh'
+[3.913s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[3.914s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/serial/package.ps1'
+[3.917s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wjs/cart_ros2/install/share/serial/package.dsv'
+[3.920s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/serial/package.sh'
+[3.922s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/serial/package.bash'
+[3.924s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/serial/package.zsh'
+[3.926s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wjs/cart_ros2/install/share/colcon-core/packages/serial)
+[3.928s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/wjs/cart_ros2/src/arduino_ros2' with build type 'ament_python'
+[3.930s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduino_ros2', 'ament_prefix_path')
+[3.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/arduino_ros2/hook/ament_prefix_path.ps1'
+[3.934s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/arduino_ros2/hook/ament_prefix_path.dsv'
+[3.936s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/arduino_ros2/hook/ament_prefix_path.sh'
+[3.940s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.940s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.979s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wjs/cart_ros2/build/agv_mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/agv_mapping -- -j4 -l4
+[3.996s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wjs/cart_ros2/build/agv_mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/agv_mapping
+[5.080s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/wjs/cart_ros2/src/arduino_ros2'
+[5.084s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.084s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.124s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(agv_mapping)
+[5.128s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake module files
+[5.131s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wjs/cart_ros2/build/agv_mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/agv_mapping
+[5.133s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake config files
+[5.139s] Level 1:colcon.colcon_core.shell:create_environment_hook('agv_mapping', 'cmake_prefix_path')
+[5.140s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/agv_mapping/hook/cmake_prefix_path.ps1'
+[5.143s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/agv_mapping/hook/cmake_prefix_path.dsv'
+[5.149s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/agv_mapping/hook/cmake_prefix_path.sh'
+[5.153s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib'
+[5.153s] Level 1:colcon.colcon_core.shell:create_environment_hook('agv_mapping', 'ld_library_path_lib')
+[5.154s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/agv_mapping/hook/ld_library_path_lib.ps1'
+[5.156s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/agv_mapping/hook/ld_library_path_lib.dsv'
+[5.158s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/agv_mapping/hook/ld_library_path_lib.sh'
+[5.160s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[5.161s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/pkgconfig/agv_mapping.pc'
+[5.162s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/python3.8/site-packages'
+[5.162s] Level 1:colcon.colcon_core.shell:create_environment_hook('agv_mapping', 'pythonpath')
+[5.163s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/agv_mapping/hook/pythonpath.ps1'
+[5.165s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/agv_mapping/hook/pythonpath.dsv'
+[5.167s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/agv_mapping/hook/pythonpath.sh'
+[5.170s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[5.172s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/agv_mapping/package.ps1'
+[5.174s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wjs/cart_ros2/install/share/agv_mapping/package.dsv'
+[5.177s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/agv_mapping/package.sh'
+[5.179s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/agv_mapping/package.bash'
+[5.181s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/agv_mapping/package.zsh'
+[5.183s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wjs/cart_ros2/install/share/colcon-core/packages/agv_mapping)
+[5.186s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(agv_mapping)
+[5.187s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake module files
+[5.189s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake config files
+[5.195s] Level 1:colcon.colcon_core.shell:create_environment_hook('agv_mapping', 'cmake_prefix_path')
+[5.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/agv_mapping/hook/cmake_prefix_path.ps1'
+[5.198s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/agv_mapping/hook/cmake_prefix_path.dsv'
+[5.201s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/agv_mapping/hook/cmake_prefix_path.sh'
+[5.203s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib'
+[5.203s] Level 1:colcon.colcon_core.shell:create_environment_hook('agv_mapping', 'ld_library_path_lib')
+[5.204s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/agv_mapping/hook/ld_library_path_lib.ps1'
+[5.206s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/agv_mapping/hook/ld_library_path_lib.dsv'
+[5.208s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/agv_mapping/hook/ld_library_path_lib.sh'
+[5.209s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[5.209s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/pkgconfig/agv_mapping.pc'
+[5.210s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/python3.8/site-packages'
+[5.210s] Level 1:colcon.colcon_core.shell:create_environment_hook('agv_mapping', 'pythonpath')
+[5.211s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/agv_mapping/hook/pythonpath.ps1'
+[5.213s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/agv_mapping/hook/pythonpath.dsv'
+[5.214s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/agv_mapping/hook/pythonpath.sh'
+[5.216s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[5.218s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/agv_mapping/package.ps1'
+[5.220s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wjs/cart_ros2/install/share/agv_mapping/package.dsv'
+[5.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/agv_mapping/package.sh'
+[5.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/agv_mapping/package.bash'
+[5.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/agv_mapping/package.zsh'
+[5.228s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wjs/cart_ros2/install/share/colcon-core/packages/agv_mapping)
+[5.230s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roboteq_interfaces)
+[5.231s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake module files
+[5.236s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wjs/cart_ros2/build/roboteq_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/roboteq_interfaces
+[5.237s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake config files
+[5.243s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboteq_interfaces', 'cmake_prefix_path')
+[5.244s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_interfaces/hook/cmake_prefix_path.ps1'
+[5.246s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/roboteq_interfaces/hook/cmake_prefix_path.dsv'
+[5.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_interfaces/hook/cmake_prefix_path.sh'
+[5.250s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib'
+[5.250s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboteq_interfaces', 'ld_library_path_lib')
+[5.252s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_interfaces/hook/ld_library_path_lib.ps1'
+[5.254s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/roboteq_interfaces/hook/ld_library_path_lib.dsv'
+[5.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_interfaces/hook/ld_library_path_lib.sh'
+[5.259s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[5.259s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/pkgconfig/roboteq_interfaces.pc'
+[5.260s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/python3.8/site-packages'
+[5.260s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboteq_interfaces', 'pythonpath')
+[5.262s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_interfaces/hook/pythonpath.ps1'
+[5.264s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/roboteq_interfaces/hook/pythonpath.dsv'
+[5.265s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_interfaces/hook/pythonpath.sh'
+[5.268s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[5.269s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/roboteq_interfaces/package.ps1'
+[5.272s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wjs/cart_ros2/install/share/roboteq_interfaces/package.dsv'
+[5.274s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/roboteq_interfaces/package.sh'
+[5.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/roboteq_interfaces/package.bash'
+[5.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/roboteq_interfaces/package.zsh'
+[5.280s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wjs/cart_ros2/install/share/colcon-core/packages/roboteq_interfaces)
+[5.283s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roboteq_interfaces)
+[5.285s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake module files
+[5.288s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake config files
+[5.294s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboteq_interfaces', 'cmake_prefix_path')
+[5.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_interfaces/hook/cmake_prefix_path.ps1'
+[5.298s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/roboteq_interfaces/hook/cmake_prefix_path.dsv'
+[5.301s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_interfaces/hook/cmake_prefix_path.sh'
+[5.304s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib'
+[5.305s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboteq_interfaces', 'ld_library_path_lib')
+[5.307s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_interfaces/hook/ld_library_path_lib.ps1'
+[5.309s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/roboteq_interfaces/hook/ld_library_path_lib.dsv'
+[5.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_interfaces/hook/ld_library_path_lib.sh'
+[5.313s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[5.313s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/pkgconfig/roboteq_interfaces.pc'
+[5.314s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/python3.8/site-packages'
+[5.314s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboteq_interfaces', 'pythonpath')
+[5.315s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_interfaces/hook/pythonpath.ps1'
+[5.317s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/roboteq_interfaces/hook/pythonpath.dsv'
+[5.318s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_interfaces/hook/pythonpath.sh'
+[5.321s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[5.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/roboteq_interfaces/package.ps1'
+[5.324s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wjs/cart_ros2/install/share/roboteq_interfaces/package.dsv'
+[5.327s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/roboteq_interfaces/package.sh'
+[5.329s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/roboteq_interfaces/package.bash'
+[5.331s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/roboteq_interfaces/package.zsh'
+[5.332s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wjs/cart_ros2/install/share/colcon-core/packages/roboteq_interfaces)
+[5.335s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/wjs/cart_ros2/src/ros2_differential_drive-ros2' with build type 'ament_python'
+[5.335s] Level 1:colcon.colcon_core.shell:create_environment_hook('differential_drive', 'ament_prefix_path')
+[5.337s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/differential_drive/hook/ament_prefix_path.ps1'
+[5.340s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/differential_drive/hook/ament_prefix_path.dsv'
+[5.342s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/differential_drive/hook/ament_prefix_path.sh'
+[5.345s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.345s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.377s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/wjs/cart_ros2/src/ira_laser_tools' with build type 'ament_cmake'
+[5.381s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/wjs/cart_ros2/src/ira_laser_tools'
+[5.384s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.386s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.536s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/wjs/cart_ros2/src/ros2_differential_drive-ros2'
+[6.540s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.540s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.608s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wjs/cart_ros2/build/ira_laser_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/ira_laser_tools -- -j4 -l4
+[6.625s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wjs/cart_ros2/build/agv_body': PYTHONPATH=/home/wjs/cart_ros2/build/agv_body/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/wjs/cart_ros2/build/agv_body/build --no-deps symlink_data
+[7.145s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wjs/cart_ros2/build/ira_laser_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/ira_laser_tools -- -j4 -l4
+[7.163s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wjs/cart_ros2/build/ira_laser_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/ira_laser_tools
+[7.260s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wjs/cart_ros2/build/arduino_ros2': PYTHONPATH=/home/wjs/cart_ros2/build/arduino_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/wjs/cart_ros2/build/arduino_ros2/build --no-deps symlink_data
+[7.313s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ira_laser_tools)
+[7.316s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake module files
+[7.319s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wjs/cart_ros2/build/ira_laser_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/ira_laser_tools
+[7.323s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake config files
+[7.329s] Level 1:colcon.colcon_core.shell:create_environment_hook('ira_laser_tools', 'cmake_prefix_path')
+[7.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/ira_laser_tools/hook/cmake_prefix_path.ps1'
+[7.335s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/ira_laser_tools/hook/cmake_prefix_path.dsv'
+[7.342s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/ira_laser_tools/hook/cmake_prefix_path.sh'
+[7.345s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib'
+[7.346s] Level 1:colcon.colcon_core.shell:create_environment_hook('ira_laser_tools', 'ld_library_path_lib')
+[7.347s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/ira_laser_tools/hook/ld_library_path_lib.ps1'
+[7.352s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/ira_laser_tools/hook/ld_library_path_lib.dsv'
+[7.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/ira_laser_tools/hook/ld_library_path_lib.sh'
+[7.356s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[7.357s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/pkgconfig/ira_laser_tools.pc'
+[7.358s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/python3.8/site-packages'
+[7.358s] Level 1:colcon.colcon_core.shell:create_environment_hook('ira_laser_tools', 'pythonpath')
+[7.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/ira_laser_tools/hook/pythonpath.ps1'
+[7.361s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/ira_laser_tools/hook/pythonpath.dsv'
+[7.363s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/ira_laser_tools/hook/pythonpath.sh'
+[7.366s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[7.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/ira_laser_tools/package.ps1'
+[7.371s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wjs/cart_ros2/install/share/ira_laser_tools/package.dsv'
+[7.373s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/ira_laser_tools/package.sh'
+[7.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/ira_laser_tools/package.bash'
+[7.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/ira_laser_tools/package.zsh'
+[7.379s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wjs/cart_ros2/install/share/colcon-core/packages/ira_laser_tools)
+[7.382s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ira_laser_tools)
+[7.383s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake module files
+[7.385s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake config files
+[7.390s] Level 1:colcon.colcon_core.shell:create_environment_hook('ira_laser_tools', 'cmake_prefix_path')
+[7.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/ira_laser_tools/hook/cmake_prefix_path.ps1'
+[7.394s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/ira_laser_tools/hook/cmake_prefix_path.dsv'
+[7.401s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/ira_laser_tools/hook/cmake_prefix_path.sh'
+[7.404s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib'
+[7.404s] Level 1:colcon.colcon_core.shell:create_environment_hook('ira_laser_tools', 'ld_library_path_lib')
+[7.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/ira_laser_tools/hook/ld_library_path_lib.ps1'
+[7.407s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/ira_laser_tools/hook/ld_library_path_lib.dsv'
+[7.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/ira_laser_tools/hook/ld_library_path_lib.sh'
+[7.410s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[7.410s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/pkgconfig/ira_laser_tools.pc'
+[7.411s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/python3.8/site-packages'
+[7.411s] Level 1:colcon.colcon_core.shell:create_environment_hook('ira_laser_tools', 'pythonpath')
+[7.412s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/ira_laser_tools/hook/pythonpath.ps1'
+[7.415s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/ira_laser_tools/hook/pythonpath.dsv'
+[7.417s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/ira_laser_tools/hook/pythonpath.sh'
+[7.419s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[7.421s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/ira_laser_tools/package.ps1'
+[7.425s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wjs/cart_ros2/install/share/ira_laser_tools/package.dsv'
+[7.428s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/ira_laser_tools/package.sh'
+[7.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/ira_laser_tools/package.bash'
+[7.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/ira_laser_tools/package.zsh'
+[7.433s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wjs/cart_ros2/install/share/colcon-core/packages/ira_laser_tools)
+[7.435s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/wjs/cart_ros2/src/laser_filters' with build type 'ament_cmake'
+[7.436s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/wjs/cart_ros2/src/laser_filters'
+[7.438s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.438s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wjs/cart_ros2/build/laser_filters': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/laser_filters -- -j4 -l4
+[8.415s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wjs/cart_ros2/build/laser_filters' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/laser_filters -- -j4 -l4
+[8.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wjs/cart_ros2/build/laser_filters': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/laser_filters
+[8.619s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(laser_filters)
+[8.621s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake module files
+[8.624s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake config files
+[8.629s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wjs/cart_ros2/build/laser_filters' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/laser_filters
+[8.632s] Level 1:colcon.colcon_core.shell:create_environment_hook('laser_filters', 'cmake_prefix_path')
+[8.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/laser_filters/hook/cmake_prefix_path.ps1'
+[8.640s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/laser_filters/hook/cmake_prefix_path.dsv'
+[8.647s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/laser_filters/hook/cmake_prefix_path.sh'
+[8.651s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib'
+[8.651s] Level 1:colcon.colcon_core.shell:create_environment_hook('laser_filters', 'ld_library_path_lib')
+[8.652s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/laser_filters/hook/ld_library_path_lib.ps1'
+[8.654s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/laser_filters/hook/ld_library_path_lib.dsv'
+[8.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/laser_filters/hook/ld_library_path_lib.sh'
+[8.658s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[8.658s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/pkgconfig/laser_filters.pc'
+[8.660s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/python3.8/site-packages'
+[8.660s] Level 1:colcon.colcon_core.shell:create_environment_hook('laser_filters', 'pythonpath')
+[8.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/laser_filters/hook/pythonpath.ps1'
+[8.664s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/laser_filters/hook/pythonpath.dsv'
+[8.667s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/laser_filters/hook/pythonpath.sh'
+[8.670s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[8.671s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/laser_filters/package.ps1'
+[8.675s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wjs/cart_ros2/install/share/laser_filters/package.dsv'
+[8.677s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/laser_filters/package.sh'
+[8.680s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/laser_filters/package.bash'
+[8.682s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/laser_filters/package.zsh'
+[8.683s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wjs/cart_ros2/install/share/colcon-core/packages/laser_filters)
+[8.686s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(laser_filters)
+[8.688s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake module files
+[8.690s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake config files
+[8.696s] Level 1:colcon.colcon_core.shell:create_environment_hook('laser_filters', 'cmake_prefix_path')
+[8.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/laser_filters/hook/cmake_prefix_path.ps1'
+[8.700s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/laser_filters/hook/cmake_prefix_path.dsv'
+[8.707s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/laser_filters/hook/cmake_prefix_path.sh'
+[8.711s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib'
+[8.712s] Level 1:colcon.colcon_core.shell:create_environment_hook('laser_filters', 'ld_library_path_lib')
+[8.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/laser_filters/hook/ld_library_path_lib.ps1'
+[8.715s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/laser_filters/hook/ld_library_path_lib.dsv'
+[8.716s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/laser_filters/hook/ld_library_path_lib.sh'
+[8.718s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[8.718s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/pkgconfig/laser_filters.pc'
+[8.719s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/python3.8/site-packages'
+[8.719s] Level 1:colcon.colcon_core.shell:create_environment_hook('laser_filters', 'pythonpath')
+[8.720s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/laser_filters/hook/pythonpath.ps1'
+[8.722s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/laser_filters/hook/pythonpath.dsv'
+[8.724s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/laser_filters/hook/pythonpath.sh'
+[8.726s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[8.728s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/laser_filters/package.ps1'
+[8.732s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wjs/cart_ros2/install/share/laser_filters/package.dsv'
+[8.734s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/laser_filters/package.sh'
+[8.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/laser_filters/package.bash'
+[8.740s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/laser_filters/package.zsh'
+[8.742s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wjs/cart_ros2/install/share/colcon-core/packages/laser_filters)
+[8.746s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/wjs/cart_ros2/src/sllidar_ros2' with build type 'ament_cmake'
+[8.747s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/wjs/cart_ros2/src/sllidar_ros2'
+[8.748s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.748s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.830s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wjs/cart_ros2/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/sllidar_ros2 -- -j4 -l4
+[9.040s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wjs/cart_ros2/build/differential_drive': PYTHONPATH=/home/wjs/cart_ros2/build/differential_drive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/wjs/cart_ros2/build/differential_drive/build --no-deps symlink_data
+[9.413s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wjs/cart_ros2/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/sllidar_ros2 -- -j4 -l4
+[9.417s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wjs/cart_ros2/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/sllidar_ros2
+[9.538s] Level 1:colcon.colcon_core.shell:create_environment_hook('agv_body', 'pythonpath_develop')
+[9.542s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/build/agv_body/share/agv_body/hook/pythonpath_develop.ps1'
+[9.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wjs/cart_ros2/build/agv_body' returned '0': PYTHONPATH=/home/wjs/cart_ros2/build/agv_body/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/wjs/cart_ros2/build/agv_body/build --no-deps symlink_data
+[9.551s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/build/agv_body/share/agv_body/hook/pythonpath_develop.dsv'
+[9.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/build/agv_body/share/agv_body/hook/pythonpath_develop.sh'
+[9.573s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake module files
+[9.577s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake config files
+[9.594s] Level 1:colcon.colcon_core.shell:create_environment_hook('agv_body', 'cmake_prefix_path')
+[9.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/agv_body/hook/cmake_prefix_path.ps1'
+[9.603s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/agv_body/hook/cmake_prefix_path.dsv'
+[9.605s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/agv_body/hook/cmake_prefix_path.sh'
+[9.609s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib'
+[9.610s] Level 1:colcon.colcon_core.shell:create_environment_hook('agv_body', 'ld_library_path_lib')
+[9.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/agv_body/hook/ld_library_path_lib.ps1'
+[9.613s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/agv_body/hook/ld_library_path_lib.dsv'
+[9.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/agv_body/hook/ld_library_path_lib.sh'
+[9.617s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[9.618s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/pkgconfig/agv_body.pc'
+[9.619s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/python3.8/site-packages'
+[9.619s] Level 1:colcon.colcon_core.shell:create_environment_hook('agv_body', 'pythonpath')
+[9.621s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/agv_body/hook/pythonpath.ps1'
+[9.622s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/agv_body/hook/pythonpath.dsv'
+[9.624s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/agv_body/hook/pythonpath.sh'
+[9.632s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[9.636s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(agv_body)
+[9.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/agv_body/package.ps1'
+[9.644s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wjs/cart_ros2/install/share/agv_body/package.dsv'
+[9.653s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/agv_body/package.sh'
+[9.657s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/agv_body/package.bash'
+[9.659s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/agv_body/package.zsh'
+[9.662s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wjs/cart_ros2/install/share/colcon-core/packages/agv_body)
+[9.667s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/wjs/cart_ros2/src/2th_NtrexAHRS_lib_ROS/ros2_example/stella_ahrs' with build type 'ament_cmake'
+[9.669s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/wjs/cart_ros2/src/2th_NtrexAHRS_lib_ROS/ros2_example/stella_ahrs'
+[9.670s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.672s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.720s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[9.724s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wjs/cart_ros2/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/sllidar_ros2
+[9.727s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake module files
+[9.735s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake config files
+[9.741s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[9.742s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[9.746s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[9.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[9.753s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib'
+[9.753s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'ld_library_path_lib')
+[9.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/sllidar_ros2/hook/ld_library_path_lib.ps1'
+[9.757s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/sllidar_ros2/hook/ld_library_path_lib.dsv'
+[9.759s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/sllidar_ros2/hook/ld_library_path_lib.sh'
+[9.761s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[9.761s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/pkgconfig/sllidar_ros2.pc'
+[9.763s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/python3.8/site-packages'
+[9.763s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'pythonpath')
+[9.764s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/sllidar_ros2/hook/pythonpath.ps1'
+[9.766s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/sllidar_ros2/hook/pythonpath.dsv'
+[9.767s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/sllidar_ros2/hook/pythonpath.sh'
+[9.776s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[9.778s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/sllidar_ros2/package.ps1'
+[9.782s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wjs/cart_ros2/install/share/sllidar_ros2/package.dsv'
+[9.785s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/sllidar_ros2/package.sh'
+[9.788s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/sllidar_ros2/package.bash'
+[9.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/sllidar_ros2/package.zsh'
+[9.794s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wjs/cart_ros2/install/share/colcon-core/packages/sllidar_ros2)
+[9.797s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[9.798s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake module files
+[9.800s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake config files
+[9.808s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[9.809s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[9.811s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[9.819s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[9.821s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib'
+[9.822s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'ld_library_path_lib')
+[9.823s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/sllidar_ros2/hook/ld_library_path_lib.ps1'
+[9.824s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/sllidar_ros2/hook/ld_library_path_lib.dsv'
+[9.826s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/sllidar_ros2/hook/ld_library_path_lib.sh'
+[9.828s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[9.828s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/pkgconfig/sllidar_ros2.pc'
+[9.829s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/python3.8/site-packages'
+[9.829s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'pythonpath')
+[9.830s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/sllidar_ros2/hook/pythonpath.ps1'
+[9.832s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/sllidar_ros2/hook/pythonpath.dsv'
+[9.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/sllidar_ros2/hook/pythonpath.sh'
+[9.837s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[9.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/sllidar_ros2/package.ps1'
+[9.841s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wjs/cart_ros2/install/share/sllidar_ros2/package.dsv'
+[9.844s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/sllidar_ros2/package.sh'
+[9.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/sllidar_ros2/package.bash'
+[9.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/sllidar_ros2/package.zsh'
+[9.851s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wjs/cart_ros2/install/share/colcon-core/packages/sllidar_ros2)
+[9.856s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_controller' with build type 'ament_cmake'
+[9.858s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_controller'
+[9.859s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.859s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.931s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wjs/cart_ros2/build/stella_ahrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/stella_ahrs -- -j4 -l4
+[10.006s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wjs/cart_ros2/build/roboteq_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/wjs/cart_ros2/install/lib:/opt/opencv-4.5.5-cuda/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /home/wjs/cart_ros2/build/roboteq_controller -- -j4 -l4
+[10.118s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduino_ros2', 'pythonpath_develop')
+[10.122s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/build/arduino_ros2/share/arduino_ros2/hook/pythonpath_develop.ps1'
+[10.124s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wjs/cart_ros2/build/arduino_ros2' returned '0': PYTHONPATH=/home/wjs/cart_ros2/build/arduino_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/wjs/cart_ros2/build/arduino_ros2/build --no-deps symlink_data
+[10.129s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/build/arduino_ros2/share/arduino_ros2/hook/pythonpath_develop.dsv'
+[10.132s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/build/arduino_ros2/share/arduino_ros2/hook/pythonpath_develop.sh'
+[10.136s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake module files
+[10.138s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake config files
+[10.144s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduino_ros2', 'cmake_prefix_path')
+[10.147s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/arduino_ros2/hook/cmake_prefix_path.ps1'
+[10.149s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/arduino_ros2/hook/cmake_prefix_path.dsv'
+[10.151s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/arduino_ros2/hook/cmake_prefix_path.sh'
+[10.154s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib'
+[10.155s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduino_ros2', 'ld_library_path_lib')
+[10.156s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/arduino_ros2/hook/ld_library_path_lib.ps1'
+[10.158s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/arduino_ros2/hook/ld_library_path_lib.dsv'
+[10.160s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/arduino_ros2/hook/ld_library_path_lib.sh'
+[10.162s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[10.162s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/pkgconfig/arduino_ros2.pc'
+[10.164s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/python3.8/site-packages'
+[10.164s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduino_ros2', 'pythonpath')
+[10.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/arduino_ros2/hook/pythonpath.ps1'
+[10.167s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/arduino_ros2/hook/pythonpath.dsv'
+[10.170s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/arduino_ros2/hook/pythonpath.sh'
+[10.173s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[10.173s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arduino_ros2)
+[10.175s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/arduino_ros2/package.ps1'
+[10.178s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wjs/cart_ros2/install/share/arduino_ros2/package.dsv'
+[10.181s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/arduino_ros2/package.sh'
+[10.184s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/arduino_ros2/package.bash'
+[10.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/arduino_ros2/package.zsh'
+[10.188s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wjs/cart_ros2/install/share/colcon-core/packages/arduino_ros2)
+[10.363s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wjs/cart_ros2/build/stella_ahrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/stella_ahrs -- -j4 -l4
+[10.378s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wjs/cart_ros2/build/stella_ahrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/stella_ahrs
+[10.392s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wjs/cart_ros2/build/roboteq_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/wjs/cart_ros2/install/lib:/opt/opencv-4.5.5-cuda/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /home/wjs/cart_ros2/build/roboteq_controller -- -j4 -l4
+[10.413s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wjs/cart_ros2/build/roboteq_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/wjs/cart_ros2/install/lib:/opt/opencv-4.5.5-cuda/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /home/wjs/cart_ros2/build/roboteq_controller
+[10.513s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stella_ahrs)
+[10.516s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake module files
+[10.520s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wjs/cart_ros2/build/stella_ahrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/stella_ahrs
+[10.525s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake config files
+[10.534s] Level 1:colcon.colcon_core.shell:create_environment_hook('stella_ahrs', 'cmake_prefix_path')
+[10.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/stella_ahrs/hook/cmake_prefix_path.ps1'
+[10.540s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/stella_ahrs/hook/cmake_prefix_path.dsv'
+[10.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/stella_ahrs/hook/cmake_prefix_path.sh'
+[10.549s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib'
+[10.549s] Level 1:colcon.colcon_core.shell:create_environment_hook('stella_ahrs', 'ld_library_path_lib')
+[10.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/stella_ahrs/hook/ld_library_path_lib.ps1'
+[10.552s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/stella_ahrs/hook/ld_library_path_lib.dsv'
+[10.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/stella_ahrs/hook/ld_library_path_lib.sh'
+[10.555s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[10.555s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/pkgconfig/stella_ahrs.pc'
+[10.557s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/python3.8/site-packages'
+[10.557s] Level 1:colcon.colcon_core.shell:create_environment_hook('stella_ahrs', 'pythonpath')
+[10.558s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/stella_ahrs/hook/pythonpath.ps1'
+[10.560s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/stella_ahrs/hook/pythonpath.dsv'
+[10.561s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/stella_ahrs/hook/pythonpath.sh'
+[10.563s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[10.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/stella_ahrs/package.ps1'
+[10.568s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wjs/cart_ros2/install/share/stella_ahrs/package.dsv'
+[10.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/stella_ahrs/package.sh'
+[10.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/stella_ahrs/package.bash'
+[10.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/stella_ahrs/package.zsh'
+[10.576s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wjs/cart_ros2/install/share/colcon-core/packages/stella_ahrs)
+[10.579s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stella_ahrs)
+[10.580s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake module files
+[10.582s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake config files
+[10.588s] Level 1:colcon.colcon_core.shell:create_environment_hook('stella_ahrs', 'cmake_prefix_path')
+[10.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/stella_ahrs/hook/cmake_prefix_path.ps1'
+[10.591s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/stella_ahrs/hook/cmake_prefix_path.dsv'
+[10.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/stella_ahrs/hook/cmake_prefix_path.sh'
+[10.601s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib'
+[10.602s] Level 1:colcon.colcon_core.shell:create_environment_hook('stella_ahrs', 'ld_library_path_lib')
+[10.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/stella_ahrs/hook/ld_library_path_lib.ps1'
+[10.607s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/stella_ahrs/hook/ld_library_path_lib.dsv'
+[10.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/stella_ahrs/hook/ld_library_path_lib.sh'
+[10.611s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[10.611s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/pkgconfig/stella_ahrs.pc'
+[10.612s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/python3.8/site-packages'
+[10.612s] Level 1:colcon.colcon_core.shell:create_environment_hook('stella_ahrs', 'pythonpath')
+[10.613s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/stella_ahrs/hook/pythonpath.ps1'
+[10.615s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/stella_ahrs/hook/pythonpath.dsv'
+[10.616s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/stella_ahrs/hook/pythonpath.sh'
+[10.618s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[10.620s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/stella_ahrs/package.ps1'
+[10.622s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wjs/cart_ros2/install/share/stella_ahrs/package.dsv'
+[10.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/stella_ahrs/package.sh'
+[10.627s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/stella_ahrs/package.bash'
+[10.629s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/stella_ahrs/package.zsh'
+[10.630s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wjs/cart_ros2/install/share/colcon-core/packages/stella_ahrs)
+[10.636s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roboteq_controller)
+[10.637s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake module files
+[10.639s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake config files
+[10.644s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wjs/cart_ros2/build/roboteq_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic LD_LIBRARY_PATH=/home/wjs/cart_ros2/install/lib:/opt/opencv-4.5.5-cuda/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /home/wjs/cart_ros2/build/roboteq_controller
+[10.647s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboteq_controller', 'cmake_prefix_path')
+[10.648s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_controller/hook/cmake_prefix_path.ps1'
+[10.650s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/roboteq_controller/hook/cmake_prefix_path.dsv'
+[10.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_controller/hook/cmake_prefix_path.sh'
+[10.659s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib'
+[10.661s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboteq_controller', 'ld_library_path_lib')
+[10.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_controller/hook/ld_library_path_lib.ps1'
+[10.665s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/roboteq_controller/hook/ld_library_path_lib.dsv'
+[10.667s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_controller/hook/ld_library_path_lib.sh'
+[10.671s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[10.671s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/pkgconfig/roboteq_controller.pc'
+[10.673s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/python3.8/site-packages'
+[10.673s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboteq_controller', 'pythonpath')
+[10.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_controller/hook/pythonpath.ps1'
+[10.676s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/roboteq_controller/hook/pythonpath.dsv'
+[10.678s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_controller/hook/pythonpath.sh'
+[10.680s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[10.682s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/roboteq_controller/package.ps1'
+[10.684s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wjs/cart_ros2/install/share/roboteq_controller/package.dsv'
+[10.686s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/roboteq_controller/package.sh'
+[10.688s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/roboteq_controller/package.bash'
+[10.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/roboteq_controller/package.zsh'
+[10.692s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wjs/cart_ros2/install/share/colcon-core/packages/roboteq_controller)
+[10.695s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roboteq_controller)
+[10.696s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake module files
+[10.699s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake config files
+[10.708s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboteq_controller', 'cmake_prefix_path')
+[10.709s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_controller/hook/cmake_prefix_path.ps1'
+[10.712s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/roboteq_controller/hook/cmake_prefix_path.dsv'
+[10.719s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_controller/hook/cmake_prefix_path.sh'
+[10.721s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib'
+[10.722s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboteq_controller', 'ld_library_path_lib')
+[10.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_controller/hook/ld_library_path_lib.ps1'
+[10.724s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/roboteq_controller/hook/ld_library_path_lib.dsv'
+[10.727s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_controller/hook/ld_library_path_lib.sh'
+[10.729s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[10.729s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/pkgconfig/roboteq_controller.pc'
+[10.730s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/python3.8/site-packages'
+[10.730s] Level 1:colcon.colcon_core.shell:create_environment_hook('roboteq_controller', 'pythonpath')
+[10.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_controller/hook/pythonpath.ps1'
+[10.732s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/roboteq_controller/hook/pythonpath.dsv'
+[10.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/roboteq_controller/hook/pythonpath.sh'
+[10.736s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[10.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/roboteq_controller/package.ps1'
+[10.740s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wjs/cart_ros2/install/share/roboteq_controller/package.dsv'
+[10.742s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/roboteq_controller/package.sh'
+[10.744s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/roboteq_controller/package.bash'
+[10.746s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/roboteq_controller/package.zsh'
+[10.748s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wjs/cart_ros2/install/share/colcon-core/packages/roboteq_controller)
+[11.512s] Level 1:colcon.colcon_core.shell:create_environment_hook('differential_drive', 'pythonpath_develop')
+[11.513s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/build/differential_drive/src/share/differential_drive/hook/pythonpath_develop.ps1'
+[11.518s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wjs/cart_ros2/build/differential_drive' returned '0': PYTHONPATH=/home/wjs/cart_ros2/build/differential_drive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/wjs/cart_ros2/build/differential_drive/build --no-deps symlink_data
+[11.519s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/build/differential_drive/src/share/differential_drive/hook/pythonpath_develop.dsv'
+[11.522s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/build/differential_drive/src/share/differential_drive/hook/pythonpath_develop.sh'
+[11.525s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake module files
+[11.527s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install' for CMake config files
+[11.533s] Level 1:colcon.colcon_core.shell:create_environment_hook('differential_drive', 'cmake_prefix_path')
+[11.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/differential_drive/hook/cmake_prefix_path.ps1'
+[11.536s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/differential_drive/hook/cmake_prefix_path.dsv'
+[11.538s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/differential_drive/hook/cmake_prefix_path.sh'
+[11.540s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib'
+[11.541s] Level 1:colcon.colcon_core.shell:create_environment_hook('differential_drive', 'ld_library_path_lib')
+[11.541s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/differential_drive/hook/ld_library_path_lib.ps1'
+[11.543s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/differential_drive/hook/ld_library_path_lib.dsv'
+[11.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/differential_drive/hook/ld_library_path_lib.sh'
+[11.546s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[11.546s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/pkgconfig/differential_drive.pc'
+[11.547s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/lib/python3.8/site-packages'
+[11.547s] Level 1:colcon.colcon_core.shell:create_environment_hook('differential_drive', 'pythonpath')
+[11.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/differential_drive/hook/pythonpath.ps1'
+[11.549s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wjs/cart_ros2/install/share/differential_drive/hook/pythonpath.dsv'
+[11.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wjs/cart_ros2/install/share/differential_drive/hook/pythonpath.sh'
+[11.553s] Level 1:colcon.colcon_core.environment:checking '/home/wjs/cart_ros2/install/bin'
+[11.553s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(differential_drive)
+[11.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/differential_drive/package.ps1'
+[11.557s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wjs/cart_ros2/install/share/differential_drive/package.dsv'
+[11.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/differential_drive/package.sh'
+[11.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/differential_drive/package.bash'
+[11.563s] INFO:colcon.colcon_core.shell:Creating package script '/home/wjs/cart_ros2/install/share/differential_drive/package.zsh'
+[11.564s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wjs/cart_ros2/install/share/colcon-core/packages/differential_drive)
+[11.565s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[11.567s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[11.568s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[11.568s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[11.595s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[11.596s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[11.596s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[11.665s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[11.668s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wjs/cart_ros2/install/local_setup.ps1'
+[11.672s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/wjs/cart_ros2/install/_local_setup_util_ps1.py'
+[11.678s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wjs/cart_ros2/install/setup.ps1'
+[11.683s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wjs/cart_ros2/install/local_setup.sh'
+[11.685s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/wjs/cart_ros2/install/_local_setup_util_sh.py'
+[11.688s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wjs/cart_ros2/install/setup.sh'
+[11.693s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wjs/cart_ros2/install/local_setup.bash'
+[11.696s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wjs/cart_ros2/install/setup.bash'
+[11.701s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wjs/cart_ros2/install/local_setup.zsh'
+[11.704s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wjs/cart_ros2/install/setup.zsh'

@@ -1,0 +1,29 @@
+[0.272s] Invoking command in '/home/wjs/cart_ros2/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/serial -- -j4 -l4
+[1.897s] [100%] Built target serial
+[1.975s] Invoked command in '/home/wjs/cart_ros2/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/serial -- -j4 -l4
+[1.984s] Invoking command in '/home/wjs/cart_ros2/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/serial
+[2.079s] -- Install configuration: ""
+[2.084s] -- Execute custom install script
+[2.090s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/environment/library_path.sh
+[2.093s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/environment/library_path.dsv
+[2.100s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/libserial.a
+[2.113s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/include/serial/serial.h
+[2.113s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/include/serial/v8stdint.h
+[2.117s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/package_run_dependencies/serial
+[2.149s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/parent_prefix_path/serial
+[2.149s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/environment/ament_prefix_path.sh
+[2.149s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/environment/ament_prefix_path.dsv
+[2.150s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/environment/path.sh
+[2.151s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/environment/path.dsv
+[2.151s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/local_setup.bash
+[2.151s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/local_setup.sh
+[2.161s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/local_setup.zsh
+[2.162s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/local_setup.dsv
+[2.162s] -- Symlinking: /home/wjs/cart_ros2/install/share/serial/package.dsv
+[2.222s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/packages/serial
+[2.228s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.232s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[2.234s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/cmake/serialConfig.cmake
+[2.238s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/cmake/serialConfig-version.cmake
+[2.240s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/package.xml
+[2.255s] Invoked command in '/home/wjs/cart_ros2/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/serial

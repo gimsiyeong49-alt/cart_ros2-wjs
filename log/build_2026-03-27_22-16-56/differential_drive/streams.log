@@ -1,0 +1,22 @@
+[3.700s] Invoking command in '/home/wjs/cart_ros2/build/differential_drive': PYTHONPATH=/home/wjs/cart_ros2/build/differential_drive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/wjs/cart_ros2/build/differential_drive/build --no-deps symlink_data
+[5.070s] running develop
+[5.720s] running egg_info
+[5.721s] writing src/differential_drive.egg-info/PKG-INFO
+[5.722s] writing dependency_links to src/differential_drive.egg-info/dependency_links.txt
+[5.725s] writing entry points to src/differential_drive.egg-info/entry_points.txt
+[5.726s] writing requirements to src/differential_drive.egg-info/requires.txt
+[5.726s] writing top-level names to src/differential_drive.egg-info/top_level.txt
+[5.841s] reading manifest file 'src/differential_drive.egg-info/SOURCES.txt'
+[5.844s] writing manifest file 'src/differential_drive.egg-info/SOURCES.txt'
+[6.049s] running build_ext
+[6.049s] Creating /home/wjs/cart_ros2/install/lib/python3.8/site-packages/differential-drive.egg-link (link to src)
+[6.057s] Installing diff_tf script to /home/wjs/cart_ros2/install/lib/differential_drive
+[6.058s] Installing pid_velocity script to /home/wjs/cart_ros2/install/lib/differential_drive
+[6.058s] Installing twist_to_motors script to /home/wjs/cart_ros2/install/lib/differential_drive
+[6.059s] Installing virtual_joystick script to /home/wjs/cart_ros2/install/lib/differential_drive
+[6.059s] Installing wheel_loopback script to /home/wjs/cart_ros2/install/lib/differential_drive
+[6.060s] Installing wheel_scaler script to /home/wjs/cart_ros2/install/lib/differential_drive
+[6.061s] 
+[6.061s] Installed /home/wjs/cart_ros2/build/differential_drive/src
+[6.061s] running symlink_data
+[6.178s] Invoked command in '/home/wjs/cart_ros2/build/differential_drive' returned '0': PYTHONPATH=/home/wjs/cart_ros2/build/differential_drive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/wjs/cart_ros2/build/differential_drive/build --no-deps symlink_data

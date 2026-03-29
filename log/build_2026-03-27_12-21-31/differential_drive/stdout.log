@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating src/differential_drive.egg-info
+writing src/differential_drive.egg-info/PKG-INFO
+writing dependency_links to src/differential_drive.egg-info/dependency_links.txt
+writing entry points to src/differential_drive.egg-info/entry_points.txt
+writing requirements to src/differential_drive.egg-info/requires.txt
+writing top-level names to src/differential_drive.egg-info/top_level.txt
+writing manifest file 'src/differential_drive.egg-info/SOURCES.txt'
+reading manifest file 'src/differential_drive.egg-info/SOURCES.txt'
+writing manifest file 'src/differential_drive.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/wjs/cart_ros2/install/lib/python3.8/site-packages/differential-drive.egg-link (link to src)
+Installing diff_tf script to /home/wjs/cart_ros2/install/lib/differential_drive
+Installing pid_velocity script to /home/wjs/cart_ros2/install/lib/differential_drive
+Installing twist_to_motors script to /home/wjs/cart_ros2/install/lib/differential_drive
+Installing virtual_joystick script to /home/wjs/cart_ros2/install/lib/differential_drive
+Installing wheel_loopback script to /home/wjs/cart_ros2/install/lib/differential_drive
+Installing wheel_scaler script to /home/wjs/cart_ros2/install/lib/differential_drive
+
+Installed /home/wjs/cart_ros2/build/differential_drive/src
+running symlink_data
+symbolically linking /home/wjs/cart_ros2/build/differential_drive/resource/differential_drive -> /home/wjs/cart_ros2/install/share/ament_index/resource_index/packages
+symbolically linking /home/wjs/cart_ros2/build/differential_drive/package.xml -> /home/wjs/cart_ros2/install/share/differential_drive
+creating /home/wjs/cart_ros2/install/share/differential_drive/launch
+creating /home/wjs/cart_ros2/install/share/differential_drive/config

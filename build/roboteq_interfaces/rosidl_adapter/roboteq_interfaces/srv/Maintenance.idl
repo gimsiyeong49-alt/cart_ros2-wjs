@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from roboteq_interfaces/srv/Maintenance.srv
+// generated code does not contain a copyright notice
+
+
+module roboteq_interfaces {
+  module srv {
+    struct Maintenance_Request {
+      string user_input;
+    };
+    struct Maintenance_Response {
+      string result;
+    };
+  };
+};

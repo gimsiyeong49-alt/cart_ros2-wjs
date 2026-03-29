@@ -1,0 +1,30 @@
+[0.125s] Invoking command in '/home/wjs/cart_ros2/build/ira_laser_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/ira_laser_tools -- -j4 -l4
+[1.083s] [ 50%] Built target laserscan_virtualizer
+[1.743s] [100%] Built target laserscan_multi_merger
+[1.935s] Invoked command in '/home/wjs/cart_ros2/build/ira_laser_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/ira_laser_tools -- -j4 -l4
+[1.964s] Invoking command in '/home/wjs/cart_ros2/build/ira_laser_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/ira_laser_tools
+[2.134s] -- Install configuration: ""
+[2.140s] -- Execute custom install script
+[2.150s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/ira_laser_tools/laserscan_multi_merger
+[2.163s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/ira_laser_tools/laserscan_virtualizer
+[2.173s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/launch/laserscan_multi_merger.launch
+[2.182s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/launch/laserscan_virtualizer.launch
+[2.186s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/launch/merge_multi.launch.py
+[2.192s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/config/laserscan_merge.yaml
+[2.194s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/package_run_dependencies/ira_laser_tools
+[2.198s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/parent_prefix_path/ira_laser_tools
+[2.199s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/environment/ament_prefix_path.sh
+[2.200s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/environment/ament_prefix_path.dsv
+[2.202s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/environment/path.sh
+[2.206s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/environment/path.dsv
+[2.207s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/local_setup.bash
+[2.211s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/local_setup.sh
+[2.212s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/local_setup.zsh
+[2.214s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/local_setup.dsv
+[2.215s] -- Symlinking: /home/wjs/cart_ros2/install/share/ira_laser_tools/package.dsv
+[2.288s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/packages/ira_laser_tools
+[2.293s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.294s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/cmake/ira_laser_toolsConfig.cmake
+[2.295s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/cmake/ira_laser_toolsConfig-version.cmake
+[2.298s] -- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/package.xml
+[2.318s] Invoked command in '/home/wjs/cart_ros2/build/ira_laser_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/ira_laser_tools

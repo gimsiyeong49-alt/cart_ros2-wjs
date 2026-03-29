@@ -1,0 +1,990 @@
+[0.000000] (-) TimerEvent: {}
+[0.001031] (agv_body) JobQueued: {'identifier': 'agv_body', 'dependencies': OrderedDict()}
+[0.002525] (agv_mapping) JobQueued: {'identifier': 'agv_mapping', 'dependencies': OrderedDict()}
+[0.003057] (arduino_ros2) JobQueued: {'identifier': 'arduino_ros2', 'dependencies': OrderedDict()}
+[0.003189] (differential_drive) JobQueued: {'identifier': 'differential_drive', 'dependencies': OrderedDict()}
+[0.003286] (ira_laser_tools) JobQueued: {'identifier': 'ira_laser_tools', 'dependencies': OrderedDict()}
+[0.003396] (laser_filters) JobQueued: {'identifier': 'laser_filters', 'dependencies': OrderedDict()}
+[0.003477] (roboteq_interfaces) JobQueued: {'identifier': 'roboteq_interfaces', 'dependencies': OrderedDict()}
+[0.003571] (serial) JobQueued: {'identifier': 'serial', 'dependencies': OrderedDict()}
+[0.003649] (sllidar_ros2) JobQueued: {'identifier': 'sllidar_ros2', 'dependencies': OrderedDict()}
+[0.003727] (stella_ahrs) JobQueued: {'identifier': 'stella_ahrs', 'dependencies': OrderedDict()}
+[0.004200] (roboteq_controller) JobQueued: {'identifier': 'roboteq_controller', 'dependencies': OrderedDict([('roboteq_interfaces', '/home/wjs/cart_ros2/install'), ('serial', '/home/wjs/cart_ros2/install')])}
+[0.004309] (roboteq_interfaces) JobStarted: {'identifier': 'roboteq_interfaces'}
+[0.061627] (serial) JobStarted: {'identifier': 'serial'}
+[0.099649] (-) TimerEvent: {}
+[0.105110] (agv_body) JobStarted: {'identifier': 'agv_body'}
+[0.162762] (agv_mapping) JobStarted: {'identifier': 'agv_mapping'}
+[0.200827] (-) TimerEvent: {}
+[0.217863] (roboteq_interfaces) JobProgress: {'identifier': 'roboteq_interfaces', 'progress': 'cmake'}
+[0.227768] (roboteq_interfaces) JobProgress: {'identifier': 'roboteq_interfaces', 'progress': 'build'}
+[0.231646] (roboteq_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wjs/cart_ros2/build/roboteq_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/wjs/cart_ros2/build/roboteq_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wjs'), ('SSH_AGENT_PID', '4037'), ('XDG_SESSION_TYPE', 'x11'), ('PIP_CACHE_DIR', '/mnt/sdcard/.cache/pip'), ('XDG_CACHE_HOME', '/mnt/sdcard/.cache'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/opencv-4.5.5-cuda/lib:/home/wjs/cart_ros2/install/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/wjs'), ('CYCLONEDDS_URI', 'file:///home/wjs/cyclonedds_lo.xml'), ('OLDPWD', '/home/wjs'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '35.6.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'Jetson-AGX'), ('MANAGERPID', '3935'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7597'), ('IM_CONFIG_PHASE', '1'), ('TMPDIR', '/mnt/sdcard/tmp'), ('COLCON_PREFIX_PATH', '/home/wjs/tb3_tpl_ws/install:/home/wjs/cart_ros2/install'), ('TORCH_HOME', '/mnt/sdcard/.cache/torch'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wjs'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Xavier (32 GB ram)'), ('JETSON_SERIAL_NUMBER', '1423420009543'), ('JOURNAL_STREAM', '8:75272'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Galen'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wjs'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/wjs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4072,unix/ubuntu:/tmp/.ICE-unix/4072'), ('INVOCATION_ID', '579b0bc7d2444c1facacc62736e29ce4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '35'), ('AMENT_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:479ed337-4a64-46eb-b813-77ac35b7f442'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/wjs/cart_ros2/build/roboteq_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '5.1.7'), ('CMAKE_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('JETSON_P_NUMBER', 'p2888-0004')]), 'shell': False}
+[0.269692] (serial) JobProgress: {'identifier': 'serial', 'progress': 'cmake'}
+[0.277728] (serial) JobProgress: {'identifier': 'serial', 'progress': 'build'}
+[0.280082] (serial) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wjs/cart_ros2/build/serial', '--', '-j4', '-l4'], 'cwd': '/home/wjs/cart_ros2/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wjs'), ('SSH_AGENT_PID', '4037'), ('XDG_SESSION_TYPE', 'x11'), ('PIP_CACHE_DIR', '/mnt/sdcard/.cache/pip'), ('XDG_CACHE_HOME', '/mnt/sdcard/.cache'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/opencv-4.5.5-cuda/lib:/home/wjs/cart_ros2/install/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/wjs'), ('CYCLONEDDS_URI', 'file:///home/wjs/cyclonedds_lo.xml'), ('OLDPWD', '/home/wjs'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '35.6.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'Jetson-AGX'), ('MANAGERPID', '3935'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7597'), ('IM_CONFIG_PHASE', '1'), ('TMPDIR', '/mnt/sdcard/tmp'), ('COLCON_PREFIX_PATH', '/home/wjs/tb3_tpl_ws/install:/home/wjs/cart_ros2/install'), ('TORCH_HOME', '/mnt/sdcard/.cache/torch'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wjs'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Xavier (32 GB ram)'), ('JETSON_SERIAL_NUMBER', '1423420009543'), ('JOURNAL_STREAM', '8:75272'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Galen'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wjs'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/wjs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4072,unix/ubuntu:/tmp/.ICE-unix/4072'), ('INVOCATION_ID', '579b0bc7d2444c1facacc62736e29ce4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '35'), ('AMENT_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:479ed337-4a64-46eb-b813-77ac35b7f442'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/wjs/cart_ros2/build/serial'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '5.1.7'), ('CMAKE_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('JETSON_P_NUMBER', 'p2888-0004')]), 'shell': False}
+[0.303098] (-) TimerEvent: {}
+[0.406679] (-) TimerEvent: {}
+[0.507583] (-) TimerEvent: {}
+[0.608569] (-) TimerEvent: {}
+[0.709632] (-) TimerEvent: {}
+[0.810631] (-) TimerEvent: {}
+[0.911649] (-) TimerEvent: {}
+[1.012585] (-) TimerEvent: {}
+[1.113661] (-) TimerEvent: {}
+[1.214642] (-) TimerEvent: {}
+[1.315670] (-) TimerEvent: {}
+[1.416765] (-) TimerEvent: {}
+[1.518179] (-) TimerEvent: {}
+[1.619461] (-) TimerEvent: {}
+[1.639346] (agv_mapping) JobProgress: {'identifier': 'agv_mapping', 'progress': 'cmake'}
+[1.645171] (agv_mapping) JobProgress: {'identifier': 'agv_mapping', 'progress': 'build'}
+[1.646466] (agv_mapping) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wjs/cart_ros2/build/agv_mapping', '--', '-j4', '-l4'], 'cwd': '/home/wjs/cart_ros2/build/agv_mapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wjs'), ('SSH_AGENT_PID', '4037'), ('XDG_SESSION_TYPE', 'x11'), ('PIP_CACHE_DIR', '/mnt/sdcard/.cache/pip'), ('XDG_CACHE_HOME', '/mnt/sdcard/.cache'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/opencv-4.5.5-cuda/lib:/home/wjs/cart_ros2/install/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/wjs'), ('CYCLONEDDS_URI', 'file:///home/wjs/cyclonedds_lo.xml'), ('OLDPWD', '/home/wjs'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '35.6.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'Jetson-AGX'), ('MANAGERPID', '3935'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7597'), ('IM_CONFIG_PHASE', '1'), ('TMPDIR', '/mnt/sdcard/tmp'), ('COLCON_PREFIX_PATH', '/home/wjs/tb3_tpl_ws/install:/home/wjs/cart_ros2/install'), ('TORCH_HOME', '/mnt/sdcard/.cache/torch'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wjs'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Xavier (32 GB ram)'), ('JETSON_SERIAL_NUMBER', '1423420009543'), ('JOURNAL_STREAM', '8:75272'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Galen'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wjs'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/wjs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4072,unix/ubuntu:/tmp/.ICE-unix/4072'), ('INVOCATION_ID', '579b0bc7d2444c1facacc62736e29ce4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '35'), ('AMENT_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:479ed337-4a64-46eb-b813-77ac35b7f442'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/wjs/cart_ros2/build/agv_mapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '5.1.7'), ('CMAKE_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('JETSON_P_NUMBER', 'p2888-0004')]), 'shell': False}
+[1.671970] (roboteq_interfaces) StdoutLine: {'line': b'[ 10%] Built target roboteq_interfaces__rosidl_generator_c\n'}
+[1.673957] (roboteq_interfaces) StdoutLine: {'line': b'[ 12%] Built target roboteq_interfaces__cpp\n'}
+[1.674421] (roboteq_interfaces) StdoutLine: {'line': b'[ 23%] Built target roboteq_interfaces__rosidl_typesupport_introspection_c\n'}
+[1.676048] (roboteq_interfaces) StdoutLine: {'line': b'[ 34%] Built target roboteq_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[1.680166] (roboteq_interfaces) StdoutLine: {'line': b'[ 45%] Built target roboteq_interfaces__rosidl_typesupport_cpp\n'}
+[1.684879] (roboteq_interfaces) StdoutLine: {'line': b'[ 56%] Built target roboteq_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[1.685780] (roboteq_interfaces) StdoutLine: {'line': b'[ 67%] Built target roboteq_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[1.688543] (roboteq_interfaces) StdoutLine: {'line': b'[ 78%] Built target roboteq_interfaces__rosidl_typesupport_c\n'}
+[1.689025] (serial) StdoutLine: {'line': b'[100%] Built target serial\n'}
+[1.693231] (serial) CommandEnded: {'returncode': 0}
+[1.704394] (serial) JobProgress: {'identifier': 'serial', 'progress': 'install'}
+[1.719892] (-) TimerEvent: {}
+[1.740100] (roboteq_interfaces) StdoutLine: {'line': b'[ 78%] Built target roboteq_interfaces\n'}
+[1.747516] (serial) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wjs/cart_ros2/build/serial'], 'cwd': '/home/wjs/cart_ros2/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wjs'), ('SSH_AGENT_PID', '4037'), ('XDG_SESSION_TYPE', 'x11'), ('PIP_CACHE_DIR', '/mnt/sdcard/.cache/pip'), ('XDG_CACHE_HOME', '/mnt/sdcard/.cache'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/opencv-4.5.5-cuda/lib:/home/wjs/cart_ros2/install/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/wjs'), ('CYCLONEDDS_URI', 'file:///home/wjs/cyclonedds_lo.xml'), ('OLDPWD', '/home/wjs'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '35.6.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'Jetson-AGX'), ('MANAGERPID', '3935'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7597'), ('IM_CONFIG_PHASE', '1'), ('TMPDIR', '/mnt/sdcard/tmp'), ('COLCON_PREFIX_PATH', '/home/wjs/tb3_tpl_ws/install:/home/wjs/cart_ros2/install'), ('TORCH_HOME', '/mnt/sdcard/.cache/torch'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wjs'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Xavier (32 GB ram)'), ('JETSON_SERIAL_NUMBER', '1423420009543'), ('JOURNAL_STREAM', '8:75272'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Galen'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wjs'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/wjs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4072,unix/ubuntu:/tmp/.ICE-unix/4072'), ('INVOCATION_ID', '579b0bc7d2444c1facacc62736e29ce4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '35'), ('AMENT_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:479ed337-4a64-46eb-b813-77ac35b7f442'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/wjs/cart_ros2/build/serial'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '5.1.7'), ('CMAKE_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('JETSON_P_NUMBER', 'p2888-0004')]), 'shell': False}
+[1.818290] (serial) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.819993] (-) TimerEvent: {}
+[1.828492] (serial) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.830874] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/environment/library_path.sh\n'}
+[1.833890] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/environment/library_path.dsv\n'}
+[1.840846] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/libserial.a\n'}
+[1.846448] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/serial/serial.h\n'}
+[1.850628] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/serial/v8stdint.h\n'}
+[1.855246] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/package_run_dependencies/serial\n'}
+[1.859204] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/parent_prefix_path/serial\n'}
+[1.863468] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/environment/ament_prefix_path.sh\n'}
+[1.865861] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/environment/ament_prefix_path.dsv\n'}
+[1.874327] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/environment/path.sh\n'}
+[1.874914] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/environment/path.dsv\n'}
+[1.876718] (agv_mapping) CommandEnded: {'returncode': 0}
+[1.880399] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/local_setup.bash\n'}
+[1.881587] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/local_setup.sh\n'}
+[1.882067] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/local_setup.zsh\n'}
+[1.883427] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/local_setup.dsv\n'}
+[1.883715] (serial) StdoutLine: {'line': b'-- Symlinking: /home/wjs/cart_ros2/install/share/serial/package.dsv\n'}
+[1.891489] (agv_mapping) JobProgress: {'identifier': 'agv_mapping', 'progress': 'install'}
+[1.892610] (agv_mapping) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wjs/cart_ros2/build/agv_mapping'], 'cwd': '/home/wjs/cart_ros2/build/agv_mapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wjs'), ('SSH_AGENT_PID', '4037'), ('XDG_SESSION_TYPE', 'x11'), ('PIP_CACHE_DIR', '/mnt/sdcard/.cache/pip'), ('XDG_CACHE_HOME', '/mnt/sdcard/.cache'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/opencv-4.5.5-cuda/lib:/home/wjs/cart_ros2/install/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/wjs'), ('CYCLONEDDS_URI', 'file:///home/wjs/cyclonedds_lo.xml'), ('OLDPWD', '/home/wjs'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '35.6.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'Jetson-AGX'), ('MANAGERPID', '3935'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7597'), ('IM_CONFIG_PHASE', '1'), ('TMPDIR', '/mnt/sdcard/tmp'), ('COLCON_PREFIX_PATH', '/home/wjs/tb3_tpl_ws/install:/home/wjs/cart_ros2/install'), ('TORCH_HOME', '/mnt/sdcard/.cache/torch'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wjs'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Xavier (32 GB ram)'), ('JETSON_SERIAL_NUMBER', '1423420009543'), ('JOURNAL_STREAM', '8:75272'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Galen'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wjs'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/wjs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4072,unix/ubuntu:/tmp/.ICE-unix/4072'), ('INVOCATION_ID', '579b0bc7d2444c1facacc62736e29ce4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '35'), ('AMENT_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:479ed337-4a64-46eb-b813-77ac35b7f442'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/wjs/cart_ros2/build/agv_mapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '5.1.7'), ('CMAKE_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('JETSON_P_NUMBER', 'p2888-0004')]), 'shell': False}
+[1.911248] (roboteq_interfaces) StdoutLine: {'line': b'[ 80%] Built target roboteq_interfaces__py\n'}
+[1.920717] (-) TimerEvent: {}
+[1.936654] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/packages/serial\n'}
+[1.938920] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.942211] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.945131] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/cmake/serialConfig.cmake\n'}
+[1.947674] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/cmake/serialConfig-version.cmake\n'}
+[1.951421] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/serial/package.xml\n'}
+[1.964852] (serial) CommandEnded: {'returncode': 0}
+[1.970007] (agv_mapping) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.972853] (agv_mapping) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.975689] (agv_mapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/launch/online_async_launch.py\n'}
+[1.977217] (agv_mapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/launch/online_cartographer_launch.py\n'}
+[1.978650] (agv_mapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/config/.ekf.yaml.swo\n'}
+[1.980802] (agv_mapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/config/agv_cartographer_2d.lua\n'}
+[1.981785] (agv_mapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/config/ekf.yaml\n'}
+[1.986715] (agv_mapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/config/mapper_params_online_async.yaml\n'}
+[1.988428] (agv_mapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/package_run_dependencies/agv_mapping\n'}
+[1.988761] (agv_mapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/parent_prefix_path/agv_mapping\n'}
+[1.989399] (agv_mapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/environment/ament_prefix_path.sh\n'}
+[1.990668] (agv_mapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/environment/ament_prefix_path.dsv\n'}
+[1.991135] (agv_mapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/environment/path.sh\n'}
+[1.991590] (agv_mapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/environment/path.dsv\n'}
+[1.992871] (agv_mapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/local_setup.bash\n'}
+[1.994303] (agv_mapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/local_setup.sh\n'}
+[1.995409] (agv_mapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/local_setup.zsh\n'}
+[1.996709] (agv_mapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/local_setup.dsv\n'}
+[1.997626] (agv_mapping) StdoutLine: {'line': b'-- Symlinking: /home/wjs/cart_ros2/install/share/agv_mapping/package.dsv\n'}
+[2.021184] (-) TimerEvent: {}
+[2.053788] (agv_mapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/packages/agv_mapping\n'}
+[2.054687] (agv_mapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/cmake/agv_mappingConfig.cmake\n'}
+[2.055063] (agv_mapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/cmake/agv_mappingConfig-version.cmake\n'}
+[2.056037] (agv_mapping) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/agv_mapping/package.xml\n'}
+[2.103072] (roboteq_interfaces) StdoutLine: {'line': b'[ 89%] Built target roboteq_interfaces__python\n'}
+[2.121613] (-) TimerEvent: {}
+[2.210868] (serial) JobEnded: {'identifier': 'serial', 'rc': 0}
+[2.216976] (arduino_ros2) JobStarted: {'identifier': 'arduino_ros2'}
+[2.221790] (-) TimerEvent: {}
+[2.259162] (roboteq_interfaces) StdoutLine: {'line': b'[ 92%] Built target roboteq_interfaces__rosidl_typesupport_c__pyext\n'}
+[2.283304] (agv_mapping) CommandEnded: {'returncode': 0}
+[2.322927] (-) TimerEvent: {}
+[2.401754] (agv_mapping) JobEnded: {'identifier': 'agv_mapping', 'rc': 0}
+[2.407252] (differential_drive) JobStarted: {'identifier': 'differential_drive'}
+[2.424020] (-) TimerEvent: {}
+[2.494960] (roboteq_interfaces) StdoutLine: {'line': b'[ 96%] Built target roboteq_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[2.531334] (-) TimerEvent: {}
+[2.640141] (-) TimerEvent: {}
+[2.741104] (-) TimerEvent: {}
+[2.842209] (-) TimerEvent: {}
+[2.890048] (roboteq_interfaces) StdoutLine: {'line': b'[100%] Built target roboteq_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.942410] (-) TimerEvent: {}
+[3.043334] (-) TimerEvent: {}
+[3.144241] (-) TimerEvent: {}
+[3.245189] (-) TimerEvent: {}
+[3.346321] (-) TimerEvent: {}
+[3.447318] (-) TimerEvent: {}
+[3.548504] (-) TimerEvent: {}
+[3.650716] (-) TimerEvent: {}
+[3.752902] (-) TimerEvent: {}
+[3.855740] (-) TimerEvent: {}
+[3.956791] (-) TimerEvent: {}
+[4.058001] (-) TimerEvent: {}
+[4.159009] (-) TimerEvent: {}
+[4.260150] (-) TimerEvent: {}
+[4.348128] (roboteq_interfaces) CommandEnded: {'returncode': 0}
+[4.361279] (roboteq_interfaces) JobProgress: {'identifier': 'roboteq_interfaces', 'progress': 'install'}
+[4.363282] (-) TimerEvent: {}
+[4.370453] (roboteq_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wjs/cart_ros2/build/roboteq_interfaces'], 'cwd': '/home/wjs/cart_ros2/build/roboteq_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wjs'), ('SSH_AGENT_PID', '4037'), ('XDG_SESSION_TYPE', 'x11'), ('PIP_CACHE_DIR', '/mnt/sdcard/.cache/pip'), ('XDG_CACHE_HOME', '/mnt/sdcard/.cache'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/opencv-4.5.5-cuda/lib:/home/wjs/cart_ros2/install/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/wjs'), ('CYCLONEDDS_URI', 'file:///home/wjs/cyclonedds_lo.xml'), ('OLDPWD', '/home/wjs'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '35.6.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'Jetson-AGX'), ('MANAGERPID', '3935'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7597'), ('IM_CONFIG_PHASE', '1'), ('TMPDIR', '/mnt/sdcard/tmp'), ('COLCON_PREFIX_PATH', '/home/wjs/tb3_tpl_ws/install:/home/wjs/cart_ros2/install'), ('TORCH_HOME', '/mnt/sdcard/.cache/torch'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wjs'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Xavier (32 GB ram)'), ('JETSON_SERIAL_NUMBER', '1423420009543'), ('JOURNAL_STREAM', '8:75272'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Galen'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wjs'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/wjs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4072,unix/ubuntu:/tmp/.ICE-unix/4072'), ('INVOCATION_ID', '579b0bc7d2444c1facacc62736e29ce4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '35'), ('AMENT_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:479ed337-4a64-46eb-b813-77ac35b7f442'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/wjs/cart_ros2/build/roboteq_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '5.1.7'), ('CMAKE_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('JETSON_P_NUMBER', 'p2888-0004')]), 'shell': False}
+[4.464166] (-) TimerEvent: {}
+[4.567757] (-) TimerEvent: {}
+[4.669966] (-) TimerEvent: {}
+[4.772556] (-) TimerEvent: {}
+[4.873629] (-) TimerEvent: {}
+[4.974818] (-) TimerEvent: {}
+[5.076192] (-) TimerEvent: {}
+[5.177128] (-) TimerEvent: {}
+[5.278231] (-) TimerEvent: {}
+[5.379371] (-) TimerEvent: {}
+[5.480420] (-) TimerEvent: {}
+[5.581384] (-) TimerEvent: {}
+[5.603096] (roboteq_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.606601] (roboteq_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[5.607683] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/rosidl_interfaces/roboteq_interfaces\n'}
+[5.610054] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/msg/channel_values.h\n'}
+[5.610416] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/msg/detail/channel_values__functions.h\n'}
+[5.611085] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/msg/detail/channel_values__struct.h\n'}
+[5.611404] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/msg/detail/channel_values__type_support.h\n'}
+[5.613211] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.614627] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/command.h\n'}
+[5.615289] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/config.h\n'}
+[5.615582] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/command__functions.h\n'}
+[5.615829] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/command__struct.h\n'}
+[5.616131] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/command__type_support.h\n'}
+[5.616408] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/config__functions.h\n'}
+[5.616646] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/config__struct.h\n'}
+[5.616893] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/config__type_support.h\n'}
+[5.617164] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/maintenance__functions.h\n'}
+[5.619153] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/maintenance__struct.h\n'}
+[5.619536] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/maintenance__type_support.h\n'}
+[5.619822] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/maintenance.h\n'}
+[5.620072] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/environment/library_path.sh\n'}
+[5.620314] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/environment/library_path.dsv\n'}
+[5.620586] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/msg/detail/channel_values__rosidl_typesupport_fastrtps_c.h\n'}
+[5.620918] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.621191] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/command__rosidl_typesupport_fastrtps_c.h\n'}
+[5.621719] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/config__rosidl_typesupport_fastrtps_c.h\n'}
+[5.622038] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/maintenance__rosidl_typesupport_fastrtps_c.h\n'}
+[5.622298] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/libroboteq_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[5.622559] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/msg/detail/channel_values__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.622807] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.623139] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.623417] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/config__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.623666] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/maintenance__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.623900] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/libroboteq_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.624138] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/msg/detail/channel_values__rosidl_typesupport_introspection_c.h\n'}
+[5.624395] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.624672] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/command__rosidl_typesupport_introspection_c.h\n'}
+[5.624907] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/config__rosidl_typesupport_introspection_c.h\n'}
+[5.625147] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/maintenance__rosidl_typesupport_introspection_c.h\n'}
+[5.625382] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/msg/channel_values.hpp\n'}
+[5.625739] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/msg/detail/channel_values__builder.hpp\n'}
+[5.625991] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/msg/detail/channel_values__struct.hpp\n'}
+[5.626239] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/msg/detail/channel_values__traits.hpp\n'}
+[5.626494] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/command.hpp\n'}
+[5.626809] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/config.hpp\n'}
+[5.627084] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/command__builder.hpp\n'}
+[5.627332] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/command__struct.hpp\n'}
+[5.627629] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/command__traits.hpp\n'}
+[5.627883] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/config__builder.hpp\n'}
+[5.628115] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/config__struct.hpp\n'}
+[5.628357] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/config__traits.hpp\n'}
+[5.628605] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/maintenance__builder.hpp\n'}
+[5.628865] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/maintenance__struct.hpp\n'}
+[5.629112] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/maintenance__traits.hpp\n'}
+[5.629365] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/maintenance.hpp\n'}
+[5.629847] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/msg/detail/channel_values__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.630246] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.631943] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/config__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.632450] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/roboteq_interfaces/srv/detail/maintenance__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.632950] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/environment/pythonpath.sh\n'}
+[5.638181] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/environment/pythonpath.dsv\n'}
+[5.644175] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/python3.8/site-packages/roboteq_interfaces/__init__.py\n'}
+[5.653574] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/python3.8/site-packages/roboteq_interfaces/msg/__init__.py\n'}
+[5.654343] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/python3.8/site-packages/roboteq_interfaces/msg/_channel_values.py\n'}
+[5.654767] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/python3.8/site-packages/roboteq_interfaces/srv/__init__.py\n'}
+[5.656301] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/python3.8/site-packages/roboteq_interfaces/srv/_command.py\n'}
+[5.662370] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/python3.8/site-packages/roboteq_interfaces/srv/_config.py\n'}
+[5.663102] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/python3.8/site-packages/roboteq_interfaces/srv/_maintenance.py\n'}
+[5.663673] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/python3.8/site-packages/roboteq_interfaces/roboteq_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[5.664261] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/python3.8/site-packages/roboteq_interfaces/roboteq_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[5.664790] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/python3.8/site-packages/roboteq_interfaces/roboteq_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[5.665192] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/libroboteq_interfaces__python.so\n'}
+[5.666234] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/msg/ChannelValues.idl\n'}
+[5.666855] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/srv/Command.idl\n'}
+[5.667752] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/srv/Config.idl\n'}
+[5.668206] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/srv/Maintenance.idl\n'}
+[5.668938] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/msg/ChannelValues.msg\n'}
+[5.669395] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/srv/Command.srv\n'}
+[5.669995] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/srv/Command_Request.msg\n'}
+[5.670489] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/srv/Command_Response.msg\n'}
+[5.671022] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/srv/Config.srv\n'}
+[5.671563] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/srv/Config_Request.msg\n'}
+[5.672479] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/srv/Config_Response.msg\n'}
+[5.673105] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/srv/Maintenance.srv\n'}
+[5.673737] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/srv/Maintenance_Request.msg\n'}
+[5.674373] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/srv/Maintenance_Response.msg\n'}
+[5.674905] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/package_run_dependencies/roboteq_interfaces\n'}
+[5.675497] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/parent_prefix_path/roboteq_interfaces\n'}
+[5.675920] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/environment/ament_prefix_path.sh\n'}
+[5.676437] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/environment/ament_prefix_path.dsv\n'}
+[5.676845] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/environment/path.sh\n'}
+[5.677194] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/environment/path.dsv\n'}
+[5.677847] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/local_setup.bash\n'}
+[5.678233] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/local_setup.sh\n'}
+[5.678701] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/local_setup.zsh\n'}
+[5.679332] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/local_setup.dsv\n'}
+[5.679726] (roboteq_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/wjs/cart_ros2/install/share/roboteq_interfaces/package.dsv\n'}
+[5.680270] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/packages/roboteq_interfaces\n'}
+[5.680812] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[5.681502] (-) TimerEvent: {}
+[5.683135] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.683722] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.684175] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.685072] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.685742] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.686202] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.686902] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/cmake/roboteq_interfacesConfig.cmake\n'}
+[5.687723] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/cmake/roboteq_interfacesConfig-version.cmake\n'}
+[5.688438] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_interfaces/package.xml\n'}
+[5.689961] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wjs/cart_ros2/install/lib/libroboteq_interfaces__rosidl_generator_c.so\n'}
+[5.690433] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wjs/cart_ros2/install/lib/libroboteq_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[5.690939] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wjs/cart_ros2/install/lib/libroboteq_interfaces__rosidl_typesupport_c.so\n'}
+[5.691382] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wjs/cart_ros2/install/lib/libroboteq_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[5.692024] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wjs/cart_ros2/install/lib/libroboteq_interfaces__rosidl_typesupport_cpp.so\n'}
+[5.692666] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wjs/cart_ros2/install/share/roboteq_interfaces/cmake/roboteq_interfaces__rosidl_generator_cExport.cmake\n'}
+[5.693152] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wjs/cart_ros2/install/share/roboteq_interfaces/cmake/roboteq_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.693500] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wjs/cart_ros2/install/share/roboteq_interfaces/cmake/roboteq_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.693834] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wjs/cart_ros2/install/share/roboteq_interfaces/cmake/roboteq_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.694234] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wjs/cart_ros2/install/share/roboteq_interfaces/cmake/roboteq_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[5.694748] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wjs/cart_ros2/install/share/roboteq_interfaces/cmake/roboteq_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.695131] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wjs/cart_ros2/install/share/roboteq_interfaces/cmake/roboteq_interfaces__rosidl_generator_cppExport.cmake\n'}
+[5.695590] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wjs/cart_ros2/install/share/roboteq_interfaces/cmake/roboteq_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.696118] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wjs/cart_ros2/install/share/roboteq_interfaces/cmake/roboteq_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.696467] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wjs/cart_ros2/install/share/roboteq_interfaces/cmake/roboteq_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[5.696877] (roboteq_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wjs/cart_ros2/install/share/roboteq_interfaces/cmake/roboteq_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.700200] (roboteq_interfaces) CommandEnded: {'returncode': 0}
+[5.782307] (-) TimerEvent: {}
+[5.790609] (roboteq_interfaces) JobEnded: {'identifier': 'roboteq_interfaces', 'rc': 0}
+[5.794673] (agv_body) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/wjs/cart_ros2/build/agv_body/build', '--no-deps', 'symlink_data'], 'cwd': '/home/wjs/cart_ros2/build/agv_body', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'wjs', 'SSH_AGENT_PID': '4037', 'XDG_SESSION_TYPE': 'x11', 'PIP_CACHE_DIR': '/mnt/sdcard/.cache/pip', 'XDG_CACHE_HOME': '/mnt/sdcard/.cache', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/opencv-4.5.5-cuda/lib:/home/wjs/cart_ros2/install/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64:', 'HOME': '/home/wjs', 'CYCLONEDDS_URI': 'file:///home/wjs/cyclonedds_lo.xml', 'OLDPWD': '/home/wjs', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_L4T': '35.6.3', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'JETSON_MODEL': 'Jetson-AGX', 'MANAGERPID': '3935', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '7597', 'IM_CONFIG_PHASE': '1', 'TMPDIR': '/mnt/sdcard/tmp', 'COLCON_PREFIX_PATH': '/home/wjs/tb3_tpl_ws/install:/home/wjs/cart_ros2/install', 'TORCH_HOME': '/mnt/sdcard/.cache/torch', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'wjs', 'JETSON_MODULE': 'NVIDIA Jetson AGX Xavier (32 GB ram)', 'JETSON_SERIAL_NUMBER': '1423420009543', 'JOURNAL_STREAM': '8:75272', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Galen', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'wjs', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/wjs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/4072,unix/ubuntu:/tmp/.ICE-unix/4072', 'INVOCATION_ID': '579b0bc7d2444c1facacc62736e29ce4', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra194', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '35', 'AMENT_PREFIX_PATH': '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:479ed337-4a64-46eb-b813-77ac35b7f442', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '7.2', 'PWD': '/home/wjs/cart_ros2/build/agv_body', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/wjs/cart_ros2/build/agv_body/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003', 'JETSON_JETPACK': '5.1.7', 'CMAKE_PREFIX_PATH': '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install', 'JETSON_P_NUMBER': 'p2888-0004'}, 'shell': False}
+[5.821752] (ira_laser_tools) JobStarted: {'identifier': 'ira_laser_tools'}
+[5.883084] (-) TimerEvent: {}
+[5.921686] (ira_laser_tools) JobProgress: {'identifier': 'ira_laser_tools', 'progress': 'cmake'}
+[5.932121] (ira_laser_tools) JobProgress: {'identifier': 'ira_laser_tools', 'progress': 'build'}
+[5.933991] (ira_laser_tools) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wjs/cart_ros2/build/ira_laser_tools', '--', '-j4', '-l4'], 'cwd': '/home/wjs/cart_ros2/build/ira_laser_tools', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wjs'), ('SSH_AGENT_PID', '4037'), ('XDG_SESSION_TYPE', 'x11'), ('PIP_CACHE_DIR', '/mnt/sdcard/.cache/pip'), ('XDG_CACHE_HOME', '/mnt/sdcard/.cache'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/opencv-4.5.5-cuda/lib:/home/wjs/cart_ros2/install/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/wjs'), ('CYCLONEDDS_URI', 'file:///home/wjs/cyclonedds_lo.xml'), ('OLDPWD', '/home/wjs'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '35.6.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'Jetson-AGX'), ('MANAGERPID', '3935'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7597'), ('IM_CONFIG_PHASE', '1'), ('TMPDIR', '/mnt/sdcard/tmp'), ('COLCON_PREFIX_PATH', '/home/wjs/tb3_tpl_ws/install:/home/wjs/cart_ros2/install'), ('TORCH_HOME', '/mnt/sdcard/.cache/torch'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wjs'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Xavier (32 GB ram)'), ('JETSON_SERIAL_NUMBER', '1423420009543'), ('JOURNAL_STREAM', '8:75272'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Galen'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wjs'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/wjs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4072,unix/ubuntu:/tmp/.ICE-unix/4072'), ('INVOCATION_ID', '579b0bc7d2444c1facacc62736e29ce4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '35'), ('AMENT_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:479ed337-4a64-46eb-b813-77ac35b7f442'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/wjs/cart_ros2/build/ira_laser_tools'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '5.1.7'), ('CMAKE_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('JETSON_P_NUMBER', 'p2888-0004')]), 'shell': False}
+[5.983533] (-) TimerEvent: {}
+[6.085324] (-) TimerEvent: {}
+[6.186399] (-) TimerEvent: {}
+[6.287298] (-) TimerEvent: {}
+[6.388182] (-) TimerEvent: {}
+[6.489083] (-) TimerEvent: {}
+[6.530753] (ira_laser_tools) StdoutLine: {'line': b'[ 50%] Built target laserscan_virtualizer\n'}
+[6.589376] (-) TimerEvent: {}
+[6.690278] (-) TimerEvent: {}
+[6.767185] (ira_laser_tools) StdoutLine: {'line': b'[100%] Built target laserscan_multi_merger\n'}
+[6.790511] (-) TimerEvent: {}
+[6.832285] (ira_laser_tools) CommandEnded: {'returncode': 0}
+[6.843625] (ira_laser_tools) JobProgress: {'identifier': 'ira_laser_tools', 'progress': 'install'}
+[6.851077] (ira_laser_tools) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wjs/cart_ros2/build/ira_laser_tools'], 'cwd': '/home/wjs/cart_ros2/build/ira_laser_tools', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wjs'), ('SSH_AGENT_PID', '4037'), ('XDG_SESSION_TYPE', 'x11'), ('PIP_CACHE_DIR', '/mnt/sdcard/.cache/pip'), ('XDG_CACHE_HOME', '/mnt/sdcard/.cache'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/opencv-4.5.5-cuda/lib:/home/wjs/cart_ros2/install/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/wjs'), ('CYCLONEDDS_URI', 'file:///home/wjs/cyclonedds_lo.xml'), ('OLDPWD', '/home/wjs'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '35.6.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'Jetson-AGX'), ('MANAGERPID', '3935'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7597'), ('IM_CONFIG_PHASE', '1'), ('TMPDIR', '/mnt/sdcard/tmp'), ('COLCON_PREFIX_PATH', '/home/wjs/tb3_tpl_ws/install:/home/wjs/cart_ros2/install'), ('TORCH_HOME', '/mnt/sdcard/.cache/torch'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wjs'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Xavier (32 GB ram)'), ('JETSON_SERIAL_NUMBER', '1423420009543'), ('JOURNAL_STREAM', '8:75272'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Galen'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wjs'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/wjs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4072,unix/ubuntu:/tmp/.ICE-unix/4072'), ('INVOCATION_ID', '579b0bc7d2444c1facacc62736e29ce4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '35'), ('AMENT_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:479ed337-4a64-46eb-b813-77ac35b7f442'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/wjs/cart_ros2/build/ira_laser_tools'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '5.1.7'), ('CMAKE_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('JETSON_P_NUMBER', 'p2888-0004')]), 'shell': False}
+[6.890779] (-) TimerEvent: {}
+[6.949537] (ira_laser_tools) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.953584] (ira_laser_tools) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[6.956461] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/ira_laser_tools/laserscan_multi_merger\n'}
+[6.957670] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/ira_laser_tools/laserscan_virtualizer\n'}
+[6.961170] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/launch/laserscan_multi_merger.launch\n'}
+[6.962823] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/launch/laserscan_virtualizer.launch\n'}
+[6.964624] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/launch/merge_multi.launch.py\n'}
+[6.967565] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/config/laserscan_merge.yaml\n'}
+[6.970232] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/package_run_dependencies/ira_laser_tools\n'}
+[6.973170] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/parent_prefix_path/ira_laser_tools\n'}
+[6.976532] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/environment/ament_prefix_path.sh\n'}
+[6.979079] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/environment/ament_prefix_path.dsv\n'}
+[6.981929] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/environment/path.sh\n'}
+[6.985632] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/environment/path.dsv\n'}
+[6.988616] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/local_setup.bash\n'}
+[6.990945] (-) TimerEvent: {}
+[6.992181] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/local_setup.sh\n'}
+[6.995089] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/local_setup.zsh\n'}
+[6.997281] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/local_setup.dsv\n'}
+[6.999312] (ira_laser_tools) StdoutLine: {'line': b'-- Symlinking: /home/wjs/cart_ros2/install/share/ira_laser_tools/package.dsv\n'}
+[7.072760] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/packages/ira_laser_tools\n'}
+[7.085397] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.088078] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/cmake/ira_laser_toolsConfig.cmake\n'}
+[7.089946] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/cmake/ira_laser_toolsConfig-version.cmake\n'}
+[7.091094] (-) TimerEvent: {}
+[7.091859] (ira_laser_tools) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ira_laser_tools/package.xml\n'}
+[7.113688] (ira_laser_tools) CommandEnded: {'returncode': 0}
+[7.178594] (agv_body) StdoutLine: {'line': b'running develop\n'}
+[7.191368] (-) TimerEvent: {}
+[7.255240] (ira_laser_tools) JobEnded: {'identifier': 'ira_laser_tools', 'rc': 0}
+[7.259007] (laser_filters) JobStarted: {'identifier': 'laser_filters'}
+[7.292238] (-) TimerEvent: {}
+[7.326603] (laser_filters) JobProgress: {'identifier': 'laser_filters', 'progress': 'cmake'}
+[7.333847] (laser_filters) JobProgress: {'identifier': 'laser_filters', 'progress': 'build'}
+[7.343727] (laser_filters) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wjs/cart_ros2/build/laser_filters', '--', '-j4', '-l4'], 'cwd': '/home/wjs/cart_ros2/build/laser_filters', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wjs'), ('SSH_AGENT_PID', '4037'), ('XDG_SESSION_TYPE', 'x11'), ('PIP_CACHE_DIR', '/mnt/sdcard/.cache/pip'), ('XDG_CACHE_HOME', '/mnt/sdcard/.cache'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/opencv-4.5.5-cuda/lib:/home/wjs/cart_ros2/install/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/wjs'), ('CYCLONEDDS_URI', 'file:///home/wjs/cyclonedds_lo.xml'), ('OLDPWD', '/home/wjs'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '35.6.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'Jetson-AGX'), ('MANAGERPID', '3935'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7597'), ('IM_CONFIG_PHASE', '1'), ('TMPDIR', '/mnt/sdcard/tmp'), ('COLCON_PREFIX_PATH', '/home/wjs/tb3_tpl_ws/install:/home/wjs/cart_ros2/install'), ('TORCH_HOME', '/mnt/sdcard/.cache/torch'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wjs'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Xavier (32 GB ram)'), ('JETSON_SERIAL_NUMBER', '1423420009543'), ('JOURNAL_STREAM', '8:75272'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Galen'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wjs'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/wjs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4072,unix/ubuntu:/tmp/.ICE-unix/4072'), ('INVOCATION_ID', '579b0bc7d2444c1facacc62736e29ce4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '35'), ('AMENT_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:479ed337-4a64-46eb-b813-77ac35b7f442'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/wjs/cart_ros2/build/laser_filters'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '5.1.7'), ('CMAKE_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('JETSON_P_NUMBER', 'p2888-0004')]), 'shell': False}
+[7.392265] (-) TimerEvent: {}
+[7.494280] (-) TimerEvent: {}
+[7.595421] (-) TimerEvent: {}
+[7.696364] (-) TimerEvent: {}
+[7.786378] (arduino_ros2) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/wjs/cart_ros2/build/arduino_ros2/build', '--no-deps', 'symlink_data'], 'cwd': '/home/wjs/cart_ros2/build/arduino_ros2', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'wjs', 'SSH_AGENT_PID': '4037', 'XDG_SESSION_TYPE': 'x11', 'PIP_CACHE_DIR': '/mnt/sdcard/.cache/pip', 'XDG_CACHE_HOME': '/mnt/sdcard/.cache', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/opencv-4.5.5-cuda/lib:/home/wjs/cart_ros2/install/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64:', 'HOME': '/home/wjs', 'CYCLONEDDS_URI': 'file:///home/wjs/cyclonedds_lo.xml', 'OLDPWD': '/home/wjs', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_L4T': '35.6.3', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'JETSON_MODEL': 'Jetson-AGX', 'MANAGERPID': '3935', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '7597', 'IM_CONFIG_PHASE': '1', 'TMPDIR': '/mnt/sdcard/tmp', 'COLCON_PREFIX_PATH': '/home/wjs/tb3_tpl_ws/install:/home/wjs/cart_ros2/install', 'TORCH_HOME': '/mnt/sdcard/.cache/torch', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'wjs', 'JETSON_MODULE': 'NVIDIA Jetson AGX Xavier (32 GB ram)', 'JETSON_SERIAL_NUMBER': '1423420009543', 'JOURNAL_STREAM': '8:75272', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Galen', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'wjs', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/wjs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/4072,unix/ubuntu:/tmp/.ICE-unix/4072', 'INVOCATION_ID': '579b0bc7d2444c1facacc62736e29ce4', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra194', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '35', 'AMENT_PREFIX_PATH': '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:479ed337-4a64-46eb-b813-77ac35b7f442', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '7.2', 'PWD': '/home/wjs/cart_ros2/build/arduino_ros2', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/wjs/cart_ros2/build/arduino_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003', 'JETSON_JETPACK': '5.1.7', 'CMAKE_PREFIX_PATH': '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install', 'JETSON_P_NUMBER': 'p2888-0004'}, 'shell': False}
+[7.800242] (-) TimerEvent: {}
+[7.857201] (laser_filters) StdoutLine: {'line': b'[ 14%] Built target laser_scan_filters\n'}
+[7.900473] (-) TimerEvent: {}
+[7.994582] (laser_filters) StdoutLine: {'line': b'[ 28%] Built target gtest_main\n'}
+[8.000657] (-) TimerEvent: {}
+[8.012388] (differential_drive) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/wjs/cart_ros2/build/differential_drive/build', '--no-deps', 'symlink_data'], 'cwd': '/home/wjs/cart_ros2/build/differential_drive', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'wjs', 'SSH_AGENT_PID': '4037', 'XDG_SESSION_TYPE': 'x11', 'PIP_CACHE_DIR': '/mnt/sdcard/.cache/pip', 'XDG_CACHE_HOME': '/mnt/sdcard/.cache', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/opencv-4.5.5-cuda/lib:/home/wjs/cart_ros2/install/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64:', 'HOME': '/home/wjs', 'CYCLONEDDS_URI': 'file:///home/wjs/cyclonedds_lo.xml', 'OLDPWD': '/home/wjs', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_L4T': '35.6.3', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'JETSON_MODEL': 'Jetson-AGX', 'MANAGERPID': '3935', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '7597', 'IM_CONFIG_PHASE': '1', 'TMPDIR': '/mnt/sdcard/tmp', 'COLCON_PREFIX_PATH': '/home/wjs/tb3_tpl_ws/install:/home/wjs/cart_ros2/install', 'TORCH_HOME': '/mnt/sdcard/.cache/torch', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'wjs', 'JETSON_MODULE': 'NVIDIA Jetson AGX Xavier (32 GB ram)', 'JETSON_SERIAL_NUMBER': '1423420009543', 'JOURNAL_STREAM': '8:75272', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'JETSON_CODENAME': 'Galen', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'wjs', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/wjs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/4072,unix/ubuntu:/tmp/.ICE-unix/4072', 'INVOCATION_ID': '579b0bc7d2444c1facacc62736e29ce4', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra194', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '35', 'AMENT_PREFIX_PATH': '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:479ed337-4a64-46eb-b813-77ac35b7f442', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '7.2', 'PWD': '/home/wjs/cart_ros2/build/differential_drive', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/wjs/cart_ros2/build/differential_drive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003', 'JETSON_JETPACK': '5.1.7', 'CMAKE_PREFIX_PATH': '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install', 'JETSON_P_NUMBER': 'p2888-0004'}, 'shell': False}
+[8.100949] (-) TimerEvent: {}
+[8.201947] (laser_filters) StdoutLine: {'line': b'[ 42%] Built target scan_to_cloud_filter_chain\n'}
+[8.202700] (-) TimerEvent: {}
+[8.303350] (-) TimerEvent: {}
+[8.373141] (agv_body) StdoutLine: {'line': b'running egg_info\n'}
+[8.374284] (agv_body) StdoutLine: {'line': b'writing agv_body.egg-info/PKG-INFO\n'}
+[8.378119] (agv_body) StdoutLine: {'line': b'writing dependency_links to agv_body.egg-info/dependency_links.txt\n'}
+[8.382323] (agv_body) StdoutLine: {'line': b'writing entry points to agv_body.egg-info/entry_points.txt\n'}
+[8.384351] (agv_body) StdoutLine: {'line': b'writing requirements to agv_body.egg-info/requires.txt\n'}
+[8.385220] (agv_body) StdoutLine: {'line': b'writing top-level names to agv_body.egg-info/top_level.txt\n'}
+[8.403561] (-) TimerEvent: {}
+[8.404642] (laser_filters) StdoutLine: {'line': b'[ 57%] Built target scan_to_scan_filter_chain\n'}
+[8.503767] (-) TimerEvent: {}
+[8.524461] (agv_body) StdoutLine: {'line': b"reading manifest file 'agv_body.egg-info/SOURCES.txt'\n"}
+[8.535493] (agv_body) StdoutLine: {'line': b"writing manifest file 'agv_body.egg-info/SOURCES.txt'\n"}
+[8.603987] (-) TimerEvent: {}
+[8.623953] (laser_filters) StdoutLine: {'line': b'[ 71%] Built target generic_laser_filter_node\n'}
+[8.704195] (-) TimerEvent: {}
+[8.754727] (agv_body) StdoutLine: {'line': b'running build_ext\n'}
+[8.765710] (agv_body) StdoutLine: {'line': b'Creating /home/wjs/cart_ros2/install/lib/python3.8/site-packages/agv-body.egg-link (link to .)\n'}
+[8.769247] (agv_body) StdoutLine: {'line': b'\n'}
+[8.769966] (agv_body) StdoutLine: {'line': b'Installed /home/wjs/cart_ros2/build/agv_body\n'}
+[8.770853] (agv_body) StdoutLine: {'line': b'running symlink_data\n'}
+[8.780322] (laser_filters) StdoutLine: {'line': b'[ 85%] Built target gtest\n'}
+[8.804447] (-) TimerEvent: {}
+[8.905536] (-) TimerEvent: {}
+[8.910423] (agv_body) CommandEnded: {'returncode': 0}
+[8.968909] (laser_filters) StdoutLine: {'line': b'[100%] Built target test_scan_filter_chain\n'}
+[9.010559] (-) TimerEvent: {}
+[9.032195] (agv_body) JobEnded: {'identifier': 'agv_body', 'rc': 0}
+[9.036388] (sllidar_ros2) JobStarted: {'identifier': 'sllidar_ros2'}
+[9.047179] (arduino_ros2) StdoutLine: {'line': b'running develop\n'}
+[9.085157] (laser_filters) CommandEnded: {'returncode': 0}
+[9.100689] (laser_filters) JobProgress: {'identifier': 'laser_filters', 'progress': 'install'}
+[9.103591] (laser_filters) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wjs/cart_ros2/build/laser_filters'], 'cwd': '/home/wjs/cart_ros2/build/laser_filters', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wjs'), ('SSH_AGENT_PID', '4037'), ('XDG_SESSION_TYPE', 'x11'), ('PIP_CACHE_DIR', '/mnt/sdcard/.cache/pip'), ('XDG_CACHE_HOME', '/mnt/sdcard/.cache'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/opencv-4.5.5-cuda/lib:/home/wjs/cart_ros2/install/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/wjs'), ('CYCLONEDDS_URI', 'file:///home/wjs/cyclonedds_lo.xml'), ('OLDPWD', '/home/wjs'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '35.6.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'Jetson-AGX'), ('MANAGERPID', '3935'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7597'), ('IM_CONFIG_PHASE', '1'), ('TMPDIR', '/mnt/sdcard/tmp'), ('COLCON_PREFIX_PATH', '/home/wjs/tb3_tpl_ws/install:/home/wjs/cart_ros2/install'), ('TORCH_HOME', '/mnt/sdcard/.cache/torch'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wjs'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Xavier (32 GB ram)'), ('JETSON_SERIAL_NUMBER', '1423420009543'), ('JOURNAL_STREAM', '8:75272'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Galen'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wjs'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/wjs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4072,unix/ubuntu:/tmp/.ICE-unix/4072'), ('INVOCATION_ID', '579b0bc7d2444c1facacc62736e29ce4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '35'), ('AMENT_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:479ed337-4a64-46eb-b813-77ac35b7f442'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/wjs/cart_ros2/build/laser_filters'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '5.1.7'), ('CMAKE_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('JETSON_P_NUMBER', 'p2888-0004')]), 'shell': False}
+[9.113287] (-) TimerEvent: {}
+[9.136550] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'cmake'}
+[9.146799] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'build'}
+[9.152306] (sllidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wjs/cart_ros2/build/sllidar_ros2', '--', '-j4', '-l4'], 'cwd': '/home/wjs/cart_ros2/build/sllidar_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wjs'), ('SSH_AGENT_PID', '4037'), ('XDG_SESSION_TYPE', 'x11'), ('PIP_CACHE_DIR', '/mnt/sdcard/.cache/pip'), ('XDG_CACHE_HOME', '/mnt/sdcard/.cache'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/opencv-4.5.5-cuda/lib:/home/wjs/cart_ros2/install/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/wjs'), ('CYCLONEDDS_URI', 'file:///home/wjs/cyclonedds_lo.xml'), ('OLDPWD', '/home/wjs'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '35.6.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'Jetson-AGX'), ('MANAGERPID', '3935'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7597'), ('IM_CONFIG_PHASE', '1'), ('TMPDIR', '/mnt/sdcard/tmp'), ('COLCON_PREFIX_PATH', '/home/wjs/tb3_tpl_ws/install:/home/wjs/cart_ros2/install'), ('TORCH_HOME', '/mnt/sdcard/.cache/torch'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wjs'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Xavier (32 GB ram)'), ('JETSON_SERIAL_NUMBER', '1423420009543'), ('JOURNAL_STREAM', '8:75272'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Galen'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wjs'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/wjs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4072,unix/ubuntu:/tmp/.ICE-unix/4072'), ('INVOCATION_ID', '579b0bc7d2444c1facacc62736e29ce4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '35'), ('AMENT_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:479ed337-4a64-46eb-b813-77ac35b7f442'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/wjs/cart_ros2/build/sllidar_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '5.1.7'), ('CMAKE_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('JETSON_P_NUMBER', 'p2888-0004')]), 'shell': False}
+[9.188320] (laser_filters) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.190488] (laser_filters) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[9.193296] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters//laser_filters_plugins.xml\n'}
+[9.196359] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/laser_filters/angular_bounds_filter.h\n'}
+[9.197262] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/laser_filters/angular_bounds_filter_in_place.h\n'}
+[9.198208] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/laser_filters/array_filter.h\n'}
+[9.200205] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/laser_filters/box_filter.h\n'}
+[9.201869] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/laser_filters/footprint_filter.h\n'}
+[9.202397] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/laser_filters/intensity_filter.h\n'}
+[9.203323] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/laser_filters/interpolation_filter.h\n'}
+[9.204179] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/laser_filters/median_filter.h\n'}
+[9.205033] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/laser_filters/range_filter.h\n'}
+[9.206055] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/laser_filters/scan_mask_filter.h\n'}
+[9.206899] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/laser_filters/scan_shadows_filter.h\n'}
+[9.207756] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/include/laser_filters/speckle_filter.h\n'}
+[9.213188] (-) TimerEvent: {}
+[9.217126] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/environment/library_path.sh\n'}
+[9.218812] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/environment/library_path.dsv\n'}
+[9.221395] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/liblaser_scan_filters.so\n'}
+[9.224008] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/laser_filters/scan_to_cloud_filter_chain\n'}
+[9.226636] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/laser_filters/scan_to_scan_filter_chain\n'}
+[9.227939] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/laser_filters/generic_laser_filter_node\n'}
+[9.232445] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/examples/box_filter_example.launch.py\n'}
+[9.234096] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/examples/box_filter_example.yaml\n'}
+[9.237833] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/examples/footprint_filter_example.launch.py\n'}
+[9.239384] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/examples/footprint_filter_example.yaml\n'}
+[9.241999] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/examples/intensity_filter_example.launch.py\n'}
+[9.242682] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/examples/intensity_filter_example.yaml\n'}
+[9.243840] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/examples/mask_filter_example.launch.py\n'}
+[9.245283] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/examples/mask_filter_example.yaml\n'}
+[9.246829] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/examples/median_filter_example.launch.py\n'}
+[9.248314] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/examples/median_filter_example.yaml\n'}
+[9.251118] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/examples/multiple_filters_example.launch.py\n'}
+[9.253965] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/examples/multiple_filters_example.yaml\n'}
+[9.255565] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/examples/pass_through_example.launch.py\n'}
+[9.257213] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/examples/pass_through_example.yaml\n'}
+[9.258693] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/examples/range_filter_example.launch.py\n'}
+[9.260139] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/examples/range_filter_example.yaml\n'}
+[9.261649] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/examples/shadow_filter_example.launch.py\n'}
+[9.263122] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/examples/shadow_filter_example.yaml\n'}
+[9.264554] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/examples/speckle_filter_example.launch\n'}
+[9.266071] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/examples/speckle_filter_example.yaml\n'}
+[9.267548] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/package_run_dependencies/laser_filters\n'}
+[9.270382] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/parent_prefix_path/laser_filters\n'}
+[9.272139] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/environment/ament_prefix_path.sh\n'}
+[9.273495] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/environment/ament_prefix_path.dsv\n'}
+[9.275509] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/environment/path.sh\n'}
+[9.278110] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/environment/path.dsv\n'}
+[9.280107] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/local_setup.bash\n'}
+[9.282146] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/local_setup.sh\n'}
+[9.284023] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/local_setup.zsh\n'}
+[9.285337] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/local_setup.dsv\n'}
+[9.286461] (laser_filters) StdoutLine: {'line': b'-- Symlinking: /home/wjs/cart_ros2/install/share/laser_filters/package.dsv\n'}
+[9.314124] (-) TimerEvent: {}
+[9.330201] (differential_drive) StdoutLine: {'line': b'running develop\n'}
+[9.347409] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/packages/laser_filters\n'}
+[9.349015] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/filters__pluginlib__plugin/laser_filters\n'}
+[9.358445] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.360437] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[9.362316] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[9.366535] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/cmake/laser_filtersConfig.cmake\n'}
+[9.368194] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/cmake/laser_filtersConfig-version.cmake\n'}
+[9.369960] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/package.xml\n'}
+[9.372355] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/config_filter/angle_filter_F.yaml\n'}
+[9.373362] (laser_filters) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/laser_filters/config_filter/angle_filter_R.yaml\n'}
+[9.389600] (laser_filters) CommandEnded: {'returncode': 0}
+[9.413589] (-) TimerEvent: {}
+[9.513396] (laser_filters) JobEnded: {'identifier': 'laser_filters', 'rc': 0}
+[9.515552] (-) TimerEvent: {}
+[9.517777] (stella_ahrs) JobStarted: {'identifier': 'stella_ahrs'}
+[9.592044] (stella_ahrs) JobProgress: {'identifier': 'stella_ahrs', 'progress': 'cmake'}
+[9.598148] (stella_ahrs) JobProgress: {'identifier': 'stella_ahrs', 'progress': 'build'}
+[9.600550] (stella_ahrs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wjs/cart_ros2/build/stella_ahrs', '--', '-j4', '-l4'], 'cwd': '/home/wjs/cart_ros2/build/stella_ahrs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wjs'), ('SSH_AGENT_PID', '4037'), ('XDG_SESSION_TYPE', 'x11'), ('PIP_CACHE_DIR', '/mnt/sdcard/.cache/pip'), ('XDG_CACHE_HOME', '/mnt/sdcard/.cache'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/opencv-4.5.5-cuda/lib:/home/wjs/cart_ros2/install/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/wjs'), ('CYCLONEDDS_URI', 'file:///home/wjs/cyclonedds_lo.xml'), ('OLDPWD', '/home/wjs'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '35.6.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'Jetson-AGX'), ('MANAGERPID', '3935'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7597'), ('IM_CONFIG_PHASE', '1'), ('TMPDIR', '/mnt/sdcard/tmp'), ('COLCON_PREFIX_PATH', '/home/wjs/tb3_tpl_ws/install:/home/wjs/cart_ros2/install'), ('TORCH_HOME', '/mnt/sdcard/.cache/torch'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wjs'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Xavier (32 GB ram)'), ('JETSON_SERIAL_NUMBER', '1423420009543'), ('JOURNAL_STREAM', '8:75272'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Galen'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wjs'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/wjs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4072,unix/ubuntu:/tmp/.ICE-unix/4072'), ('INVOCATION_ID', '579b0bc7d2444c1facacc62736e29ce4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '35'), ('AMENT_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:479ed337-4a64-46eb-b813-77ac35b7f442'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/wjs/cart_ros2/build/stella_ahrs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '5.1.7'), ('CMAKE_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('JETSON_P_NUMBER', 'p2888-0004')]), 'shell': False}
+[9.616082] (-) TimerEvent: {}
+[9.623775] (sllidar_ros2) StdoutLine: {'line': b'[ 85%] Built target sllidar_node\n'}
+[9.716221] (-) TimerEvent: {}
+[9.816883] (arduino_ros2) StdoutLine: {'line': b'running egg_info\n'}
+[9.817763] (-) TimerEvent: {}
+[9.818404] (arduino_ros2) StdoutLine: {'line': b'writing arduino_ros2.egg-info/PKG-INFO\n'}
+[9.819080] (arduino_ros2) StdoutLine: {'line': b'writing dependency_links to arduino_ros2.egg-info/dependency_links.txt\n'}
+[9.820455] (arduino_ros2) StdoutLine: {'line': b'writing entry points to arduino_ros2.egg-info/entry_points.txt\n'}
+[9.820839] (arduino_ros2) StdoutLine: {'line': b'writing requirements to arduino_ros2.egg-info/requires.txt\n'}
+[9.821340] (arduino_ros2) StdoutLine: {'line': b'writing top-level names to arduino_ros2.egg-info/top_level.txt\n'}
+[9.836102] (sllidar_ros2) StdoutLine: {'line': b'[100%] Built target sllidar_client\n'}
+[9.898662] (sllidar_ros2) CommandEnded: {'returncode': 0}
+[9.910689] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'install'}
+[9.918240] (sllidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wjs/cart_ros2/build/sllidar_ros2'], 'cwd': '/home/wjs/cart_ros2/build/sllidar_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wjs'), ('SSH_AGENT_PID', '4037'), ('XDG_SESSION_TYPE', 'x11'), ('PIP_CACHE_DIR', '/mnt/sdcard/.cache/pip'), ('XDG_CACHE_HOME', '/mnt/sdcard/.cache'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/opencv-4.5.5-cuda/lib:/home/wjs/cart_ros2/install/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/wjs'), ('CYCLONEDDS_URI', 'file:///home/wjs/cyclonedds_lo.xml'), ('OLDPWD', '/home/wjs'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '35.6.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'Jetson-AGX'), ('MANAGERPID', '3935'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7597'), ('IM_CONFIG_PHASE', '1'), ('TMPDIR', '/mnt/sdcard/tmp'), ('COLCON_PREFIX_PATH', '/home/wjs/tb3_tpl_ws/install:/home/wjs/cart_ros2/install'), ('TORCH_HOME', '/mnt/sdcard/.cache/torch'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wjs'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Xavier (32 GB ram)'), ('JETSON_SERIAL_NUMBER', '1423420009543'), ('JOURNAL_STREAM', '8:75272'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Galen'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wjs'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/wjs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4072,unix/ubuntu:/tmp/.ICE-unix/4072'), ('INVOCATION_ID', '579b0bc7d2444c1facacc62736e29ce4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '35'), ('AMENT_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:479ed337-4a64-46eb-b813-77ac35b7f442'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/wjs/cart_ros2/build/sllidar_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '5.1.7'), ('CMAKE_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('JETSON_P_NUMBER', 'p2888-0004')]), 'shell': False}
+[9.932063] (-) TimerEvent: {}
+[9.960787] (arduino_ros2) StdoutLine: {'line': b"reading manifest file 'arduino_ros2.egg-info/SOURCES.txt'\n"}
+[9.969622] (sllidar_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.972320] (sllidar_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[9.973199] (arduino_ros2) StdoutLine: {'line': b"writing manifest file 'arduino_ros2.egg-info/SOURCES.txt'\n"}
+[9.976512] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/run_lidar_F.launch.py\n'}
+[9.977392] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/run_lidar_F.launch.py.bak\n'}
+[9.978362] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/run_lidar_R.launch.py\n'}
+[9.979278] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/run_lidars.launch.py\n'}
+[9.980219] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/sllidar_a3_filtered.launch.py\n'}
+[9.981234] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/sllidar_a3_launch.py\n'}
+[9.982386] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/sllidar_launch.py\n'}
+[9.983267] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/sllidar_s1_launch.py\n'}
+[9.985350] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/sllidar_s1_tcp_launch.py\n'}
+[9.988277] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/sllidar_s2_launch.py\n'}
+[9.989125] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/sllidar_s2e_launch.py\n'}
+[9.990264] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/sllidar_t1_launch.py\n'}
+[9.991078] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/view_sllidar_a3_launch.py\n'}
+[9.991874] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/view_sllidar_launch.py\n'}
+[9.992819] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/view_sllidar_s1_launch.py\n'}
+[9.994265] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/view_sllidar_s1_tcp_launch.py\n'}
+[9.994832] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/view_sllidar_s2_launch.py\n'}
+[9.995740] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/view_sllidar_s2e_launch.py\n'}
+[9.996639] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/view_sllidar_t1_launch.py\n'}
+[9.998592] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/rviz/sllidar_ros2.rviz\n'}
+[10.010376] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/sllidar_ros2/sllidar_node\n'}
+[10.011538] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/sllidar_ros2/sllidar_client\n'}
+[10.013035] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/package_run_dependencies/sllidar_ros2\n'}
+[10.016450] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2\n'}
+[10.018030] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/environment/ament_prefix_path.sh\n'}
+[10.020512] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/environment/ament_prefix_path.dsv\n'}
+[10.021979] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/environment/path.sh\n'}
+[10.023296] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/environment/path.dsv\n'}
+[10.024536] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/local_setup.bash\n'}
+[10.025986] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/local_setup.sh\n'}
+[10.027227] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/local_setup.zsh\n'}
+[10.028736] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/local_setup.dsv\n'}
+[10.029869] (sllidar_ros2) StdoutLine: {'line': b'-- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/package.dsv\n'}
+[10.031557] (stella_ahrs) StdoutLine: {'line': b'[100%] Built target stella_ahrs_node\n'}
+[10.032185] (-) TimerEvent: {}
+[10.083155] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/packages/sllidar_ros2\n'}
+[10.084404] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.087143] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[10.088395] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/cmake/sllidar_ros2Config.cmake\n'}
+[10.089291] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/cmake/sllidar_ros2Config-version.cmake\n'}
+[10.090908] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/sllidar_ros2/package.xml\n'}
+[10.099223] (sllidar_ros2) CommandEnded: {'returncode': 0}
+[10.132431] (-) TimerEvent: {}
+[10.139319] (differential_drive) StdoutLine: {'line': b'running egg_info\n'}
+[10.140107] (differential_drive) StdoutLine: {'line': b'writing src/differential_drive.egg-info/PKG-INFO\n'}
+[10.141295] (differential_drive) StdoutLine: {'line': b'writing dependency_links to src/differential_drive.egg-info/dependency_links.txt\n'}
+[10.142540] (differential_drive) StdoutLine: {'line': b'writing entry points to src/differential_drive.egg-info/entry_points.txt\n'}
+[10.143026] (differential_drive) StdoutLine: {'line': b'writing requirements to src/differential_drive.egg-info/requires.txt\n'}
+[10.143501] (differential_drive) StdoutLine: {'line': b'writing top-level names to src/differential_drive.egg-info/top_level.txt\n'}
+[10.195063] (arduino_ros2) StdoutLine: {'line': b'running build_ext\n'}
+[10.196443] (arduino_ros2) StdoutLine: {'line': b'Creating /home/wjs/cart_ros2/install/lib/python3.8/site-packages/arduino-ros2.egg-link (link to .)\n'}
+[10.201657] (arduino_ros2) StdoutLine: {'line': b'Installing pub_joycmd script to /home/wjs/cart_ros2/install/lib/arduino_ros2\n'}
+[10.202655] (arduino_ros2) StdoutLine: {'line': b'\n'}
+[10.202967] (arduino_ros2) StdoutLine: {'line': b'Installed /home/wjs/cart_ros2/build/arduino_ros2\n'}
+[10.203395] (arduino_ros2) StdoutLine: {'line': b'running symlink_data\n'}
+[10.232822] (-) TimerEvent: {}
+[10.243766] (sllidar_ros2) JobEnded: {'identifier': 'sllidar_ros2', 'rc': 0}
+[10.248754] (roboteq_controller) JobStarted: {'identifier': 'roboteq_controller'}
+[10.288949] (differential_drive) StdoutLine: {'line': b"reading manifest file 'src/differential_drive.egg-info/SOURCES.txt'\n"}
+[10.298587] (stella_ahrs) CommandEnded: {'returncode': 0}
+[10.301976] (differential_drive) StdoutLine: {'line': b"writing manifest file 'src/differential_drive.egg-info/SOURCES.txt'\n"}
+[10.316135] (stella_ahrs) JobProgress: {'identifier': 'stella_ahrs', 'progress': 'install'}
+[10.317320] (stella_ahrs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wjs/cart_ros2/build/stella_ahrs'], 'cwd': '/home/wjs/cart_ros2/build/stella_ahrs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wjs'), ('SSH_AGENT_PID', '4037'), ('XDG_SESSION_TYPE', 'x11'), ('PIP_CACHE_DIR', '/mnt/sdcard/.cache/pip'), ('XDG_CACHE_HOME', '/mnt/sdcard/.cache'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/opencv-4.5.5-cuda/lib:/home/wjs/cart_ros2/install/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/wjs'), ('CYCLONEDDS_URI', 'file:///home/wjs/cyclonedds_lo.xml'), ('OLDPWD', '/home/wjs'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '35.6.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'Jetson-AGX'), ('MANAGERPID', '3935'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7597'), ('IM_CONFIG_PHASE', '1'), ('TMPDIR', '/mnt/sdcard/tmp'), ('COLCON_PREFIX_PATH', '/home/wjs/tb3_tpl_ws/install:/home/wjs/cart_ros2/install'), ('TORCH_HOME', '/mnt/sdcard/.cache/torch'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wjs'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Xavier (32 GB ram)'), ('JETSON_SERIAL_NUMBER', '1423420009543'), ('JOURNAL_STREAM', '8:75272'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Galen'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wjs'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/wjs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4072,unix/ubuntu:/tmp/.ICE-unix/4072'), ('INVOCATION_ID', '579b0bc7d2444c1facacc62736e29ce4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '35'), ('AMENT_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:479ed337-4a64-46eb-b813-77ac35b7f442'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/wjs/cart_ros2/build/stella_ahrs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '5.1.7'), ('CMAKE_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('JETSON_P_NUMBER', 'p2888-0004')]), 'shell': False}
+[10.335186] (-) TimerEvent: {}
+[10.355072] (roboteq_controller) JobProgress: {'identifier': 'roboteq_controller', 'progress': 'cmake'}
+[10.374864] (roboteq_controller) JobProgress: {'identifier': 'roboteq_controller', 'progress': 'build'}
+[10.376699] (roboteq_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wjs/cart_ros2/build/roboteq_controller', '--', '-j4', '-l4'], 'cwd': '/home/wjs/cart_ros2/build/roboteq_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wjs'), ('SSH_AGENT_PID', '4037'), ('XDG_SESSION_TYPE', 'x11'), ('PIP_CACHE_DIR', '/mnt/sdcard/.cache/pip'), ('XDG_CACHE_HOME', '/mnt/sdcard/.cache'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wjs/cart_ros2/install/lib:/opt/opencv-4.5.5-cuda/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64'), ('HOME', '/home/wjs'), ('CYCLONEDDS_URI', 'file:///home/wjs/cyclonedds_lo.xml'), ('OLDPWD', '/home/wjs'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '35.6.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'Jetson-AGX'), ('MANAGERPID', '3935'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7597'), ('IM_CONFIG_PHASE', '1'), ('TMPDIR', '/mnt/sdcard/tmp'), ('COLCON_PREFIX_PATH', '/home/wjs/tb3_tpl_ws/install:/home/wjs/cart_ros2/install'), ('TORCH_HOME', '/mnt/sdcard/.cache/torch'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wjs'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Xavier (32 GB ram)'), ('JETSON_SERIAL_NUMBER', '1423420009543'), ('JOURNAL_STREAM', '8:75272'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Galen'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wjs'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/wjs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4072,unix/ubuntu:/tmp/.ICE-unix/4072'), ('INVOCATION_ID', '579b0bc7d2444c1facacc62736e29ce4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '35'), ('AMENT_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:479ed337-4a64-46eb-b813-77ac35b7f442'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/wjs/cart_ros2/build/roboteq_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '5.1.7'), ('CMAKE_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('JETSON_P_NUMBER', 'p2888-0004')]), 'shell': False}
+[10.382787] (stella_ahrs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.383367] (stella_ahrs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[10.390777] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs//launch/stella_ahrs_launch.py\n'}
+[10.391327] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/rviz/imu_test.rviz\n'}
+[10.391912] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/stella_ahrs/stella_ahrs_node\n'}
+[10.396804] (arduino_ros2) CommandEnded: {'returncode': 0}
+[10.403825] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/package_run_dependencies/stella_ahrs\n'}
+[10.404410] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/parent_prefix_path/stella_ahrs\n'}
+[10.404675] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/environment/ament_prefix_path.sh\n'}
+[10.404949] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/environment/ament_prefix_path.dsv\n'}
+[10.408046] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/environment/path.sh\n'}
+[10.408585] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/environment/path.dsv\n'}
+[10.408837] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/local_setup.bash\n'}
+[10.409076] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/local_setup.sh\n'}
+[10.409786] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/local_setup.zsh\n'}
+[10.411041] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/local_setup.dsv\n'}
+[10.414533] (stella_ahrs) StdoutLine: {'line': b'-- Symlinking: /home/wjs/cart_ros2/install/share/stella_ahrs/package.dsv\n'}
+[10.436655] (-) TimerEvent: {}
+[10.462017] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/packages/stella_ahrs\n'}
+[10.463479] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[10.465033] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/cmake/stella_ahrsConfig.cmake\n'}
+[10.467932] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/cmake/stella_ahrsConfig-version.cmake\n'}
+[10.469624] (stella_ahrs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/stella_ahrs/package.xml\n'}
+[10.510622] (arduino_ros2) JobEnded: {'identifier': 'arduino_ros2', 'rc': 0}
+[10.515795] (stella_ahrs) CommandEnded: {'returncode': 0}
+[10.537294] (-) TimerEvent: {}
+[10.538357] (differential_drive) StdoutLine: {'line': b'running build_ext\n'}
+[10.541222] (differential_drive) StdoutLine: {'line': b'Creating /home/wjs/cart_ros2/install/lib/python3.8/site-packages/differential-drive.egg-link (link to src)\n'}
+[10.543759] (differential_drive) StdoutLine: {'line': b'Installing diff_tf script to /home/wjs/cart_ros2/install/lib/differential_drive\n'}
+[10.544969] (differential_drive) StdoutLine: {'line': b'Installing pid_velocity script to /home/wjs/cart_ros2/install/lib/differential_drive\n'}
+[10.546985] (differential_drive) StdoutLine: {'line': b'Installing twist_to_motors script to /home/wjs/cart_ros2/install/lib/differential_drive\n'}
+[10.547348] (differential_drive) StdoutLine: {'line': b'Installing virtual_joystick script to /home/wjs/cart_ros2/install/lib/differential_drive\n'}
+[10.548313] (differential_drive) StdoutLine: {'line': b'Installing wheel_loopback script to /home/wjs/cart_ros2/install/lib/differential_drive\n'}
+[10.549314] (differential_drive) StdoutLine: {'line': b'Installing wheel_scaler script to /home/wjs/cart_ros2/install/lib/differential_drive\n'}
+[10.551129] (differential_drive) StdoutLine: {'line': b'\n'}
+[10.558012] (differential_drive) StdoutLine: {'line': b'Installed /home/wjs/cart_ros2/build/differential_drive/src\n'}
+[10.560258] (differential_drive) StdoutLine: {'line': b'running symlink_data\n'}
+[10.615367] (roboteq_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target roboteq_controller_node\x1b[0m\n'}
+[10.638071] (-) TimerEvent: {}
+[10.670213] (stella_ahrs) JobEnded: {'identifier': 'stella_ahrs', 'rc': 0}
+[10.688556] (differential_drive) CommandEnded: {'returncode': 0}
+[10.740626] (-) TimerEvent: {}
+[10.749009] (differential_drive) JobEnded: {'identifier': 'differential_drive', 'rc': 0}
+[10.808412] (roboteq_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/roboteq_controller_node.dir/src/roboteq_controller_node.cpp.o\x1b[0m\n'}
+[10.840895] (-) TimerEvent: {}
+[10.941914] (-) TimerEvent: {}
+[11.042915] (-) TimerEvent: {}
+[11.143980] (-) TimerEvent: {}
+[11.245031] (-) TimerEvent: {}
+[11.346043] (-) TimerEvent: {}
+[11.446980] (-) TimerEvent: {}
+[11.547999] (-) TimerEvent: {}
+[11.649155] (-) TimerEvent: {}
+[11.750292] (-) TimerEvent: {}
+[11.851395] (-) TimerEvent: {}
+[11.952431] (-) TimerEvent: {}
+[12.053683] (-) TimerEvent: {}
+[12.154640] (-) TimerEvent: {}
+[12.255608] (-) TimerEvent: {}
+[12.356593] (-) TimerEvent: {}
+[12.457758] (-) TimerEvent: {}
+[12.558722] (-) TimerEvent: {}
+[12.659816] (-) TimerEvent: {}
+[12.761367] (-) TimerEvent: {}
+[12.864772] (-) TimerEvent: {}
+[12.966145] (-) TimerEvent: {}
+[13.067767] (-) TimerEvent: {}
+[13.169488] (-) TimerEvent: {}
+[13.270589] (-) TimerEvent: {}
+[13.371488] (-) TimerEvent: {}
+[13.472469] (-) TimerEvent: {}
+[13.573576] (-) TimerEvent: {}
+[13.674534] (-) TimerEvent: {}
+[13.775504] (-) TimerEvent: {}
+[13.876610] (-) TimerEvent: {}
+[13.977653] (-) TimerEvent: {}
+[14.078621] (-) TimerEvent: {}
+[14.179651] (-) TimerEvent: {}
+[14.280701] (-) TimerEvent: {}
+[14.381819] (-) TimerEvent: {}
+[14.482905] (-) TimerEvent: {}
+[14.584022] (-) TimerEvent: {}
+[14.685075] (-) TimerEvent: {}
+[14.786190] (-) TimerEvent: {}
+[14.887234] (-) TimerEvent: {}
+[14.988263] (-) TimerEvent: {}
+[15.089374] (-) TimerEvent: {}
+[15.190950] (-) TimerEvent: {}
+[15.291977] (-) TimerEvent: {}
+[15.393075] (-) TimerEvent: {}
+[15.494226] (-) TimerEvent: {}
+[15.595225] (-) TimerEvent: {}
+[15.696266] (-) TimerEvent: {}
+[15.797253] (-) TimerEvent: {}
+[15.898402] (-) TimerEvent: {}
+[15.999462] (-) TimerEvent: {}
+[16.100442] (-) TimerEvent: {}
+[16.201674] (-) TimerEvent: {}
+[16.302694] (-) TimerEvent: {}
+[16.403661] (-) TimerEvent: {}
+[16.504667] (-) TimerEvent: {}
+[16.606376] (-) TimerEvent: {}
+[16.707524] (-) TimerEvent: {}
+[16.808716] (-) TimerEvent: {}
+[16.909959] (-) TimerEvent: {}
+[17.011075] (-) TimerEvent: {}
+[17.112173] (-) TimerEvent: {}
+[17.213379] (-) TimerEvent: {}
+[17.314511] (-) TimerEvent: {}
+[17.415568] (-) TimerEvent: {}
+[17.516639] (-) TimerEvent: {}
+[17.617748] (-) TimerEvent: {}
+[17.719098] (-) TimerEvent: {}
+[17.820168] (-) TimerEvent: {}
+[17.921032] (-) TimerEvent: {}
+[18.022031] (-) TimerEvent: {}
+[18.122963] (-) TimerEvent: {}
+[18.223998] (-) TimerEvent: {}
+[18.324960] (-) TimerEvent: {}
+[18.426027] (-) TimerEvent: {}
+[18.527029] (-) TimerEvent: {}
+[18.628049] (-) TimerEvent: {}
+[18.729024] (-) TimerEvent: {}
+[18.830048] (-) TimerEvent: {}
+[18.930925] (-) TimerEvent: {}
+[19.031794] (-) TimerEvent: {}
+[19.132653] (-) TimerEvent: {}
+[19.233603] (-) TimerEvent: {}
+[19.334608] (-) TimerEvent: {}
+[19.435701] (-) TimerEvent: {}
+[19.536684] (-) TimerEvent: {}
+[19.637637] (-) TimerEvent: {}
+[19.738664] (-) TimerEvent: {}
+[19.839577] (-) TimerEvent: {}
+[19.940612] (-) TimerEvent: {}
+[20.041702] (-) TimerEvent: {}
+[20.142738] (-) TimerEvent: {}
+[20.243831] (-) TimerEvent: {}
+[20.344858] (-) TimerEvent: {}
+[20.445995] (-) TimerEvent: {}
+[20.547070] (-) TimerEvent: {}
+[20.648121] (-) TimerEvent: {}
+[20.749212] (-) TimerEvent: {}
+[20.850299] (-) TimerEvent: {}
+[20.951934] (-) TimerEvent: {}
+[21.053104] (-) TimerEvent: {}
+[21.154188] (-) TimerEvent: {}
+[21.255163] (-) TimerEvent: {}
+[21.356311] (-) TimerEvent: {}
+[21.457642] (-) TimerEvent: {}
+[21.558812] (-) TimerEvent: {}
+[21.659910] (-) TimerEvent: {}
+[21.761036] (-) TimerEvent: {}
+[21.862323] (-) TimerEvent: {}
+[21.963472] (-) TimerEvent: {}
+[22.039627] (roboteq_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_controller/src/roboteq_controller_node.cpp:1\x1b[m\x1b[K:\n'}
+[22.040454] (roboteq_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_controller/include/roboteq_controller/roboteq_controller_node.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KRoboteqDriver::RoboteqDriver(const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[22.040837] (roboteq_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_controller/include/roboteq_controller/roboteq_controller_node.h:80:6:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KRoboteqDriver::frequency_\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[22.041211] (roboteq_controller) StderrLine: {'line': b'   80 |  int \x1b[01;35m\x1b[Kfrequency_\x1b[m\x1b[K;\n'}
+[22.041670] (roboteq_controller) StderrLine: {'line': b'      |      \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[22.041978] (roboteq_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_controller/include/roboteq_controller/roboteq_controller_node.h:55:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::string RoboteqDriver::serial_port_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[22.042335] (roboteq_controller) StderrLine: {'line': b'   55 |  std::string    \x1b[01;35m\x1b[Kserial_port_\x1b[m\x1b[K;\n'}
+[22.042627] (roboteq_controller) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[22.042887] (roboteq_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_controller/src/roboteq_controller_node.cpp:75:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[22.043149] (roboteq_controller) StderrLine: {'line': b'   75 | \x1b[01;35m\x1b[KRoboteqDriver\x1b[m\x1b[K::RoboteqDriver(const rclcpp::NodeOptions &options): Node("roboteq_controller", options),\n'}
+[22.043448] (roboteq_controller) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[22.063760] (-) TimerEvent: {}
+[22.164905] (-) TimerEvent: {}
+[22.255925] (roboteq_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_controller/src/roboteq_controller_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RoboteqDriver::queryCallback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[22.256973] (roboteq_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_controller/src/roboteq_controller_node.cpp:276:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::__cxx11::basic_string<char> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[22.257314] (roboteq_controller) StderrLine: {'line': b'  276 |   for (int i = 0; \x1b[01;35m\x1b[Ki < fields_H.size() - 1\x1b[m\x1b[K; ++i){\n'}
+[22.257731] (roboteq_controller) StderrLine: {'line': b'      |                   \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[22.258061] (roboteq_controller) StderrLine: {'line': b'\n'}
+[22.258344] (roboteq_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_controller/src/roboteq_controller_node.cpp:283:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::__cxx11::basic_string<char> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[22.258681] (roboteq_controller) StderrLine: {'line': b'  283 |   for (int j = 0; \x1b[01;35m\x1b[Kj < sub_fields_H.size()\x1b[m\x1b[K; j++){\n'}
+[22.258941] (roboteq_controller) StderrLine: {'line': b'      |                   \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[22.259182] (roboteq_controller) StderrLine: {'line': b'\n'}
+[22.265087] (-) TimerEvent: {}
+[22.366294] (-) TimerEvent: {}
+[22.467373] (-) TimerEvent: {}
+[22.568627] (-) TimerEvent: {}
+[22.669846] (-) TimerEvent: {}
+[22.770953] (-) TimerEvent: {}
+[22.872114] (-) TimerEvent: {}
+[22.973287] (-) TimerEvent: {}
+[23.074438] (-) TimerEvent: {}
+[23.175504] (-) TimerEvent: {}
+[23.276593] (-) TimerEvent: {}
+[23.377697] (-) TimerEvent: {}
+[23.478924] (-) TimerEvent: {}
+[23.579899] (-) TimerEvent: {}
+[23.680977] (-) TimerEvent: {}
+[23.782147] (-) TimerEvent: {}
+[23.883242] (-) TimerEvent: {}
+[23.984393] (-) TimerEvent: {}
+[24.085680] (-) TimerEvent: {}
+[24.186771] (-) TimerEvent: {}
+[24.287986] (-) TimerEvent: {}
+[24.389077] (-) TimerEvent: {}
+[24.490181] (-) TimerEvent: {}
+[24.591227] (-) TimerEvent: {}
+[24.692287] (-) TimerEvent: {}
+[24.793404] (-) TimerEvent: {}
+[24.894547] (-) TimerEvent: {}
+[24.995604] (-) TimerEvent: {}
+[25.096724] (-) TimerEvent: {}
+[25.198016] (-) TimerEvent: {}
+[25.299154] (-) TimerEvent: {}
+[25.400270] (-) TimerEvent: {}
+[25.501507] (-) TimerEvent: {}
+[25.602522] (-) TimerEvent: {}
+[25.703589] (-) TimerEvent: {}
+[25.805298] (-) TimerEvent: {}
+[25.906921] (-) TimerEvent: {}
+[26.007976] (-) TimerEvent: {}
+[26.109224] (-) TimerEvent: {}
+[26.211166] (-) TimerEvent: {}
+[26.312892] (-) TimerEvent: {}
+[26.414537] (-) TimerEvent: {}
+[26.515723] (-) TimerEvent: {}
+[26.617112] (-) TimerEvent: {}
+[26.718383] (-) TimerEvent: {}
+[26.819466] (-) TimerEvent: {}
+[26.920569] (-) TimerEvent: {}
+[27.021696] (-) TimerEvent: {}
+[27.122940] (-) TimerEvent: {}
+[27.233677] (-) TimerEvent: {}
+[27.334762] (-) TimerEvent: {}
+[27.435823] (-) TimerEvent: {}
+[27.536925] (-) TimerEvent: {}
+[27.638078] (-) TimerEvent: {}
+[27.739147] (-) TimerEvent: {}
+[27.840232] (-) TimerEvent: {}
+[27.941351] (-) TimerEvent: {}
+[28.042502] (-) TimerEvent: {}
+[28.143628] (-) TimerEvent: {}
+[28.244718] (-) TimerEvent: {}
+[28.346510] (-) TimerEvent: {}
+[28.447713] (-) TimerEvent: {}
+[28.548901] (-) TimerEvent: {}
+[28.650101] (-) TimerEvent: {}
+[28.751812] (-) TimerEvent: {}
+[28.852938] (-) TimerEvent: {}
+[28.954110] (-) TimerEvent: {}
+[29.055138] (-) TimerEvent: {}
+[29.156223] (-) TimerEvent: {}
+[29.257370] (-) TimerEvent: {}
+[29.358514] (-) TimerEvent: {}
+[29.459557] (-) TimerEvent: {}
+[29.560604] (-) TimerEvent: {}
+[29.661715] (-) TimerEvent: {}
+[29.762718] (-) TimerEvent: {}
+[29.863823] (-) TimerEvent: {}
+[29.964867] (-) TimerEvent: {}
+[30.065957] (-) TimerEvent: {}
+[30.167042] (-) TimerEvent: {}
+[30.268711] (-) TimerEvent: {}
+[30.370432] (-) TimerEvent: {}
+[30.471525] (-) TimerEvent: {}
+[30.572647] (-) TimerEvent: {}
+[30.673821] (-) TimerEvent: {}
+[30.774893] (-) TimerEvent: {}
+[30.875921] (-) TimerEvent: {}
+[30.977059] (-) TimerEvent: {}
+[31.078322] (-) TimerEvent: {}
+[31.179381] (-) TimerEvent: {}
+[31.280459] (-) TimerEvent: {}
+[31.381671] (-) TimerEvent: {}
+[31.482811] (-) TimerEvent: {}
+[31.583945] (-) TimerEvent: {}
+[31.685250] (-) TimerEvent: {}
+[31.786405] (-) TimerEvent: {}
+[31.887855] (-) TimerEvent: {}
+[31.989007] (-) TimerEvent: {}
+[32.090179] (-) TimerEvent: {}
+[32.191176] (-) TimerEvent: {}
+[32.302623] (-) TimerEvent: {}
+[32.403767] (-) TimerEvent: {}
+[32.505154] (-) TimerEvent: {}
+[32.606386] (-) TimerEvent: {}
+[32.707587] (-) TimerEvent: {}
+[32.808574] (-) TimerEvent: {}
+[32.909690] (-) TimerEvent: {}
+[33.010831] (-) TimerEvent: {}
+[33.112049] (-) TimerEvent: {}
+[33.213095] (-) TimerEvent: {}
+[33.315057] (-) TimerEvent: {}
+[33.416367] (-) TimerEvent: {}
+[33.517737] (-) TimerEvent: {}
+[33.619120] (-) TimerEvent: {}
+[33.720255] (-) TimerEvent: {}
+[33.821500] (-) TimerEvent: {}
+[33.922578] (-) TimerEvent: {}
+[34.023764] (-) TimerEvent: {}
+[34.124846] (-) TimerEvent: {}
+[34.225940] (-) TimerEvent: {}
+[34.327086] (-) TimerEvent: {}
+[34.428224] (-) TimerEvent: {}
+[34.529297] (-) TimerEvent: {}
+[34.630585] (-) TimerEvent: {}
+[34.731896] (-) TimerEvent: {}
+[34.833924] (-) TimerEvent: {}
+[34.936558] (-) TimerEvent: {}
+[35.038169] (-) TimerEvent: {}
+[35.139410] (-) TimerEvent: {}
+[35.240663] (-) TimerEvent: {}
+[35.342058] (-) TimerEvent: {}
+[35.443330] (-) TimerEvent: {}
+[35.544574] (-) TimerEvent: {}
+[35.645864] (-) TimerEvent: {}
+[35.747163] (-) TimerEvent: {}
+[35.848453] (-) TimerEvent: {}
+[35.949709] (-) TimerEvent: {}
+[36.050870] (-) TimerEvent: {}
+[36.151978] (-) TimerEvent: {}
+[36.253104] (-) TimerEvent: {}
+[36.354415] (-) TimerEvent: {}
+[36.456217] (-) TimerEvent: {}
+[36.557297] (-) TimerEvent: {}
+[36.658507] (-) TimerEvent: {}
+[36.759621] (-) TimerEvent: {}
+[36.860727] (-) TimerEvent: {}
+[36.961982] (-) TimerEvent: {}
+[37.063028] (-) TimerEvent: {}
+[37.164078] (-) TimerEvent: {}
+[37.265177] (-) TimerEvent: {}
+[37.375920] (-) TimerEvent: {}
+[37.476771] (-) TimerEvent: {}
+[37.577785] (-) TimerEvent: {}
+[37.678792] (-) TimerEvent: {}
+[37.780093] (-) TimerEvent: {}
+[37.881118] (-) TimerEvent: {}
+[37.982173] (-) TimerEvent: {}
+[38.083132] (-) TimerEvent: {}
+[38.184452] (-) TimerEvent: {}
+[38.285562] (-) TimerEvent: {}
+[38.386538] (-) TimerEvent: {}
+[38.487465] (-) TimerEvent: {}
+[38.588382] (-) TimerEvent: {}
+[38.689239] (-) TimerEvent: {}
+[38.790296] (-) TimerEvent: {}
+[38.891217] (-) TimerEvent: {}
+[38.992227] (-) TimerEvent: {}
+[39.093155] (-) TimerEvent: {}
+[39.194244] (-) TimerEvent: {}
+[39.295291] (-) TimerEvent: {}
+[39.396250] (-) TimerEvent: {}
+[39.497211] (-) TimerEvent: {}
+[39.598368] (-) TimerEvent: {}
+[39.699397] (-) TimerEvent: {}
+[39.800456] (-) TimerEvent: {}
+[39.901492] (-) TimerEvent: {}
+[40.002410] (-) TimerEvent: {}
+[40.103692] (-) TimerEvent: {}
+[40.204668] (-) TimerEvent: {}
+[40.305664] (-) TimerEvent: {}
+[40.406670] (-) TimerEvent: {}
+[40.507603] (-) TimerEvent: {}
+[40.608593] (-) TimerEvent: {}
+[40.709612] (-) TimerEvent: {}
+[40.810760] (-) TimerEvent: {}
+[40.911680] (-) TimerEvent: {}
+[41.012622] (-) TimerEvent: {}
+[41.113692] (-) TimerEvent: {}
+[41.214720] (-) TimerEvent: {}
+[41.315654] (-) TimerEvent: {}
+[41.416596] (-) TimerEvent: {}
+[41.517732] (-) TimerEvent: {}
+[41.618687] (-) TimerEvent: {}
+[41.721262] (-) TimerEvent: {}
+[41.822402] (-) TimerEvent: {}
+[41.923485] (-) TimerEvent: {}
+[42.024525] (-) TimerEvent: {}
+[42.125710] (-) TimerEvent: {}
+[42.226739] (-) TimerEvent: {}
+[42.327661] (-) TimerEvent: {}
+[42.428711] (-) TimerEvent: {}
+[42.529943] (-) TimerEvent: {}
+[42.630964] (-) TimerEvent: {}
+[42.731951] (-) TimerEvent: {}
+[42.832883] (-) TimerEvent: {}
+[42.933940] (-) TimerEvent: {}
+[43.034918] (-) TimerEvent: {}
+[43.135866] (-) TimerEvent: {}
+[43.236855] (-) TimerEvent: {}
+[43.337924] (-) TimerEvent: {}
+[43.438835] (-) TimerEvent: {}
+[43.539802] (-) TimerEvent: {}
+[43.640774] (-) TimerEvent: {}
+[43.741869] (-) TimerEvent: {}
+[43.842811] (-) TimerEvent: {}
+[43.943838] (-) TimerEvent: {}
+[43.948202] (roboteq_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable roboteq_controller_node\x1b[0m\n'}
+[44.044091] (-) TimerEvent: {}
+[44.145101] (-) TimerEvent: {}
+[44.246282] (-) TimerEvent: {}
+[44.347490] (-) TimerEvent: {}
+[44.448716] (-) TimerEvent: {}
+[44.550086] (-) TimerEvent: {}
+[44.651303] (-) TimerEvent: {}
+[44.752381] (-) TimerEvent: {}
+[44.853408] (-) TimerEvent: {}
+[44.954608] (-) TimerEvent: {}
+[45.055639] (-) TimerEvent: {}
+[45.156700] (-) TimerEvent: {}
+[45.257913] (-) TimerEvent: {}
+[45.359194] (-) TimerEvent: {}
+[45.460481] (-) TimerEvent: {}
+[45.561801] (-) TimerEvent: {}
+[45.581985] (roboteq_controller) StdoutLine: {'line': b'[100%] Built target roboteq_controller_node\n'}
+[45.630733] (roboteq_controller) CommandEnded: {'returncode': 0}
+[45.643809] (roboteq_controller) JobProgress: {'identifier': 'roboteq_controller', 'progress': 'install'}
+[45.645864] (roboteq_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wjs/cart_ros2/build/roboteq_controller'], 'cwd': '/home/wjs/cart_ros2/build/roboteq_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wjs'), ('SSH_AGENT_PID', '4037'), ('XDG_SESSION_TYPE', 'x11'), ('PIP_CACHE_DIR', '/mnt/sdcard/.cache/pip'), ('XDG_CACHE_HOME', '/mnt/sdcard/.cache'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wjs/cart_ros2/install/lib:/opt/opencv-4.5.5-cuda/lib:/home/wjs/tb3_tpl_ws/install/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-11.4/lib64'), ('HOME', '/home/wjs'), ('CYCLONEDDS_URI', 'file:///home/wjs/cyclonedds_lo.xml'), ('OLDPWD', '/home/wjs'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '35.6.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'Jetson-AGX'), ('MANAGERPID', '3935'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7597'), ('IM_CONFIG_PHASE', '1'), ('TMPDIR', '/mnt/sdcard/tmp'), ('COLCON_PREFIX_PATH', '/home/wjs/tb3_tpl_ws/install:/home/wjs/cart_ros2/install'), ('TORCH_HOME', '/mnt/sdcard/.cache/torch'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wjs'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Xavier (32 GB ram)'), ('JETSON_SERIAL_NUMBER', '1423420009543'), ('JOURNAL_STREAM', '8:75272'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Galen'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wjs'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-11.4/bin:/home/wjs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/4072,unix/ubuntu:/tmp/.ICE-unix/4072'), ('INVOCATION_ID', '579b0bc7d2444c1facacc62736e29ce4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '35'), ('AMENT_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:479ed337-4a64-46eb-b813-77ac35b7f442'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/wjs/cart_ros2/build/roboteq_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/wjs/cart_ros2/install/lib/python3.8/site-packages:/opt/opencv-4.5.5-cuda/lib/python3.8/site-packages:/home/wjs/cart_ros2/build/differential_drive/src:/home/wjs/cart_ros2/build/arduino_ros2:/home/wjs/cart_ros2/build/agv_body:/home/wjs/tb3_tpl_ws/build/turtlebot3_teleop:/home/wjs/tb3_tpl_ws/install/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '5.1.7'), ('CMAKE_PREFIX_PATH', '/home/wjs/cart_ros2/install:/home/wjs/tb3_tpl_ws/install:/opt/ros/galactic'), ('JETSON_P_NUMBER', 'p2888-0004')]), 'shell': False}
+[45.662043] (-) TimerEvent: {}
+[45.692609] (roboteq_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[45.695473] (roboteq_controller) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[45.697249] (roboteq_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/package_run_dependencies/roboteq_controller\n'}
+[45.699741] (roboteq_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/parent_prefix_path/roboteq_controller\n'}
+[45.702881] (roboteq_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_controller/environment/ament_prefix_path.sh\n'}
+[45.704076] (roboteq_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_controller/environment/ament_prefix_path.dsv\n'}
+[45.705274] (roboteq_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_controller/environment/path.sh\n'}
+[45.706591] (roboteq_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_controller/environment/path.dsv\n'}
+[45.707956] (roboteq_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_controller/local_setup.bash\n'}
+[45.709283] (roboteq_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_controller/local_setup.sh\n'}
+[45.710617] (roboteq_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_controller/local_setup.zsh\n'}
+[45.711940] (roboteq_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_controller/local_setup.dsv\n'}
+[45.712925] (roboteq_controller) StdoutLine: {'line': b'-- Symlinking: /home/wjs/cart_ros2/install/share/roboteq_controller/package.dsv\n'}
+[45.751171] (roboteq_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/ament_index/resource_index/packages/roboteq_controller\n'}
+[45.752329] (roboteq_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_controller/cmake/roboteq_controllerConfig.cmake\n'}
+[45.753214] (roboteq_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_controller/cmake/roboteq_controllerConfig-version.cmake\n'}
+[45.754485] (roboteq_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_controller/package.xml\n'}
+[45.762148] (-) TimerEvent: {}
+[45.764014] (roboteq_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/lib/roboteq_controller/roboteq_controller_node\n'}
+[45.766587] (roboteq_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_controller//launch/roboteq_launch.py\n'}
+[45.768767] (roboteq_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_controller/config/.query.yaml.swp\n'}
+[45.769662] (roboteq_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wjs/cart_ros2/install/share/roboteq_controller/config/query.yaml\n'}
+[45.777673] (roboteq_controller) CommandEnded: {'returncode': 0}
+[45.863992] (-) TimerEvent: {}
+[45.877882] (roboteq_controller) JobEnded: {'identifier': 'roboteq_controller', 'rc': 0}
+[45.882438] (-) EventReactorShutdown: {}

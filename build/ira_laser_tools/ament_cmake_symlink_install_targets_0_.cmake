@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/wjs/cart_ros2/build/ira_laser_tools/laserscan_multi_merger" "/home/wjs/cart_ros2/build/ira_laser_tools/laserscan_virtualizer" "TARGETS" "laserscan_multi_merger" "laserscan_virtualizer" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "lib/ira_laser_tools")

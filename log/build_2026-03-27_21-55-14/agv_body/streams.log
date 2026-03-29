@@ -1,0 +1,16 @@
+[5.697s] Invoking command in '/home/wjs/cart_ros2/build/agv_body': PYTHONPATH=/home/wjs/cart_ros2/build/agv_body/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/wjs/cart_ros2/build/agv_body/build --no-deps symlink_data
+[7.071s] running develop
+[8.266s] running egg_info
+[8.267s] writing agv_body.egg-info/PKG-INFO
+[8.270s] writing dependency_links to agv_body.egg-info/dependency_links.txt
+[8.275s] writing entry points to agv_body.egg-info/entry_points.txt
+[8.277s] writing requirements to agv_body.egg-info/requires.txt
+[8.278s] writing top-level names to agv_body.egg-info/top_level.txt
+[8.417s] reading manifest file 'agv_body.egg-info/SOURCES.txt'
+[8.428s] writing manifest file 'agv_body.egg-info/SOURCES.txt'
+[8.647s] running build_ext
+[8.658s] Creating /home/wjs/cart_ros2/install/lib/python3.8/site-packages/agv-body.egg-link (link to .)
+[8.662s] 
+[8.662s] Installed /home/wjs/cart_ros2/build/agv_body
+[8.663s] running symlink_data
+[8.807s] Invoked command in '/home/wjs/cart_ros2/build/agv_body' returned '0': PYTHONPATH=/home/wjs/cart_ros2/build/agv_body/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wjs/cart_ros2/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/wjs/cart_ros2/build/agv_body/build --no-deps symlink_data

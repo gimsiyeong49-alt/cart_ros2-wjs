@@ -1,0 +1,50 @@
+-- The C compiler identification is GNU 10.5.0
+-- The CXX compiler identification is GNU 10.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/wjs/cart_ros2/build/agv_mapping
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/wjs/cart_ros2/install/share/agv_mapping/launch/online_async_launch.py
+-- Symlinking: /home/wjs/cart_ros2/install/share/agv_mapping/launch/online_cartographer_launch.py
+-- Symlinking: /home/wjs/cart_ros2/install/share/agv_mapping/config/.ekf.yaml.swo
+-- Symlinking: /home/wjs/cart_ros2/install/share/agv_mapping/config/agv_cartographer_2d.lua
+-- Symlinking: /home/wjs/cart_ros2/install/share/agv_mapping/config/ekf.yaml
+-- Symlinking: /home/wjs/cart_ros2/install/share/agv_mapping/config/mapper_params_online_async.yaml
+-- Symlinking: /home/wjs/cart_ros2/install/share/ament_index/resource_index/package_run_dependencies/agv_mapping
+-- Symlinking: /home/wjs/cart_ros2/install/share/ament_index/resource_index/parent_prefix_path/agv_mapping
+-- Symlinking: /home/wjs/cart_ros2/install/share/agv_mapping/environment/ament_prefix_path.sh
+-- Symlinking: /home/wjs/cart_ros2/install/share/agv_mapping/environment/ament_prefix_path.dsv
+-- Symlinking: /home/wjs/cart_ros2/install/share/agv_mapping/environment/path.sh
+-- Symlinking: /home/wjs/cart_ros2/install/share/agv_mapping/environment/path.dsv
+-- Symlinking: /home/wjs/cart_ros2/install/share/agv_mapping/local_setup.bash
+-- Symlinking: /home/wjs/cart_ros2/install/share/agv_mapping/local_setup.sh
+-- Symlinking: /home/wjs/cart_ros2/install/share/agv_mapping/local_setup.zsh
+-- Symlinking: /home/wjs/cart_ros2/install/share/agv_mapping/local_setup.dsv
+-- Symlinking: /home/wjs/cart_ros2/install/share/agv_mapping/package.dsv
+-- Symlinking: /home/wjs/cart_ros2/install/share/ament_index/resource_index/packages/agv_mapping
+-- Symlinking: /home/wjs/cart_ros2/install/share/agv_mapping/cmake/agv_mappingConfig.cmake
+-- Symlinking: /home/wjs/cart_ros2/install/share/agv_mapping/cmake/agv_mappingConfig-version.cmake
+-- Symlinking: /home/wjs/cart_ros2/install/share/agv_mapping/package.xml

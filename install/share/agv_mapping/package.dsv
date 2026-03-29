@@ -1,0 +1,14 @@
+source;share/agv_mapping/hook/cmake_prefix_path.ps1
+source;share/agv_mapping/hook/cmake_prefix_path.dsv
+source;share/agv_mapping/hook/cmake_prefix_path.sh
+source;share/agv_mapping/hook/ld_library_path_lib.ps1
+source;share/agv_mapping/hook/ld_library_path_lib.dsv
+source;share/agv_mapping/hook/ld_library_path_lib.sh
+source;share/agv_mapping/hook/pythonpath.ps1
+source;share/agv_mapping/hook/pythonpath.dsv
+source;share/agv_mapping/hook/pythonpath.sh
+source;share/agv_mapping/local_setup.bash
+source;share/agv_mapping/local_setup.dsv
+source;share/agv_mapping/local_setup.ps1
+source;share/agv_mapping/local_setup.sh
+source;share/agv_mapping/local_setup.zsh

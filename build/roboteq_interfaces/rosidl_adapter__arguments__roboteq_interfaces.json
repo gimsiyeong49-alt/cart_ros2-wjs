@@ -1,0 +1,9 @@
+{
+  "package_name": "roboteq_interfaces",
+  "non_idl_tuples": [
+    "/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_interfaces:msg/ChannelValues.msg",
+    "/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_interfaces:srv/Command.srv",
+    "/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_interfaces:srv/Config.srv",
+    "/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_interfaces:srv/Maintenance.srv"
+  ]
+}

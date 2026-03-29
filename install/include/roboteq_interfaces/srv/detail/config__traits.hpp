@@ -1,0 +1,1 @@
+/home/wjs/cart_ros2/build/roboteq_interfaces/rosidl_generator_cpp/roboteq_interfaces/srv/detail/config__traits.hpp

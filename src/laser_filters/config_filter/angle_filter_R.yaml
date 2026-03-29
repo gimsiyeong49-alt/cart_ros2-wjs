@@ -1,0 +1,20 @@
+lidar_R:
+  scan_to_scan_filter_chain:
+    ros__parameters:
+      filter1:
+        type: laser_filters/LaserScanAngularBoundsFilterInPlace
+        name: angle_filter
+        params:
+          lower_angle: -0.785398
+          upper_angle: 0.785398
+        
+        
+      filter2:
+        type: laser_filters/LaserScanRangeFilter
+        name: range_filter
+        params:
+          use_message_range_limits: false
+          lower_threshold: 0.1
+          upper_threshold: .inf
+          lower_replacement_value: -.inf
+          upper_replacement_value: .inf

@@ -1,0 +1,18 @@
+In file included from [01m[K/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_controller/src/roboteq_controller_node.cpp:1[m[K:
+[01m[K/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_controller/include/roboteq_controller/roboteq_controller_node.h:[m[K In constructor ‘[01m[KRoboteqDriver::RoboteqDriver(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_controller/include/roboteq_controller/roboteq_controller_node.h:80:6:[m[K [01;35m[Kwarning: [m[K‘[01m[KRoboteqDriver::frequency_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   80 |  int [01;35m[Kfrequency_[m[K;
+      |      [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_controller/include/roboteq_controller/roboteq_controller_node.h:55:17:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::string RoboteqDriver::serial_port_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   55 |  std::string    [01;35m[Kserial_port_[m[K;
+      |                 [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_controller/src/roboteq_controller_node.cpp:75:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   75 | [01;35m[KRoboteqDriver[m[K::RoboteqDriver(const rclcpp::NodeOptions &options): Node("roboteq_controller", options),
+      | [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_controller/src/roboteq_controller_node.cpp:[m[K In member function ‘[01m[Kvoid RoboteqDriver::queryCallback()[m[K’:
+[01m[K/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_controller/src/roboteq_controller_node.cpp:276:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  276 |     for (int i = 0; [01;35m[Ki < fields_H.size() - 1[m[K; ++i){
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wjs/cart_ros2/src/roboteq_controller_ros-galactic-devel/roboteq_controller/src/roboteq_controller_node.cpp:283:24:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  283 |      for (int j = 0; [01;35m[Kj < sub_fields_H.size()[m[K; j++){
+      |                      [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K

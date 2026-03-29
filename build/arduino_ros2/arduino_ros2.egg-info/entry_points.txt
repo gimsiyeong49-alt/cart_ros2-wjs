@@ -1,0 +1,3 @@
+[console_scripts]
+pub_joycmd = arduino_ros2.pub_joycmd:main
+

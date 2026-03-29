@@ -1,0 +1,558 @@
+[0.145s] Invoking command in '/home/wjs/cart_ros2/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake /home/wjs/cart_ros2/src/sllidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/wjs/cart_ros2/install
+[0.788s] -- The C compiler identification is GNU 10.5.0
+[1.242s] -- The CXX compiler identification is GNU 10.5.0
+[1.282s] -- Check for working C compiler: /usr/bin/cc
+[2.105s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.110s] -- Detecting C compiler ABI info
+[2.885s] -- Detecting C compiler ABI info - done
+[3.029s] -- Detecting C compile features
+[3.031s] -- Detecting C compile features - done
+[3.082s] -- Check for working CXX compiler: /usr/bin/c++
+[4.171s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[4.179s] -- Detecting CXX compiler ABI info
+[5.406s] -- Detecting CXX compiler ABI info - done
+[5.537s] -- Detecting CXX compile features
+[5.540s] -- Detecting CXX compile features - done
+[5.577s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[5.883s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[5.887s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.304s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[6.561s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[7.074s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.157s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[8.277s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[8.558s] -- Found FastRTPS: /opt/ros/galactic/include  
+[9.516s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.123s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[10.135s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[10.268s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[10.273s] -- Looking for pthread.h
+[10.826s] -- Looking for pthread.h - found
+[10.829s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[11.354s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[11.355s] -- Looking for pthread_create in pthreads
+[11.752s] -- Looking for pthread_create in pthreads - not found
+[11.752s] -- Looking for pthread_create in pthread
+[12.258s] -- Looking for pthread_create in pthread - found
+[12.267s] -- Found Threads: TRUE  
+[12.985s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[13.470s] -- Found std_srvs: 2.2.4 (/opt/ros/galactic/share/std_srvs/cmake)
+[13.911s] -- Configuring done
+[13.981s] -- Generating done
+[14.018s] -- Build files have been written to: /home/wjs/cart_ros2/build/sllidar_ros2
+[14.059s] Invoked command in '/home/wjs/cart_ros2/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake /home/wjs/cart_ros2/src/sllidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/wjs/cart_ros2/install
+[14.074s] Invoking command in '/home/wjs/cart_ros2/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/sllidar_ros2 -- -j4 -l4
+[14.328s] [35m[1mScanning dependencies of target sllidar_node[0m
+[14.816s] [  7%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/src/sllidar_node.cpp.o[0m
+[22.804s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:36[m[K,
+[22.804s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[22.804s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar.h:36[m[K,
+[22.805s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:38[m[K:
+[22.805s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[22.805s]    58 |     sl_u8 data[[01;35m[K0[m[K];
+[22.806s]       |                [01;35m[K^[m[K
+[22.806s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[22.807s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar.h:36[m[K,
+[22.807s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:38[m[K:
+[22.807s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[22.807s]   295 |     sl_u8  payload[[01;35m[K0[m[K];
+[22.808s]       |                    [01;35m[K^[m[K
+[22.853s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:[m[K In member function ‘[01m[Kvoid SLlidarNode::init_param()[m[K’:
+[22.854s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:69:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[22.854s]    69 | >declare_parameter("channel_type"[01;35m[K)[m[K;
+[22.854s]       |                                  [01;35m[K^[m[K
+[22.854s] 
+[22.855s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[22.855s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[22.855s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[22.856s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:35[m[K:
+[22.856s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[22.856s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[22.856s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[22.858s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:70:41:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[22.859s]    70 |  this->declare_parameter("tcp_ip"[01;35m[K)[m[K;
+[22.859s]       |                                  [01;35m[K^[m[K
+[22.860s] 
+[22.860s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[22.860s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[22.861s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[22.861s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:35[m[K:
+[22.861s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[22.861s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[22.862s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[22.862s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:71:43:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[22.862s]    71 | his->declare_parameter("tcp_port"[01;35m[K)[m[K;
+[22.862s]       |                                  [01;35m[K^[m[K
+[22.863s] 
+[22.863s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[22.863s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[22.864s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[22.864s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:35[m[K:
+[22.864s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[22.864s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[22.865s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[22.865s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:72:41:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[22.865s]    72 |  this->declare_parameter("udp_ip"[01;35m[K)[m[K;
+[22.865s]       |                                  [01;35m[K^[m[K
+[22.866s] 
+[22.866s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[22.866s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[22.866s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[22.867s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:35[m[K:
+[22.867s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[22.867s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[22.867s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[22.868s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:73:43:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[22.868s]    73 | his->declare_parameter("udp_port"[01;35m[K)[m[K;
+[22.868s]       |                                  [01;35m[K^[m[K
+[22.868s] 
+[22.869s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[22.869s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[22.869s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[22.869s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:35[m[K:
+[22.870s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[22.870s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[22.870s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[22.870s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:74:46:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[22.882s]    74 | ->declare_parameter("serial_port"[01;35m[K)[m[K;
+[22.883s]       |                                  [01;35m[K^[m[K
+[22.883s] 
+[22.883s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[22.884s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[22.884s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[22.884s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:35[m[K:
+[22.884s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[22.885s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[22.885s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[22.885s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:75:50:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[22.886s]    75 | clare_parameter("serial_baudrate"[01;35m[K)[m[K;
+[22.886s]       |                                  [01;35m[K^[m[K
+[22.886s] 
+[22.886s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[22.887s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[22.887s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[22.892s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:35[m[K:
+[22.892s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[22.892s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[22.893s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[22.893s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:76:43:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[22.893s]    76 | his->declare_parameter("frame_id"[01;35m[K)[m[K;
+[22.893s]       |                                  [01;35m[K^[m[K
+[22.896s] 
+[22.896s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[22.896s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[22.897s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[22.897s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:35[m[K:
+[22.897s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[22.897s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[22.898s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[22.898s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:77:43:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[22.898s]    77 | his->declare_parameter("inverted"[01;35m[K)[m[K;
+[22.898s]       |                                  [01;35m[K^[m[K
+[22.899s] 
+[22.899s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[22.899s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[22.908s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[22.908s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:35[m[K:
+[22.909s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[22.909s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[22.909s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[22.910s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:78:51:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[22.910s]    78 | lare_parameter("angle_compensate"[01;35m[K)[m[K;
+[22.910s]       |                                  [01;35m[K^[m[K
+[22.911s] 
+[22.911s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[22.912s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[22.912s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[22.912s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:35[m[K:
+[22.912s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[22.913s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[22.913s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[22.913s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:79:44:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[22.914s]    79 | is->declare_parameter("scan_mode"[01;35m[K)[m[K;
+[22.914s]       |                                  [01;35m[K^[m[K
+[22.914s] 
+[22.914s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[22.914s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[22.915s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[22.915s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:35[m[K:
+[22.915s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[22.916s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[22.916s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[22.916s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:80:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[22.916s]    80 | eclare_parameter("scan_frequency"[01;35m[K)[m[K;
+[22.917s]       |                                  [01;35m[K^[m[K
+[22.917s] 
+[22.917s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[22.917s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[22.918s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[22.918s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:35[m[K:
+[22.918s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[22.918s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[22.919s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[26.521s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:[m[K In member function ‘[01m[Kbool SLlidarNode::checkSLLIDARHealth(sl::ILidarDriver*)[m[K’:
+[26.521s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/src/sllidar_node.cpp:147:5:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[26.521s]   147 |     [01;35m[K}[m[K
+[26.522s]       |     [01;35m[K^[m[K
+[33.078s] [ 14%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/net_socket.cpp.o[0m
+[33.360s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/src/sdkcommon.h:47[m[K,
+[33.360s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[33.361s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/src/hal/assert.h:1:1:[m[K [01;35m[Kwarning: [m[Knull character(s) ignored
+[33.361s]     1 | [01;35m[K [m[K                                                                                                                                                                                                                                                                                                                        
+[33.361s]       | [01;35m[K^[m[K
+[34.519s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[34.520s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[34.520s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[34.520s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[34.521s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[34.521s]    58 |     sl_u8 data[[01;35m[K0[m[K];
+[34.521s]       |                [01;35m[K^[m[K
+[34.524s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[34.524s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K,
+[34.524s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[34.525s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[34.525s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[34.525s]   295 |     sl_u8  payload[[01;35m[K0[m[K];
+[34.526s]       |                    [01;35m[K^[m[K
+[34.791s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::net::SocketAddress::getAddressAsString(char*, size_t) const[m[K’:
+[34.792s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:170:15:[m[K [01;35m[Kwarning: [m[Kordered comparison of pointer with integer zero [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wextra-Wextra]8;;[m[K]
+[34.792s]   170 |     return [01;35m[Kans<=0[m[K?RESULT_OPERATION_FAIL:RESULT_OK;
+[34.792s]       |            [01;35m[K~~~^~~[m[K
+[34.813s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::arch::net::StreamSocketImpl::send(const void*, size_t)[m[K’:
+[34.814s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:438:17:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[34.814s]   438 |         if ([01;35m[Kans == (int)len[m[K) {
+[34.815s]       |             [01;35m[K~~~~^~~~~~~~~~~[m[K
+[34.835s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::arch::net::DGramSocketImpl::sendTo(const rp::net::SocketAddress&, const void*, size_t)[m[K’:
+[34.835s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:722:39:[m[K [01;35m[Kwarning: [m[Kthe compiler can assume that the address of ‘[01m[Ktarget[m[K’ will never be NULL [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Waddress-Waddress]8;;[m[K]
+[34.835s]   722 | struct sockaddr* addr = [01;35m[K&target[m[K ? reinterpret_cast<const struct sockaddr*>(target.getPlatformData()) : NULL;
+[34.836s]       |                         [01;35m[K^~~~~~~[m[K
+[34.836s] 
+[34.837s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/src/arch/linux/arch_linux.h:42[m[K,
+[34.838s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/src/sdkcommon.h:41[m[K,
+[34.838s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[34.838s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:726:24:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[34.838s]   726 |             assert([01;35m[Kans == (int)len[m[K);
+[34.839s]       |                    [01;35m[K~~~~^~~~~~~~~~~[m[K
+[35.212s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:722:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Knonnull[m[K’ argument ‘[01m[Ktarget[m[K’ compared to NULL [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnonnull-compare-Wnonnull-compare]8;;[m[K]
+[35.213s]   722 | ockaddr* addr = &target [01;35m[K?[m[K reinterpret_cast<const struct sockaddr*>(target.getPlatformData()) : NULL;
+[35.213s]       |                         [01;35m[K^[m[K
+[35.213s] 
+[35.827s] [ 21%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/timer.cpp.o[0m
+[38.321s] [ 28%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/hal/thread.cpp.o[0m
+[38.716s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/src/sdkcommon.h:47[m[K,
+[38.721s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/hal/thread.cpp:35[m[K:
+[38.721s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/src/hal/assert.h:1:1:[m[K [01;35m[Kwarning: [m[Knull character(s) ignored
+[38.721s]     1 | [01;35m[K [m[K                                                                                                                                                                                                                                                                                                                        
+[38.722s]       | [01;35m[K^[m[K
+[39.965s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[39.966s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[39.966s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[39.966s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/hal/thread.cpp:35[m[K:
+[39.967s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[39.967s]    58 |     sl_u8 data[[01;35m[K0[m[K];
+[39.967s]       |                [01;35m[K^[m[K
+[39.968s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[39.968s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K,
+[39.969s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[39.969s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/hal/thread.cpp:35[m[K:
+[39.970s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[39.970s]   295 |     sl_u8  payload[[01;35m[K0[m[K];
+[39.971s]       |                    [01;35m[K^[m[K
+[40.230s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/hal/thread.cpp:43[m[K:
+[40.231s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:[m[K In static member function ‘[01m[Kstatic rp::hal::Thread rp::hal::Thread::create(thread_proc_t, void*)[m[K’:
+[40.231s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:48:57:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcast-function-type-Wcast-function-type]8;;[m[K]
+[40.232s]    48 | &newborn._handle, NULL, [01;35m[K(void * (*)(void *))proc[m[K, data);
+[40.233s]       |                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[40.233s] 
+[40.237s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:[m[K In member function ‘[01m[Ku_result rp::hal::Thread::join(long unsigned int)[m[K’:
+[40.238s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:129:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[40.239s]   129 | Thread::join([01;35m[Kunsigned long timeout[m[K)
+[40.240s]       |              [01;35m[K~~~~~~~~~~~~~~^~~~~~~[m[K
+[40.240s] 
+[40.782s] [ 35%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/rplidar_driver.cpp.o[0m
+[41.448s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sdkcommon.h:47[m[K,
+[41.448s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:33[m[K:
+[41.450s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/hal/assert.h:1:1:[m[K [01;35m[Kwarning: [m[Knull character(s) ignored
+[41.450s]     1 | [01;35m[K [m[K                                                                                                                                                                                                                                                                                                                        
+[41.450s]       | [01;35m[K^[m[K
+[41.480s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:37[m[K:
+[41.480s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/hal/assert.h:1:1:[m[K [01;35m[Kwarning: [m[Knull character(s) ignored
+[41.480s]     1 | [01;35m[K [m[K                                                                                                                                                                                                                                                                                                                        
+[41.481s]       | [01;35m[K^[m[K
+[42.688s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[42.688s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[42.689s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sdkcommon.h:49[m[K,
+[42.689s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:33[m[K:
+[42.690s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[42.690s]    58 |     sl_u8 data[[01;35m[K0[m[K];
+[42.690s]       |                [01;35m[K^[m[K
+[42.691s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[42.691s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K,
+[42.692s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sdkcommon.h:49[m[K,
+[42.693s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:33[m[K:
+[42.693s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[42.694s]   295 |     sl_u8  payload[[01;35m[K0[m[K];
+[42.694s]       |                    [01;35m[K^[m[K
+[43.504s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::connect(const char*, _u32, _u32)[m[K’:
+[43.505s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:67:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[43.505s]    67 |  *path, _u32 portOrBaud, [01;35m[K_u32 flag[m[K)
+[43.506s]       |                          [01;35m[K~~~~~^~~~[m[K
+[43.506s] 
+[43.506s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::reset(_u32)[m[K’:
+[43.506s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:101:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[43.507s]   101 |  RPlidarDriver::reset([01;35m[K_u32 timeout[m[K)
+[43.508s]       |                       [01;35m[K~~~~~^~~~~~~[m[K
+[43.508s] 
+[43.510s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::getScanDataWithInterval(rplidar_response_measurement_node_t*, size_t&)[m[K’:
+[43.510s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:175:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knodebuffer[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[43.510s]   175 | [01;35m[Kse_measurement_node_t * nodebuffer[m[K, size_t & count)
+[43.510s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[43.511s] 
+[43.511s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:175:112:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcount[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[43.511s]   175 | ode_t * nodebuffer, [01;35m[Ksize_t & count[m[K)
+[43.512s]       |                     [01;35m[K~~~~~~~~~^~~~~[m[K
+[43.512s] 
+[44.193s] [ 42%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_crc.cpp.o[0m
+[44.344s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:36[m[K,
+[44.345s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_crc.h:36[m[K,
+[44.345s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_crc.cpp:33[m[K:
+[44.345s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[44.345s]    58 |     sl_u8 data[[01;35m[K0[m[K];
+[44.346s]       |                [01;35m[K^[m[K
+[44.347s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_crc.h:36[m[K,
+[44.358s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_crc.cpp:33[m[K:
+[44.358s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[44.359s]   295 |     sl_u8  payload[[01;35m[K0[m[K];
+[44.359s]       |                    [01;35m[K^[m[K
+[44.362s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_crc.cpp:[m[K In function ‘[01m[Ksl_u32 sl::crc32::cal(sl_u32, void*, sl_u16)[m[K’:
+[44.363s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_crc.cpp:77:29:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K-[m[K’ in operand of ‘[01m[K&[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[44.363s]    77 |     sl_u8 leftBytes = [01;35m[K4 - len[m[K & 0x3;
+[44.364s]       |                       [01;35m[K~~^~~~~[m[K
+[44.364s] 
+[44.639s] [ 50%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_lidar_driver.cpp.o[0m
+[44.998s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sdkcommon.h:47[m[K,
+[44.999s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:33[m[K:
+[44.999s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/hal/assert.h:1:1:[m[K [01;35m[Kwarning: [m[Knull character(s) ignored
+[44.999s]     1 | [01;35m[K [m[K                                                                                                                                                                                                                                                                                                                        
+[45.000s]       | [01;35m[K^[m[K
+[45.024s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:37[m[K:
+[45.024s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/hal/assert.h:1:1:[m[K [01;35m[Kwarning: [m[Knull character(s) ignored
+[45.025s]     1 | [01;35m[K [m[K                                                                                                                                                                                                                                                                                                                        
+[45.025s]       | [01;35m[K^[m[K
+[46.346s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[46.347s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[46.347s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sdkcommon.h:49[m[K,
+[46.347s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:33[m[K:
+[46.348s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[46.348s]    58 |     sl_u8 data[[01;35m[K0[m[K];
+[46.348s]       |                [01;35m[K^[m[K
+[46.351s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[46.351s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K,
+[46.352s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sdkcommon.h:49[m[K,
+[46.352s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:33[m[K:
+[46.352s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[46.352s]   295 |     sl_u8  payload[[01;35m[K0[m[K];
+[46.353s]       |                    [01;35m[K^[m[K
+[47.085s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::reset(sl_u32)[m[K’:
+[47.086s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:273:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[47.086s]   273 |  sl_result reset([01;35m[Ksl_u32 timeoutInMs = DEFAULT_TIMEOUT[m[K)
+[47.086s]       |                  [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[47.087s] 
+[47.097s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::getAllSupportedScanModes(std::vector<sl::LidarScanMode>&, sl_u32)[m[K’:
+[47.097s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:286:89:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[47.097s]   286 | Mode>& outModes, [01;35m[Ksl_u32 timeoutInMs = DEFAULT_TIMEOUT[m[K)
+[47.098s]       |                  [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[47.098s] 
+[47.100s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::startScan(bool, bool, sl_u32, sl::LidarScanMode*)[m[K’:
+[47.100s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:347:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Koptions[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[47.101s]   347 |  useTypicalScan, [01;35m[Ksl_u32 options = 0[m[K, LidarScanMode* outUsedScanMode = nullptr)
+[47.101s]       |                  [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+[47.101s] 
+[47.110s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::stop(sl_u32)[m[K’:
+[47.111s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:534:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[47.111s]   534 |   sl_result stop([01;35m[Ksl_u32 timeout = DEFAULT_TIMEOUT[m[K)
+[47.112s]       |                  [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[47.112s] 
+[47.113s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::getDeviceInfo(sl_lidar_response_device_info_t&, sl_u32)[m[K’:
+[47.113s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:579:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[47.113s]   579 | ce_info_t& info, [01;35m[Ksl_u32 timeout = DEFAULT_TIMEOUT[m[K)
+[47.113s]       |                  [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[47.114s] 
+[47.115s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::checkMotorCtrlSupport(sl::MotorCtrlSupport&, sl_u32)[m[K’:
+[47.115s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:592:76:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[47.115s]   592 | pport & support, [01;35m[Ksl_u32 timeout = DEFAULT_TIMEOUT[m[K)
+[47.116s]       |                  [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[47.116s] 
+[47.116s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::getFrequency(const sl::LidarScanMode&, const sl_lidar_response_measurement_node_hq_t*, size_t, float&)[m[K’:
+[47.116s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:627:110:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knodes[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[47.117s]   627 | [01;35m[K_measurement_node_hq_t* nodes[m[K, size_t count, float& frequency)
+[47.117s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[47.117s] 
+[47.118s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::getHealth(sl_lidar_response_device_health_t&, sl_u32)[m[K’:
+[47.118s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:640:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[47.118s]   640 | ealth_t& health, [01;35m[Ksl_u32 timeout = DEFAULT_TIMEOUT[m[K)
+[47.118s]       |                  [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[47.119s] 
+[47.122s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::getMotorInfo(sl::LidarMotorInfo&, sl_u32)[m[K’:
+[47.122s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:730:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[47.122s]   730 | Info &motorInfo, [01;35m[Ksl_u32 timeoutInMs[m[K)
+[47.123s]       |                  [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+[47.123s] 
+[47.136s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Ksl_result sl::SlamtecLidarDriver::_sendCommand(sl_u16, const void*, size_t)[m[K’:
+[47.136s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1089:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<unsigned char>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[47.137s]  1089 |   for (int pos = 0; [01;35m[Kpos < cmd_packet.size()[m[K; pos++) {
+[47.137s]       |                     [01;35m[K~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[47.137s] 
+[47.137s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1058:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpkt_header[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[47.138s]  1058 |             sl_u8 [01;35m[Kpkt_header[m[K[10];
+[47.138s]       |                   [01;35m[K^~~~~~~~~~[m[K
+[47.146s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvoid sl::SlamtecLidarDriver::_ultraCapsuleToNormal(const sl_lidar_response_ultra_capsule_measurement_nodes_t&, sl_lidar_response_measurement_node_hq_t*, size_t&)[m[K’:
+[47.147s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1370:40:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[47.148s]  1370 |      if (([01;35m[Kdist_predict1 == 0xFFFFFE00[m[K) || (dist_predict1 == 0x1FF)) {
+[47.148s]       |           [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[47.148s] 
+[47.148s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1379:40:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[47.149s]  1379 |      if (([01;35m[Kdist_predict2 == 0xFFFFFE00[m[K) || (dist_predict2 == 0x1FF)) {
+[47.149s]       |           [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[47.149s] 
+[47.156s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvoid sl::SlamtecLidarDriver::_dense_capsuleToNormal(const sl_lidar_response_capsule_measurement_nodes_t&, sl_lidar_response_measurement_node_hq_t*, size_t&)[m[K’:
+[47.157s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1577:38:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+[47.158s]  1577 |        const int dist = [01;35m[Kstatic_cast<const int>(_cached_previous_dense_capsuledata.cabins[pos].distance)[m[K;
+[47.158s]       |                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[47.159s] 
+[47.276s] /home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp: In instantiation of ‘[01m[Ksl_result sl::ascendScanData_(TNode*, size_t) [with TNode = sl_lidar_response_measurement_node_hq_t; sl_result = unsigned int; size_t = long unsigned int][m[K’:
+[47.277s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:677:94:[m[K   required from here
+[47.277s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:178:31:[m[K [01;35m[Kwarning: [m[Kcomparison of unsigned expression in ‘[01m[K>= 0[m[K’ is always true [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wtype-limits-Wtype-limits]8;;[m[K]
+[47.277s]   178 |   for (i = count - 1; [01;35m[Ki >= 0[m[K; i--) {
+[47.277s]       |                       [01;35m[K~~^~~~[m[K
+[47.278s] 
+[47.572s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K At global scope:
+[47.573s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:72:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid sl::convert(const sl_lidar_response_measurement_node_hq_t&, sl_lidar_response_measurement_node_t&)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[47.573s]    72 |     static void [01;35m[Kconvert[m[K(const sl_lidar_response_measurement_node_hq_t& from, sl_lidar_response_measurement_node_t& to)
+[47.573s]       |                 [01;35m[K^~~~~~~[m[K
+[47.574s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:59:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid sl::printDeprecationWarn(const char*, const char*)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[47.574s]    59 |     static void [01;35m[KprintDeprecationWarn[m[K(const char* fn, const char* replacement)
+[47.574s]       |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[48.641s] [ 57%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_serial_channel.cpp.o[0m
+[48.684s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_serial_channel.cpp:33:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
+[48.684s]    33 | #pragma [01;35m[Konce[m[K
+[48.684s]       |         [01;35m[K^~~~[m[K
+[49.657s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:36[m[K,
+[49.657s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[49.658s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_serial_channel.cpp:34[m[K:
+[49.658s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[49.658s]    58 |     sl_u8 data[[01;35m[K0[m[K];
+[49.659s]       |                [01;35m[K^[m[K
+[49.659s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[49.659s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_serial_channel.cpp:34[m[K:
+[49.660s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[49.660s]   295 |     sl_u8  payload[[01;35m[K0[m[K];
+[49.660s]       |                    [01;35m[K^[m[K
+[50.104s] [ 64%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_tcp_channel.cpp.o[0m
+[50.148s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:33:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
+[50.148s]    33 | #pragma [01;35m[Konce[m[K
+[50.148s]       |         [01;35m[K^~~~[m[K
+[51.048s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:36[m[K,
+[51.049s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[51.050s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:34[m[K:
+[51.050s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[51.050s]    58 |     sl_u8 data[[01;35m[K0[m[K];
+[51.050s]       |                [01;35m[K^[m[K
+[51.051s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[51.051s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:34[m[K:
+[51.052s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[51.052s]   295 |     sl_u8  payload[[01;35m[K0[m[K];
+[51.052s]       |                    [01;35m[K^[m[K
+[51.069s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:[m[K In member function ‘[01m[Kvoid sl::TcpChannel::setStatus(_u32)[m[K’:
+[51.069s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:95:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[51.069s]    95 |         void setStatus([01;35m[K_u32 flag[m[K){}
+[51.070s]       |                        [01;35m[K~~~~~^~~~[m[K
+[51.464s] [ 71%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_udp_channel.cpp.o[0m
+[51.508s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:33:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
+[51.509s]    33 | #pragma [01;35m[Konce[m[K
+[51.509s]       |         [01;35m[K^~~~[m[K
+[52.407s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:36[m[K,
+[52.407s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[52.408s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:34[m[K:
+[52.408s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[52.409s]    58 |     sl_u8 data[[01;35m[K0[m[K];
+[52.409s]       |                [01;35m[K^[m[K
+[52.409s] In file included from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[52.410s]                  from [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:34[m[K:
+[52.410s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[52.410s]   295 |     sl_u8  payload[[01;35m[K0[m[K];
+[52.410s]       |                    [01;35m[K^[m[K
+[52.427s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:[m[K In member function ‘[01m[Kvoid sl::UdpChannel::setStatus(_u32)[m[K’:
+[52.428s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:103:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[52.428s]   103 |         void setStatus([01;35m[K_u32 flag[m[K){}
+[52.428s]       |                        [01;35m[K~~~~~^~~~[m[K
+[52.826s] [ 78%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/net_serial.cpp.o[0m
+[54.597s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kbool rp::arch::net::raw_serial::open(const char*, uint32_t, uint32_t)[m[K’:
+[54.598s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:97:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[54.598s]    97 |  uint32_t baudrate, [01;35m[Kuint32_t flags[m[K)
+[54.598s]       |                     [01;35m[K~~~~~~~~~^~~~~[m[K
+[54.599s] 
+[54.600s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual void rp::arch::net::raw_serial::flush(_u32)[m[K’:
+[54.600s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:281:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[54.601s]   281 | void raw_serial::flush( [01;35m[K_u32 flags[m[K)
+[54.601s]       |                         [01;35m[K~~~~~^~~~~[m[K
+[54.602s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual int rp::arch::net::raw_serial::waitforsent(_u32, size_t*)[m[K’:
+[54.602s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:286:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[54.602s]   286 | erial::waitforsent([01;35m[K_u32 timeout[m[K, size_t * returned_size)
+[54.602s]       |                    [01;35m[K~~~~~^~~~~~~[m[K
+[54.603s] 
+[54.603s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual int rp::arch::net::raw_serial::waitforrecv(_u32, size_t*)[m[K’:
+[54.603s] [01m[K/home/wjs/cart_ros2/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:292:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[54.604s]   292 | erial::waitforrecv([01;35m[K_u32 timeout[m[K, size_t * returned_size)
+[54.604s]       |                    [01;35m[K~~~~~^~~~~~~[m[K
+[54.604s] 
+[55.199s] [ 85%] [32m[1mLinking CXX executable sllidar_node[0m
+[56.464s] [ 85%] Built target sllidar_node
+[56.521s] [35m[1mScanning dependencies of target sllidar_client[0m
+[56.783s] [ 92%] [32mBuilding CXX object CMakeFiles/sllidar_client.dir/src/sllidar_client.cpp.o[0m
+[85.196s] [100%] [32m[1mLinking CXX executable sllidar_client[0m
+[87.347s] [100%] Built target sllidar_client
+[87.466s] Invoked command in '/home/wjs/cart_ros2/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/wjs/cart_ros2/build/sllidar_ros2 -- -j4 -l4
+[87.473s] Invoking command in '/home/wjs/cart_ros2/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/sllidar_ros2
+[87.526s] -- Install configuration: ""
+[87.530s] -- Execute custom install script
+[87.535s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/run_lidar_F.launch.py
+[87.589s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/run_lidar_F.launch.py.bak
+[87.644s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/run_lidar_R.launch.py
+[87.701s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/run_lidars.launch.py
+[87.750s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/sllidar_a3_filtered.launch.py
+[87.808s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/sllidar_a3_launch.py
+[87.855s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/sllidar_launch.py
+[87.908s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/sllidar_s1_launch.py
+[87.958s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/sllidar_s1_tcp_launch.py
+[88.010s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/sllidar_s2_launch.py
+[88.058s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/sllidar_s2e_launch.py
+[88.106s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/sllidar_t1_launch.py
+[88.161s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/view_sllidar_a3_launch.py
+[88.209s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/view_sllidar_launch.py
+[88.259s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/view_sllidar_s1_launch.py
+[88.312s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/view_sllidar_s1_tcp_launch.py
+[88.362s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/view_sllidar_s2_launch.py
+[88.413s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/view_sllidar_s2e_launch.py
+[88.462s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/launch/view_sllidar_t1_launch.py
+[88.509s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/rviz/sllidar_ros2.rviz
+[88.560s] -- Symlinking: /home/wjs/cart_ros2/install/lib/sllidar_ros2/sllidar_node
+[88.609s] -- Symlinking: /home/wjs/cart_ros2/install/lib/sllidar_ros2/sllidar_client
+[88.659s] -- Symlinking: /home/wjs/cart_ros2/install/share/ament_index/resource_index/package_run_dependencies/sllidar_ros2
+[88.709s] -- Symlinking: /home/wjs/cart_ros2/install/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2
+[88.754s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/environment/ament_prefix_path.sh
+[88.801s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/environment/ament_prefix_path.dsv
+[88.849s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/environment/path.sh
+[88.892s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/environment/path.dsv
+[88.939s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/local_setup.bash
+[88.988s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/local_setup.sh
+[89.035s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/local_setup.zsh
+[89.082s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/local_setup.dsv
+[89.129s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/package.dsv
+[89.177s] -- Symlinking: /home/wjs/cart_ros2/install/share/ament_index/resource_index/packages/sllidar_ros2
+[89.224s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake
+[89.272s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake
+[89.321s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/cmake/sllidar_ros2Config.cmake
+[89.366s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/cmake/sllidar_ros2Config-version.cmake
+[89.416s] -- Symlinking: /home/wjs/cart_ros2/install/share/sllidar_ros2/package.xml
+[89.480s] Invoked command in '/home/wjs/cart_ros2/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/wjs/cart_ros2/build/sllidar_ros2

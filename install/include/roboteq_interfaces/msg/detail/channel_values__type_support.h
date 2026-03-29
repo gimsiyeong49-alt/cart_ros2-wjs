@@ -1,0 +1,1 @@
+/home/wjs/cart_ros2/build/roboteq_interfaces/rosidl_generator_c/roboteq_interfaces/msg/detail/channel_values__type_support.h

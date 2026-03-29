@@ -1,0 +1,51 @@
+-- The C compiler identification is GNU 10.5.0
+-- The CXX compiler identification is GNU 10.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/wjs/cart_ros2/build/serial
+[35m[1mScanning dependencies of target serial[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o[0m
+[100%] [32m[1mLinking CXX static library libserial.a[0m
+[100%] Built target serial
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/wjs/cart_ros2/install/share/serial/environment/library_path.sh
+-- Symlinking: /home/wjs/cart_ros2/install/share/serial/environment/library_path.dsv
+-- Symlinking: /home/wjs/cart_ros2/install/lib/libserial.a
+-- Symlinking: /home/wjs/cart_ros2/install/include/serial/serial.h
+-- Symlinking: /home/wjs/cart_ros2/install/include/serial/v8stdint.h
+-- Symlinking: /home/wjs/cart_ros2/install/share/ament_index/resource_index/package_run_dependencies/serial
+-- Symlinking: /home/wjs/cart_ros2/install/share/ament_index/resource_index/parent_prefix_path/serial
+-- Symlinking: /home/wjs/cart_ros2/install/share/serial/environment/ament_prefix_path.sh
+-- Symlinking: /home/wjs/cart_ros2/install/share/serial/environment/ament_prefix_path.dsv
+-- Symlinking: /home/wjs/cart_ros2/install/share/serial/environment/path.sh
+-- Symlinking: /home/wjs/cart_ros2/install/share/serial/environment/path.dsv
+-- Symlinking: /home/wjs/cart_ros2/install/share/serial/local_setup.bash
+-- Symlinking: /home/wjs/cart_ros2/install/share/serial/local_setup.sh
+-- Symlinking: /home/wjs/cart_ros2/install/share/serial/local_setup.zsh
+-- Symlinking: /home/wjs/cart_ros2/install/share/serial/local_setup.dsv
+-- Symlinking: /home/wjs/cart_ros2/install/share/serial/package.dsv
+-- Symlinking: /home/wjs/cart_ros2/install/share/ament_index/resource_index/packages/serial
+-- Symlinking: /home/wjs/cart_ros2/install/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/wjs/cart_ros2/install/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/wjs/cart_ros2/install/share/serial/cmake/serialConfig.cmake
+-- Symlinking: /home/wjs/cart_ros2/install/share/serial/cmake/serialConfig-version.cmake
+-- Symlinking: /home/wjs/cart_ros2/install/share/serial/package.xml

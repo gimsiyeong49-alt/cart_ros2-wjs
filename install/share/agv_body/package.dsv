@@ -1,0 +1,15 @@
+source;share/agv_body/hook/cmake_prefix_path.ps1
+source;share/agv_body/hook/cmake_prefix_path.dsv
+source;share/agv_body/hook/cmake_prefix_path.sh
+source;share/agv_body/hook/ld_library_path_lib.ps1
+source;share/agv_body/hook/ld_library_path_lib.dsv
+source;share/agv_body/hook/ld_library_path_lib.sh
+source;share/agv_body/hook/pythonpath.ps1
+source;share/agv_body/hook/pythonpath.dsv
+source;share/agv_body/hook/pythonpath.sh
+source;share/agv_body/hook/ament_prefix_path.ps1
+source;share/agv_body/hook/ament_prefix_path.dsv
+source;share/agv_body/hook/ament_prefix_path.sh
+source;../build/agv_body/share/agv_body/hook/pythonpath_develop.ps1
+source;../build/agv_body/share/agv_body/hook/pythonpath_develop.dsv
+source;../build/agv_body/share/agv_body/hook/pythonpath_develop.sh
